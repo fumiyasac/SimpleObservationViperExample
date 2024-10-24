@@ -13,6 +13,7 @@
 		DEF3BB992CC879D9007B2D9A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF3BB922CC879D9007B2D9A /* AppDelegate.swift */; };
 		DEF3BB9A2CC879D9007B2D9A /* ObservationViperExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF3BB942CC879D9007B2D9A /* ObservationViperExampleApp.swift */; };
 		DEF3BB9C2CC87A22007B2D9A /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF3BB9B2CC87A17007B2D9A /* UIColorExtension.swift */; };
+		DEF3BBA02CCA968A007B2D9A /* FirstAppearExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF3BB9F2CCA9687007B2D9A /* FirstAppearExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		DEF3BB932CC879D9007B2D9A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DEF3BB942CC879D9007B2D9A /* ObservationViperExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservationViperExampleApp.swift; sourceTree = "<group>"; };
 		DEF3BB9B2CC87A17007B2D9A /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		DEF3BB9F2CCA9687007B2D9A /* FirstAppearExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstAppearExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -113,6 +115,7 @@
 		DEF3BB8F2CC879D9007B2D9A /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				DEF3BB9F2CCA9687007B2D9A /* FirstAppearExtension.swift */,
 				DEF3BB9B2CC87A17007B2D9A /* UIColorExtension.swift */,
 			);
 			path = Extension;
@@ -133,10 +136,26 @@
 				DEF3BB942CC879D9007B2D9A /* ObservationViperExampleApp.swift */,
 				DEF3BB932CC879D9007B2D9A /* Assets.xcassets */,
 				DEF3BB8E2CC879D9007B2D9A /* Application */,
+				DEF3BB9E2CCA9658007B2D9A /* Common */,
 				DEF3BB8F2CC879D9007B2D9A /* Extension */,
 				DEF3BB912CC879D9007B2D9A /* Preview Content */,
+				DEF3BB9D2CCA9640007B2D9A /* Screen */,
 			);
 			path = ObservationViperExample;
+			sourceTree = "<group>";
+		};
+		DEF3BB9D2CCA9640007B2D9A /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		DEF3BB9E2CCA9658007B2D9A /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -283,6 +302,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DEF3BB982CC879D9007B2D9A /* ContentView.swift in Sources */,
+				DEF3BBA02CCA968A007B2D9A /* FirstAppearExtension.swift in Sources */,
 				DEF3BB992CC879D9007B2D9A /* AppDelegate.swift in Sources */,
 				DEF3BB9A2CC879D9007B2D9A /* ObservationViperExampleApp.swift in Sources */,
 				DEF3BB9C2CC87A22007B2D9A /* UIColorExtension.swift in Sources */,
