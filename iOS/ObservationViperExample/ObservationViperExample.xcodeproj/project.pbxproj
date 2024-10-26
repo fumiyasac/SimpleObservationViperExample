@@ -16,6 +16,7 @@
 		DEF3BBA02CCA968A007B2D9A /* FirstAppearExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF3BB9F2CCA9687007B2D9A /* FirstAppearExtension.swift */; };
 		DEF3BBA22CCBA2E4007B2D9A /* SwiftUIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF3BBA12CCBA2E3007B2D9A /* SwiftUIColorExtension.swift */; };
 		DEF3BBA42CCBA9D4007B2D9A /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF3BBA32CCBA9D4007B2D9A /* StringExtension.swift */; };
+		DEF3BBA82CCCE7F8007B2D9A /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF3BBA72CCCE7F8007B2D9A /* UIViewControllerExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		DEF3BB9F2CCA9687007B2D9A /* FirstAppearExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstAppearExtension.swift; sourceTree = "<group>"; };
 		DEF3BBA12CCBA2E3007B2D9A /* SwiftUIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIColorExtension.swift; sourceTree = "<group>"; };
 		DEF3BBA32CCBA9D4007B2D9A /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		DEF3BBA72CCCE7F8007B2D9A /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -123,6 +125,7 @@
 				DEF3BB9F2CCA9687007B2D9A /* FirstAppearExtension.swift */,
 				DEF3BB9B2CC87A17007B2D9A /* UIColorExtension.swift */,
 				DEF3BBA32CCBA9D4007B2D9A /* StringExtension.swift */,
+				DEF3BBA72CCCE7F8007B2D9A /* UIViewControllerExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -144,6 +147,7 @@
 				DEF3BB8E2CC879D9007B2D9A /* Application */,
 				DEF3BB9E2CCA9658007B2D9A /* Common */,
 				DEF3BB8F2CC879D9007B2D9A /* Extension */,
+				DEF3BBA92CCCE808007B2D9A /* Infrastructure */,
 				DEF3BB912CC879D9007B2D9A /* Preview Content */,
 				DEF3BB9D2CCA9640007B2D9A /* Screen */,
 			);
@@ -162,6 +166,13 @@
 			children = (
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		DEF3BBA92CCCE808007B2D9A /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Infrastructure;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -311,6 +322,7 @@
 				DEF3BBA42CCBA9D4007B2D9A /* StringExtension.swift in Sources */,
 				DEF3BB982CC879D9007B2D9A /* ContentView.swift in Sources */,
 				DEF3BBA02CCA968A007B2D9A /* FirstAppearExtension.swift in Sources */,
+				DEF3BBA82CCCE7F8007B2D9A /* UIViewControllerExtension.swift in Sources */,
 				DEF3BB992CC879D9007B2D9A /* AppDelegate.swift in Sources */,
 				DEF3BB9A2CC879D9007B2D9A /* ObservationViperExampleApp.swift in Sources */,
 				DEF3BB9C2CC87A22007B2D9A /* UIColorExtension.swift in Sources */,
