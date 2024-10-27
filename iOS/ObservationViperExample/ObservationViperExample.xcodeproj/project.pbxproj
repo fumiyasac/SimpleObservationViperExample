@@ -17,6 +17,9 @@
 		DEF3BBA22CCBA2E4007B2D9A /* SwiftUIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF3BBA12CCBA2E3007B2D9A /* SwiftUIColorExtension.swift */; };
 		DEF3BBA42CCBA9D4007B2D9A /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF3BBA32CCBA9D4007B2D9A /* StringExtension.swift */; };
 		DEF3BBA82CCCE7F8007B2D9A /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF3BBA72CCCE7F8007B2D9A /* UIViewControllerExtension.swift */; };
+		DEF3BBAC2CCE5CF3007B2D9A /* ObservationViperExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF3BBAA2CCE5CF3007B2D9A /* ObservationViperExampleTests.swift */; };
+		DEF3BBB02CCE5CF9007B2D9A /* ObservationViperExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF3BBAD2CCE5CF9007B2D9A /* ObservationViperExampleUITests.swift */; };
+		DEF3BBB12CCE5CF9007B2D9A /* ObservationViperExampleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF3BBAE2CCE5CF9007B2D9A /* ObservationViperExampleUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,20 +53,10 @@
 		DEF3BBA12CCBA2E3007B2D9A /* SwiftUIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIColorExtension.swift; sourceTree = "<group>"; };
 		DEF3BBA32CCBA9D4007B2D9A /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		DEF3BBA72CCCE7F8007B2D9A /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		DEF3BBAA2CCE5CF3007B2D9A /* ObservationViperExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservationViperExampleTests.swift; sourceTree = "<group>"; };
+		DEF3BBAD2CCE5CF9007B2D9A /* ObservationViperExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservationViperExampleUITests.swift; sourceTree = "<group>"; };
+		DEF3BBAE2CCE5CF9007B2D9A /* ObservationViperExampleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservationViperExampleUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		DEF3BB5B2CC3876C007B2D9A /* ObservationViperExampleTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = ObservationViperExampleTests;
-			sourceTree = "<group>";
-		};
-		DEF3BB652CC3876C007B2D9A /* ObservationViperExampleUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = ObservationViperExampleUITests;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		DEF3BB452CC3876A007B2D9A /* Frameworks */ = {
@@ -94,8 +87,8 @@
 			isa = PBXGroup;
 			children = (
 				DEF3BB952CC879D9007B2D9A /* ObservationViperExample */,
-				DEF3BB5B2CC3876C007B2D9A /* ObservationViperExampleTests */,
-				DEF3BB652CC3876C007B2D9A /* ObservationViperExampleUITests */,
+				DEF3BBAB2CCE5CF3007B2D9A /* ObservationViperExampleTests */,
+				DEF3BBAF2CCE5CF9007B2D9A /* ObservationViperExampleUITests */,
 				DEF3BB492CC3876A007B2D9A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -175,6 +168,23 @@
 			path = Infrastructure;
 			sourceTree = "<group>";
 		};
+		DEF3BBAB2CCE5CF3007B2D9A /* ObservationViperExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				DEF3BBAA2CCE5CF3007B2D9A /* ObservationViperExampleTests.swift */,
+			);
+			path = ObservationViperExampleTests;
+			sourceTree = "<group>";
+		};
+		DEF3BBAF2CCE5CF9007B2D9A /* ObservationViperExampleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DEF3BBAD2CCE5CF9007B2D9A /* ObservationViperExampleUITests.swift */,
+				DEF3BBAE2CCE5CF9007B2D9A /* ObservationViperExampleUITestsLaunchTests.swift */,
+			);
+			path = ObservationViperExampleUITests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -210,9 +220,6 @@
 			dependencies = (
 				DEF3BB5A2CC3876C007B2D9A /* PBXTargetDependency */,
 			);
-			fileSystemSynchronizedGroups = (
-				DEF3BB5B2CC3876C007B2D9A /* ObservationViperExampleTests */,
-			);
 			name = ObservationViperExampleTests;
 			packageProductDependencies = (
 			);
@@ -232,9 +239,6 @@
 			);
 			dependencies = (
 				DEF3BB642CC3876C007B2D9A /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				DEF3BB652CC3876C007B2D9A /* ObservationViperExampleUITests */,
 			);
 			name = ObservationViperExampleUITests;
 			packageProductDependencies = (
@@ -333,6 +337,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEF3BBAC2CCE5CF3007B2D9A /* ObservationViperExampleTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +345,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEF3BBB02CCE5CF9007B2D9A /* ObservationViperExampleUITests.swift in Sources */,
+				DEF3BBB12CCE5CF9007B2D9A /* ObservationViperExampleUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
