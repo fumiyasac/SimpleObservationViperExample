@@ -141,8 +141,8 @@
 				DEF3BB9E2CCA9658007B2D9A /* Common */,
 				DEF3BB8F2CC879D9007B2D9A /* Extension */,
 				DEF3BBA92CCCE808007B2D9A /* Infrastructure */,
-				DEF3BB912CC879D9007B2D9A /* Preview Content */,
 				DEF3BB9D2CCA9640007B2D9A /* Screen */,
+				DEF3BB912CC879D9007B2D9A /* Preview Content */,
 			);
 			path = ObservationViperExample;
 			sourceTree = "<group>";
