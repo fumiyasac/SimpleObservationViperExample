@@ -20,6 +20,7 @@
 		DEF3BBAC2CCE5CF3007B2D9A /* ObservationViperExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF3BBAA2CCE5CF3007B2D9A /* ObservationViperExampleTests.swift */; };
 		DEF3BBB02CCE5CF9007B2D9A /* ObservationViperExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF3BBAD2CCE5CF9007B2D9A /* ObservationViperExampleUITests.swift */; };
 		DEF3BBB12CCE5CF9007B2D9A /* ObservationViperExampleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF3BBAE2CCE5CF9007B2D9A /* ObservationViperExampleUITestsLaunchTests.swift */; };
+		DEF3BBB32CCFB074007B2D9A /* ConnectionErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF3BBB22CCFB074007B2D9A /* ConnectionErrorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		DEF3BBAA2CCE5CF3007B2D9A /* ObservationViperExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservationViperExampleTests.swift; sourceTree = "<group>"; };
 		DEF3BBAD2CCE5CF9007B2D9A /* ObservationViperExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservationViperExampleUITests.swift; sourceTree = "<group>"; };
 		DEF3BBAE2CCE5CF9007B2D9A /* ObservationViperExampleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservationViperExampleUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DEF3BBB22CCFB074007B2D9A /* ConnectionErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionErrorView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +159,7 @@
 		DEF3BB9E2CCA9658007B2D9A /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				DEF3BBB22CCFB074007B2D9A /* ConnectionErrorView.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -324,6 +327,7 @@
 			files = (
 				DEF3BBA22CCBA2E4007B2D9A /* SwiftUIColorExtension.swift in Sources */,
 				DEF3BBA42CCBA9D4007B2D9A /* StringExtension.swift in Sources */,
+				DEF3BBB32CCFB074007B2D9A /* ConnectionErrorView.swift in Sources */,
 				DEF3BB982CC879D9007B2D9A /* ContentView.swift in Sources */,
 				DEF3BBA02CCA968A007B2D9A /* FirstAppearExtension.swift in Sources */,
 				DEF3BBA82CCCE7F8007B2D9A /* UIViewControllerExtension.swift in Sources */,
