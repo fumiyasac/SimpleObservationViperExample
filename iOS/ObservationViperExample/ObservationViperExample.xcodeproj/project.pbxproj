@@ -154,6 +154,9 @@
 		DEF3BB9D2CCA9640007B2D9A /* Screen */ = {
 			isa = PBXGroup;
 			children = (
+				DEF3BBB92CD13459007B2D9A /* Course */,
+				DEF3BBBA2CD1346C007B2D9A /* Featured */,
+				DEF3BBB82CD133E4007B2D9A /* Bookmark */,
 			);
 			path = Screen;
 			sourceTree = "<group>";
@@ -189,6 +192,27 @@
 				DEF3BBAE2CCE5CF9007B2D9A /* ObservationViperExampleUITestsLaunchTests.swift */,
 			);
 			path = ObservationViperExampleUITests;
+			sourceTree = "<group>";
+		};
+		DEF3BBB82CD133E4007B2D9A /* Bookmark */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Bookmark;
+			sourceTree = "<group>";
+		};
+		DEF3BBB92CD13459007B2D9A /* Course */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Course;
+			sourceTree = "<group>";
+		};
+		DEF3BBBA2CD1346C007B2D9A /* Featured */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Featured;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
