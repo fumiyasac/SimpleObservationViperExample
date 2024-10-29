@@ -47,8 +47,8 @@ final class ApiClientManager {
 
     private enum EndPoint: String {
 
-        case pickupFoods = "pickup_foods"
-        case popularFoods = "popular_foods"
+        case foodPhotos = "pickup_foods"
+        case recentNews = "recent_news"
 
         func getBaseUrl() -> String {
             return [host, self.rawValue].joined(separator: "/")
