@@ -309,6 +309,14 @@
 			);
 			mainGroup = DEF3BB3F2CC3876A007B2D9A;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				DEF3BBBB2CD28903007B2D9A /* XCRemoteSwiftPackageReference "swift-async-algorithms" */,
+				DEF3BBBC2CD28923007B2D9A /* XCRemoteSwiftPackageReference "swift-testing" */,
+				DEF3BBBD2CD2894D007B2D9A /* XCRemoteSwiftPackageReference "Nuke" */,
+				DEF3BBBE2CD28986007B2D9A /* XCRemoteSwiftPackageReference "apollo-ios" */,
+				DEF3BBBF2CD289E4007B2D9A /* XCRemoteSwiftPackageReference "Cosmos" */,
+				DEF3BBC02CD28A2E007B2D9A /* XCRemoteSwiftPackageReference "swift-markdown-ui" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = DEF3BB492CC3876A007B2D9A /* Products */;
 			projectDirPath = "";
@@ -687,6 +695,57 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DEF3BBBB2CD28903007B2D9A /* XCRemoteSwiftPackageReference "swift-async-algorithms" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-async-algorithms.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.2;
+			};
+		};
+		DEF3BBBC2CD28923007B2D9A /* XCRemoteSwiftPackageReference "swift-testing" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-testing.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.2;
+			};
+		};
+		DEF3BBBD2CD2894D007B2D9A /* XCRemoteSwiftPackageReference "Nuke" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kean/Nuke.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.8.0;
+			};
+		};
+		DEF3BBBE2CD28986007B2D9A /* XCRemoteSwiftPackageReference "apollo-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apollographql/apollo-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.15.2;
+			};
+		};
+		DEF3BBBF2CD289E4007B2D9A /* XCRemoteSwiftPackageReference "Cosmos" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/evgenyneu/Cosmos.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 25.0.1;
+			};
+		};
+		DEF3BBC02CD28A2E007B2D9A /* XCRemoteSwiftPackageReference "swift-markdown-ui" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/gonzalezreal/swift-markdown-ui";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.4.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
 	};
 	rootObject = DEF3BB402CC3876A007B2D9A /* Project object */;
 }
