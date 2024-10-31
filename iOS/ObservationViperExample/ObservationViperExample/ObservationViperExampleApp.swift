@@ -9,6 +9,12 @@ import SwiftUI
 
 @main
 struct ObservationViperExampleApp: App {
+
+    // MEMO: AppDelegate
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+
+    // MARK: - Body
+
     var body: some Scene {
         WindowGroup {
             ContentView()

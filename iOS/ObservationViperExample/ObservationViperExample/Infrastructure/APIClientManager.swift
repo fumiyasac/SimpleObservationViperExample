@@ -55,7 +55,7 @@ final class ApiClientManager {
         }
     }
 
-    // MARK: - Properties
+    // MARK: - Property
 
     // MEMO: API ServerへのURLに関する情報
     private static let host = "http://localhost:3000"
