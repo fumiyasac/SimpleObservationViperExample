@@ -22,6 +22,9 @@
 		DEF3BBB12CCE5CF9007B2D9A /* ObservationViperExampleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF3BBAE2CCE5CF9007B2D9A /* ObservationViperExampleUITestsLaunchTests.swift */; };
 		DEF3BBB32CCFB074007B2D9A /* ConnectionErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF3BBB22CCFB074007B2D9A /* ConnectionErrorView.swift */; };
 		DEF3BBB72CCFB0FE007B2D9A /* APIClientManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF3BBB62CCFB0FE007B2D9A /* APIClientManager.swift */; };
+		DEF3BBC72CD6856A007B2D9A /* CourseListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF3BBC62CD6856A007B2D9A /* CourseListView.swift */; };
+		DEF3BBC92CD685A2007B2D9A /* FeaturedListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF3BBC82CD685A2007B2D9A /* FeaturedListView.swift */; };
+		DEF3BBCB2CD685D1007B2D9A /* BookmarkListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF3BBCA2CD685D1007B2D9A /* BookmarkListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +63,9 @@
 		DEF3BBAE2CCE5CF9007B2D9A /* ObservationViperExampleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservationViperExampleUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		DEF3BBB22CCFB074007B2D9A /* ConnectionErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionErrorView.swift; sourceTree = "<group>"; };
 		DEF3BBB62CCFB0FE007B2D9A /* APIClientManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClientManager.swift; sourceTree = "<group>"; };
+		DEF3BBC62CD6856A007B2D9A /* CourseListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseListView.swift; sourceTree = "<group>"; };
+		DEF3BBC82CD685A2007B2D9A /* FeaturedListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedListView.swift; sourceTree = "<group>"; };
+		DEF3BBCA2CD685D1007B2D9A /* BookmarkListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,6 +203,7 @@
 		DEF3BBB82CD133E4007B2D9A /* Bookmark */ = {
 			isa = PBXGroup;
 			children = (
+				DEF3BBCE2CD68669007B2D9A /* BookmarkList */,
 			);
 			path = Bookmark;
 			sourceTree = "<group>";
@@ -204,6 +211,7 @@
 		DEF3BBB92CD13459007B2D9A /* Course */ = {
 			isa = PBXGroup;
 			children = (
+				DEF3BBCC2CD6864D007B2D9A /* CourseList */,
 			);
 			path = Course;
 			sourceTree = "<group>";
@@ -211,8 +219,33 @@
 		DEF3BBBA2CD1346C007B2D9A /* Featured */ = {
 			isa = PBXGroup;
 			children = (
+				DEF3BBCD2CD6865A007B2D9A /* FeaturedList */,
 			);
 			path = Featured;
+			sourceTree = "<group>";
+		};
+		DEF3BBCC2CD6864D007B2D9A /* CourseList */ = {
+			isa = PBXGroup;
+			children = (
+				DEF3BBC62CD6856A007B2D9A /* CourseListView.swift */,
+			);
+			path = CourseList;
+			sourceTree = "<group>";
+		};
+		DEF3BBCD2CD6865A007B2D9A /* FeaturedList */ = {
+			isa = PBXGroup;
+			children = (
+				DEF3BBC82CD685A2007B2D9A /* FeaturedListView.swift */,
+			);
+			path = FeaturedList;
+			sourceTree = "<group>";
+		};
+		DEF3BBCE2CD68669007B2D9A /* BookmarkList */ = {
+			isa = PBXGroup;
+			children = (
+				DEF3BBCA2CD685D1007B2D9A /* BookmarkListView.swift */,
+			);
+			path = BookmarkList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -364,12 +397,15 @@
 				DEF3BBA42CCBA9D4007B2D9A /* StringExtension.swift in Sources */,
 				DEF3BBB32CCFB074007B2D9A /* ConnectionErrorView.swift in Sources */,
 				DEF3BB982CC879D9007B2D9A /* ContentView.swift in Sources */,
+				DEF3BBC92CD685A2007B2D9A /* FeaturedListView.swift in Sources */,
 				DEF3BBA02CCA968A007B2D9A /* FirstAppearExtension.swift in Sources */,
 				DEF3BBB72CCFB0FE007B2D9A /* APIClientManager.swift in Sources */,
 				DEF3BBA82CCCE7F8007B2D9A /* UIViewControllerExtension.swift in Sources */,
+				DEF3BBCB2CD685D1007B2D9A /* BookmarkListView.swift in Sources */,
 				DEF3BB992CC879D9007B2D9A /* AppDelegate.swift in Sources */,
 				DEF3BB9A2CC879D9007B2D9A /* ObservationViperExampleApp.swift in Sources */,
 				DEF3BB9C2CC87A22007B2D9A /* UIColorExtension.swift in Sources */,
+				DEF3BBC72CD6856A007B2D9A /* CourseListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

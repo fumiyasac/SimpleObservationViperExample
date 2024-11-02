@@ -29,7 +29,7 @@ final class AppDelegate: NSObject, UIApplicationDelegate {
         titleTextAttributes[NSAttributedString.Key.foregroundColor] = UIColor.white
         let newNavigationAppearance = UINavigationBarAppearance()
         newNavigationAppearance.configureWithTransparentBackground()
-        newNavigationAppearance.backgroundColor = UIColor(code: "#90673e")
+        newNavigationAppearance.backgroundColor = UIColor(code: "#f88c75")
         newNavigationAppearance.titleTextAttributes = titleTextAttributes
         UINavigationBar.appearance().standardAppearance = newNavigationAppearance
         UINavigationBar.appearance().scrollEdgeAppearance = newNavigationAppearance
@@ -44,7 +44,7 @@ final class AppDelegate: NSObject, UIApplicationDelegate {
             NSAttributedString.Key.foregroundColor : UIColor.lightGray
         ]
         tabBarItemAppearance.selected.titleTextAttributes = [
-            NSAttributedString.Key.foregroundColor : UIColor(code: "#90673e")
+            NSAttributedString.Key.foregroundColor : UIColor(code: "#f88c75")
         ]
         tabBarAppearance.stackedLayoutAppearance = tabBarItemAppearance
         UITabBar.appearance().standardAppearance = tabBarAppearance
