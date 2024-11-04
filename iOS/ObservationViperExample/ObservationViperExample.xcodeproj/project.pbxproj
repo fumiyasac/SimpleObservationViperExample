@@ -25,6 +25,8 @@
 		DEF3BBC72CD6856A007B2D9A /* CourseListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF3BBC62CD6856A007B2D9A /* CourseListView.swift */; };
 		DEF3BBC92CD685A2007B2D9A /* FeaturedListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF3BBC82CD685A2007B2D9A /* FeaturedListView.swift */; };
 		DEF3BBCB2CD685D1007B2D9A /* BookmarkListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF3BBCA2CD685D1007B2D9A /* BookmarkListView.swift */; };
+		DEF3BBD62CD8FCD8007B2D9A /* StarRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF3BBD52CD8FCD8007B2D9A /* StarRatingView.swift */; };
+		DEF3BBD82CD8FCFA007B2D9A /* RatingViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF3BBD72CD8FCFA007B2D9A /* RatingViewRepresentable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +68,8 @@
 		DEF3BBC62CD6856A007B2D9A /* CourseListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseListView.swift; sourceTree = "<group>"; };
 		DEF3BBC82CD685A2007B2D9A /* FeaturedListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedListView.swift; sourceTree = "<group>"; };
 		DEF3BBCA2CD685D1007B2D9A /* BookmarkListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkListView.swift; sourceTree = "<group>"; };
+		DEF3BBD52CD8FCD8007B2D9A /* StarRatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarRatingView.swift; sourceTree = "<group>"; };
+		DEF3BBD72CD8FCFA007B2D9A /* RatingViewRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingViewRepresentable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,10 +153,12 @@
 				DEF3BB932CC879D9007B2D9A /* Assets.xcassets */,
 				DEF3BB8E2CC879D9007B2D9A /* Application */,
 				DEF3BB9E2CCA9658007B2D9A /* Common */,
+				DEF3BBD02CD8FC65007B2D9A /* Components */,
+				DEF3BBCF2CD8F12C007B2D9A /* Entity */,
 				DEF3BB8F2CC879D9007B2D9A /* Extension */,
 				DEF3BBA92CCCE808007B2D9A /* Infrastructure */,
-				DEF3BB9D2CCA9640007B2D9A /* Screen */,
 				DEF3BB912CC879D9007B2D9A /* Preview Content */,
+				DEF3BB9D2CCA9640007B2D9A /* Screen */,
 			);
 			path = ObservationViperExample;
 			sourceTree = "<group>";
@@ -246,6 +252,38 @@
 				DEF3BBCA2CD685D1007B2D9A /* BookmarkListView.swift */,
 			);
 			path = BookmarkList;
+			sourceTree = "<group>";
+		};
+		DEF3BBCF2CD8F12C007B2D9A /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		DEF3BBD02CD8FC65007B2D9A /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				DEF3BBD22CD8FC9D007B2D9A /* StarRating */,
+				DEF3BBD12CD8FC80007B2D9A /* UIViewRepresentable */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		DEF3BBD12CD8FC80007B2D9A /* UIViewRepresentable */ = {
+			isa = PBXGroup;
+			children = (
+				DEF3BBD72CD8FCFA007B2D9A /* RatingViewRepresentable.swift */,
+			);
+			path = UIViewRepresentable;
+			sourceTree = "<group>";
+		};
+		DEF3BBD22CD8FC9D007B2D9A /* StarRating */ = {
+			isa = PBXGroup;
+			children = (
+				DEF3BBD52CD8FCD8007B2D9A /* StarRatingView.swift */,
+			);
+			path = StarRating;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -400,7 +438,9 @@
 				DEF3BBC92CD685A2007B2D9A /* FeaturedListView.swift in Sources */,
 				DEF3BBA02CCA968A007B2D9A /* FirstAppearExtension.swift in Sources */,
 				DEF3BBB72CCFB0FE007B2D9A /* APIClientManager.swift in Sources */,
+				DEF3BBD62CD8FCD8007B2D9A /* StarRatingView.swift in Sources */,
 				DEF3BBA82CCCE7F8007B2D9A /* UIViewControllerExtension.swift in Sources */,
+				DEF3BBD82CD8FCFA007B2D9A /* RatingViewRepresentable.swift in Sources */,
 				DEF3BBCB2CD685D1007B2D9A /* BookmarkListView.swift in Sources */,
 				DEF3BB992CC879D9007B2D9A /* AppDelegate.swift in Sources */,
 				DEF3BB9A2CC879D9007B2D9A /* ObservationViperExampleApp.swift in Sources */,

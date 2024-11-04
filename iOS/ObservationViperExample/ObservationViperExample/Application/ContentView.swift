@@ -9,6 +9,8 @@ import SwiftUI
 
 struct ContentView: View {
 
+    // MEMO: 対応する画面はVIPERに対応する形にする
+
     // MARK: - Body
 
     var body: some View {
