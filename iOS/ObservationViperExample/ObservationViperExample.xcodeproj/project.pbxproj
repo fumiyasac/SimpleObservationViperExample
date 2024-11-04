@@ -27,6 +27,10 @@
 		DEF3BBCB2CD685D1007B2D9A /* BookmarkListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF3BBCA2CD685D1007B2D9A /* BookmarkListView.swift */; };
 		DEF3BBD62CD8FCD8007B2D9A /* StarRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF3BBD52CD8FCD8007B2D9A /* StarRatingView.swift */; };
 		DEF3BBD82CD8FCFA007B2D9A /* RatingViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF3BBD72CD8FCFA007B2D9A /* RatingViewRepresentable.swift */; };
+		DEF3BBDC2CD940DB007B2D9A /* Cosmos in Frameworks */ = {isa = PBXBuildFile; productRef = DEF3BBDB2CD940DB007B2D9A /* Cosmos */; };
+		DEF3BBDE2CD94149007B2D9A /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = DEF3BBDD2CD94149007B2D9A /* Apollo */; };
+		DEF3BBE02CD9414D007B2D9A /* Nuke in Frameworks */ = {isa = PBXBuildFile; productRef = DEF3BBDF2CD9414D007B2D9A /* Nuke */; };
+		DEF3BBE22CD94155007B2D9A /* MarkdownUI in Frameworks */ = {isa = PBXBuildFile; productRef = DEF3BBE12CD94155007B2D9A /* MarkdownUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +81,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEF3BBE02CD9414D007B2D9A /* Nuke in Frameworks */,
+				DEF3BBDC2CD940DB007B2D9A /* Cosmos in Frameworks */,
+				DEF3BBDE2CD94149007B2D9A /* Apollo in Frameworks */,
+				DEF3BBE22CD94155007B2D9A /* MarkdownUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,6 +111,7 @@
 				DEF3BB952CC879D9007B2D9A /* ObservationViperExample */,
 				DEF3BBAB2CCE5CF3007B2D9A /* ObservationViperExampleTests */,
 				DEF3BBAF2CCE5CF9007B2D9A /* ObservationViperExampleUITests */,
+				DEF3BBDA2CD940DB007B2D9A /* Frameworks */,
 				DEF3BB492CC3876A007B2D9A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -286,6 +295,13 @@
 			path = StarRating;
 			sourceTree = "<group>";
 		};
+		DEF3BBDA2CD940DB007B2D9A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -303,6 +319,10 @@
 			);
 			name = ObservationViperExample;
 			packageProductDependencies = (
+				DEF3BBDB2CD940DB007B2D9A /* Cosmos */,
+				DEF3BBDD2CD94149007B2D9A /* Apollo */,
+				DEF3BBDF2CD9414D007B2D9A /* Nuke */,
+				DEF3BBE12CD94155007B2D9A /* MarkdownUI */,
 			);
 			productName = ObservationViperExample;
 			productReference = DEF3BB482CC3876A007B2D9A /* ObservationViperExample.app */;
@@ -381,12 +401,12 @@
 			mainGroup = DEF3BB3F2CC3876A007B2D9A;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				DEF3BBBB2CD28903007B2D9A /* XCRemoteSwiftPackageReference "swift-async-algorithms" */,
 				DEF3BBBC2CD28923007B2D9A /* XCRemoteSwiftPackageReference "swift-testing" */,
 				DEF3BBBD2CD2894D007B2D9A /* XCRemoteSwiftPackageReference "Nuke" */,
 				DEF3BBBE2CD28986007B2D9A /* XCRemoteSwiftPackageReference "apollo-ios" */,
 				DEF3BBBF2CD289E4007B2D9A /* XCRemoteSwiftPackageReference "Cosmos" */,
 				DEF3BBC02CD28A2E007B2D9A /* XCRemoteSwiftPackageReference "swift-markdown-ui" */,
+				DEF3BBD92CD93F66007B2D9A /* XCRemoteSwiftPackageReference "swift-async-algorithms" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = DEF3BB492CC3876A007B2D9A /* Products */;
@@ -773,14 +793,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		DEF3BBBB2CD28903007B2D9A /* XCRemoteSwiftPackageReference "swift-async-algorithms" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/apple/swift-async-algorithms.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.2;
-			};
-		};
 		DEF3BBBC2CD28923007B2D9A /* XCRemoteSwiftPackageReference "swift-testing" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/apple/swift-testing.git";
@@ -821,7 +833,38 @@
 				minimumVersion = 2.4.1;
 			};
 		};
+		DEF3BBD92CD93F66007B2D9A /* XCRemoteSwiftPackageReference "swift-async-algorithms" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-async-algorithms.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.2;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DEF3BBDB2CD940DB007B2D9A /* Cosmos */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DEF3BBBF2CD289E4007B2D9A /* XCRemoteSwiftPackageReference "Cosmos" */;
+			productName = Cosmos;
+		};
+		DEF3BBDD2CD94149007B2D9A /* Apollo */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DEF3BBBE2CD28986007B2D9A /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = Apollo;
+		};
+		DEF3BBDF2CD9414D007B2D9A /* Nuke */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DEF3BBBD2CD2894D007B2D9A /* XCRemoteSwiftPackageReference "Nuke" */;
+			productName = Nuke;
+		};
+		DEF3BBE12CD94155007B2D9A /* MarkdownUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DEF3BBC02CD28A2E007B2D9A /* XCRemoteSwiftPackageReference "swift-markdown-ui" */;
+			productName = MarkdownUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DEF3BB402CC3876A007B2D9A /* Project object */;
 }
