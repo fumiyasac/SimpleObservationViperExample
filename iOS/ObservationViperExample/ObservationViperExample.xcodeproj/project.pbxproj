@@ -31,6 +31,8 @@
 		DEF3BBDE2CD94149007B2D9A /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = DEF3BBDD2CD94149007B2D9A /* Apollo */; };
 		DEF3BBE02CD9414D007B2D9A /* Nuke in Frameworks */ = {isa = PBXBuildFile; productRef = DEF3BBDF2CD9414D007B2D9A /* Nuke */; };
 		DEF3BBE22CD94155007B2D9A /* MarkdownUI in Frameworks */ = {isa = PBXBuildFile; productRef = DEF3BBE12CD94155007B2D9A /* MarkdownUI */; };
+		DEF3BBE42CDBB084007B2D9A /* AsyncAlgorithms in Frameworks */ = {isa = PBXBuildFile; productRef = DEF3BBE32CDBB084007B2D9A /* AsyncAlgorithms */; };
+		DEF3BBE62CDBB096007B2D9A /* Testing in Frameworks */ = {isa = PBXBuildFile; productRef = DEF3BBE52CDBB096007B2D9A /* Testing */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +87,7 @@
 				DEF3BBDC2CD940DB007B2D9A /* Cosmos in Frameworks */,
 				DEF3BBDE2CD94149007B2D9A /* Apollo in Frameworks */,
 				DEF3BBE22CD94155007B2D9A /* MarkdownUI in Frameworks */,
+				DEF3BBE42CDBB084007B2D9A /* AsyncAlgorithms in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,6 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEF3BBE62CDBB096007B2D9A /* Testing in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,6 +327,7 @@
 				DEF3BBDD2CD94149007B2D9A /* Apollo */,
 				DEF3BBDF2CD9414D007B2D9A /* Nuke */,
 				DEF3BBE12CD94155007B2D9A /* MarkdownUI */,
+				DEF3BBE32CDBB084007B2D9A /* AsyncAlgorithms */,
 			);
 			productName = ObservationViperExample;
 			productReference = DEF3BB482CC3876A007B2D9A /* ObservationViperExample.app */;
@@ -343,6 +348,7 @@
 			);
 			name = ObservationViperExampleTests;
 			packageProductDependencies = (
+				DEF3BBE52CDBB096007B2D9A /* Testing */,
 			);
 			productName = ObservationViperExampleTests;
 			productReference = DEF3BB582CC3876C007B2D9A /* ObservationViperExampleTests.xctest */;
@@ -863,6 +869,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = DEF3BBC02CD28A2E007B2D9A /* XCRemoteSwiftPackageReference "swift-markdown-ui" */;
 			productName = MarkdownUI;
+		};
+		DEF3BBE32CDBB084007B2D9A /* AsyncAlgorithms */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DEF3BBD92CD93F66007B2D9A /* XCRemoteSwiftPackageReference "swift-async-algorithms" */;
+			productName = AsyncAlgorithms;
+		};
+		DEF3BBE52CDBB096007B2D9A /* Testing */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DEF3BBBC2CD28923007B2D9A /* XCRemoteSwiftPackageReference "swift-testing" */;
+			productName = Testing;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
