@@ -33,6 +33,7 @@
 		DEF3BBE22CD94155007B2D9A /* MarkdownUI in Frameworks */ = {isa = PBXBuildFile; productRef = DEF3BBE12CD94155007B2D9A /* MarkdownUI */; };
 		DEF3BBE42CDBB084007B2D9A /* AsyncAlgorithms in Frameworks */ = {isa = PBXBuildFile; productRef = DEF3BBE32CDBB084007B2D9A /* AsyncAlgorithms */; };
 		DEF3BBE62CDBB096007B2D9A /* Testing in Frameworks */ = {isa = PBXBuildFile; productRef = DEF3BBE52CDBB096007B2D9A /* Testing */; };
+		DEF3BBED2CDE7C18007B2D9A /* GraphQLClientManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF3BBEC2CDE7C0C007B2D9A /* GraphQLClientManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +77,7 @@
 		DEF3BBCA2CD685D1007B2D9A /* BookmarkListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkListView.swift; sourceTree = "<group>"; };
 		DEF3BBD52CD8FCD8007B2D9A /* StarRatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarRatingView.swift; sourceTree = "<group>"; };
 		DEF3BBD72CD8FCFA007B2D9A /* RatingViewRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingViewRepresentable.swift; sourceTree = "<group>"; };
+		DEF3BBEC2CDE7C0C007B2D9A /* GraphQLClientManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphQLClientManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,7 +171,8 @@
 				DEF3BBD02CD8FC65007B2D9A /* Components */,
 				DEF3BBCF2CD8F12C007B2D9A /* Entity */,
 				DEF3BB8F2CC879D9007B2D9A /* Extension */,
-				DEF3BBA92CCCE808007B2D9A /* Infrastructure */,
+				DEF3BBEA2CDE7B42007B2D9A /* GraphQL */,
+				DEF3BBA92CCCE808007B2D9A /* Client */,
 				DEF3BB912CC879D9007B2D9A /* Preview Content */,
 				DEF3BB9D2CCA9640007B2D9A /* Screen */,
 			);
@@ -194,12 +197,13 @@
 			path = Common;
 			sourceTree = "<group>";
 		};
-		DEF3BBA92CCCE808007B2D9A /* Infrastructure */ = {
+		DEF3BBA92CCCE808007B2D9A /* Client */ = {
 			isa = PBXGroup;
 			children = (
+				DEF3BBEC2CDE7C0C007B2D9A /* GraphQLClientManager.swift */,
 				DEF3BBB62CCFB0FE007B2D9A /* APIClientManager.swift */,
 			);
-			path = Infrastructure;
+			path = Client;
 			sourceTree = "<group>";
 		};
 		DEF3BBAB2CCE5CF3007B2D9A /* ObservationViperExampleTests */ = {
@@ -304,6 +308,13 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DEF3BBEA2CDE7B42007B2D9A /* GraphQL */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = GraphQL;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -471,6 +482,7 @@
 				DEF3BB992CC879D9007B2D9A /* AppDelegate.swift in Sources */,
 				DEF3BB9A2CC879D9007B2D9A /* ObservationViperExampleApp.swift in Sources */,
 				DEF3BB9C2CC87A22007B2D9A /* UIColorExtension.swift in Sources */,
+				DEF3BBED2CDE7C18007B2D9A /* GraphQLClientManager.swift in Sources */,
 				DEF3BBC72CD6856A007B2D9A /* CourseListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
