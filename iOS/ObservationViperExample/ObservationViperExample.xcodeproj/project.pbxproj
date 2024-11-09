@@ -313,8 +313,24 @@
 		DEF3BBEA2CDE7B42007B2D9A /* GraphQL */ = {
 			isa = PBXGroup;
 			children = (
+				DEF3BBEF2CDFC00F007B2D9A /* Query */,
+				DEF3BBEE2CDFC008007B2D9A /* Mutation */,
 			);
 			path = GraphQL;
+			sourceTree = "<group>";
+		};
+		DEF3BBEE2CDFC008007B2D9A /* Mutation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Mutation;
+			sourceTree = "<group>";
+		};
+		DEF3BBEF2CDFC00F007B2D9A /* Query */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Query;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
