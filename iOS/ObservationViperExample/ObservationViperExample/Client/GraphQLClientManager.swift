@@ -29,8 +29,8 @@ final class GraphQLClientManager {
             store: store
         )
         // MEMO: エンドポイントはすでにサンプルとして公開されているものを利用する形としています。
-        // 動作コード: http://localhost:4000/graphql
-        let url = URL(string: "http://localhost:4000/graphql")!
+        // 動作コード: (Local環境用のURL)
+        let url = URL(string: "(Local環境用のURL)")!
         let transport = RequestChainNetworkTransport(
             interceptorProvider: provider,
             endpointURL: url,
