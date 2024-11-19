@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+// MEMO: CourseのBookMark一覧は遷移先で展開する
+
 struct CourseListView: View {
 
     // MARK: - Body
