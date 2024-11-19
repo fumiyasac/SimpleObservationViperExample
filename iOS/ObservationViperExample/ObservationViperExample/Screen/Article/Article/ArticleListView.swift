@@ -16,7 +16,7 @@ struct ArticleListView: View {
         NavigationStack {
             Group {
                 VStack {
-                    Text("ArticleListViewL")
+                    Text("ArticleListView")
                 }
             }
             // Navigation表示に関する設定
