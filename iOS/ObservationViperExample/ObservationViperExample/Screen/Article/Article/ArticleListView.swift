@@ -1,5 +1,5 @@
 //
-//  BookmarkListView.swift
+//  ArticleListView.swift
 //  ObservationViperExample
 //
 //  Created by 酒井文也 on 2024/11/03.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct BookmarkListView: View {
+struct ArticleListView: View {
 
     // MARK: - Body
 
@@ -16,7 +16,7 @@ struct BookmarkListView: View {
         NavigationStack {
             Group {
                 VStack {
-                    Text("BookmarkListView")
+                    Text("ArticleListViewL")
                 }
             }
             // Navigation表示に関する設定
@@ -29,5 +29,5 @@ struct BookmarkListView: View {
 // MARK: - Preview
 
 #Preview {
-    BookmarkListView()
+    ArticleListView()
 }

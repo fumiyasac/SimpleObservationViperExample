@@ -34,12 +34,12 @@ struct ContentView: View {
                         }
                     }
                     .tag(1)
-                // BookmarkListコンテンツ画面
-                BookmarkListView()
+                // ArticleListコンテンツ画面
+                ArticleListView()
                     .tabItem {
                         VStack {
-                            Image(systemName: "folder.circle.fill")
-                            Text("Bookmark")
+                            Image(systemName: "doc.text.fill")
+                            Text("Article")
                         }
                     }.tag(2)
             }
