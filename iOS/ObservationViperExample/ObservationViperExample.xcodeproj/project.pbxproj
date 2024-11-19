@@ -24,7 +24,7 @@
 		DEF3BBB72CCFB0FE007B2D9A /* APIClientManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF3BBB62CCFB0FE007B2D9A /* APIClientManager.swift */; };
 		DEF3BBC72CD6856A007B2D9A /* CourseListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF3BBC62CD6856A007B2D9A /* CourseListView.swift */; };
 		DEF3BBC92CD685A2007B2D9A /* FeaturedListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF3BBC82CD685A2007B2D9A /* FeaturedListView.swift */; };
-		DEF3BBCB2CD685D1007B2D9A /* BookmarkListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF3BBCA2CD685D1007B2D9A /* BookmarkListView.swift */; };
+		DEF3BBCB2CD685D1007B2D9A /* ArticleListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF3BBCA2CD685D1007B2D9A /* ArticleListView.swift */; };
 		DEF3BBD62CD8FCD8007B2D9A /* StarRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF3BBD52CD8FCD8007B2D9A /* StarRatingView.swift */; };
 		DEF3BBD82CD8FCFA007B2D9A /* RatingViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF3BBD72CD8FCFA007B2D9A /* RatingViewRepresentable.swift */; };
 		DEF3BBDC2CD940DB007B2D9A /* Cosmos in Frameworks */ = {isa = PBXBuildFile; productRef = DEF3BBDB2CD940DB007B2D9A /* Cosmos */; };
@@ -36,7 +36,7 @@
 		DEF3BBED2CDE7C18007B2D9A /* GraphQLClientManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF3BBEC2CDE7C0C007B2D9A /* GraphQLClientManager.swift */; };
 		DEF3BBF12CE22487007B2D9A /* CourseEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF3BBF02CE2247E007B2D9A /* CourseEntity.swift */; };
 		DEF3BBF32CE224A2007B2D9A /* FeaturedEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF3BBF22CE2249A007B2D9A /* FeaturedEntity.swift */; };
-		DEF3BBF52CE224BF007B2D9A /* BookmarkEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF3BBF42CE224B1007B2D9A /* BookmarkEntity.swift */; };
+		DEF3BBF52CE224BF007B2D9A /* ArticleEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF3BBF42CE224B1007B2D9A /* ArticleEntity.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,13 +77,13 @@
 		DEF3BBB62CCFB0FE007B2D9A /* APIClientManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClientManager.swift; sourceTree = "<group>"; };
 		DEF3BBC62CD6856A007B2D9A /* CourseListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseListView.swift; sourceTree = "<group>"; };
 		DEF3BBC82CD685A2007B2D9A /* FeaturedListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedListView.swift; sourceTree = "<group>"; };
-		DEF3BBCA2CD685D1007B2D9A /* BookmarkListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkListView.swift; sourceTree = "<group>"; };
+		DEF3BBCA2CD685D1007B2D9A /* ArticleListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleListView.swift; sourceTree = "<group>"; };
 		DEF3BBD52CD8FCD8007B2D9A /* StarRatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarRatingView.swift; sourceTree = "<group>"; };
 		DEF3BBD72CD8FCFA007B2D9A /* RatingViewRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingViewRepresentable.swift; sourceTree = "<group>"; };
 		DEF3BBEC2CDE7C0C007B2D9A /* GraphQLClientManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphQLClientManager.swift; sourceTree = "<group>"; };
 		DEF3BBF02CE2247E007B2D9A /* CourseEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseEntity.swift; sourceTree = "<group>"; };
 		DEF3BBF22CE2249A007B2D9A /* FeaturedEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedEntity.swift; sourceTree = "<group>"; };
-		DEF3BBF42CE224B1007B2D9A /* BookmarkEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bookmark\U001fEntity.swift"; sourceTree = "<group>"; };
+		DEF3BBF42CE224B1007B2D9A /* ArticleEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleEntity.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,8 +179,8 @@
 				DEF3BB8F2CC879D9007B2D9A /* Extension */,
 				DEF3BBEA2CDE7B42007B2D9A /* GraphQL */,
 				DEF3BBA92CCCE808007B2D9A /* Client */,
-				DEF3BB912CC879D9007B2D9A /* Preview Content */,
 				DEF3BB9D2CCA9640007B2D9A /* Screen */,
+				DEF3BB912CC879D9007B2D9A /* Preview Content */,
 			);
 			path = ObservationViperExample;
 			sourceTree = "<group>";
@@ -190,7 +190,7 @@
 			children = (
 				DEF3BBB92CD13459007B2D9A /* Course */,
 				DEF3BBBA2CD1346C007B2D9A /* Featured */,
-				DEF3BBB82CD133E4007B2D9A /* Bookmark */,
+				DEF3BBB82CD133E4007B2D9A /* Article */,
 			);
 			path = Screen;
 			sourceTree = "<group>";
@@ -229,12 +229,12 @@
 			path = ObservationViperExampleUITests;
 			sourceTree = "<group>";
 		};
-		DEF3BBB82CD133E4007B2D9A /* Bookmark */ = {
+		DEF3BBB82CD133E4007B2D9A /* Article */ = {
 			isa = PBXGroup;
 			children = (
-				DEF3BBCE2CD68669007B2D9A /* BookmarkList */,
+				DEF3BBCE2CD68669007B2D9A /* Article */,
 			);
-			path = Bookmark;
+			path = Article;
 			sourceTree = "<group>";
 		};
 		DEF3BBB92CD13459007B2D9A /* Course */ = {
@@ -269,18 +269,18 @@
 			path = FeaturedList;
 			sourceTree = "<group>";
 		};
-		DEF3BBCE2CD68669007B2D9A /* BookmarkList */ = {
+		DEF3BBCE2CD68669007B2D9A /* Article */ = {
 			isa = PBXGroup;
 			children = (
-				DEF3BBCA2CD685D1007B2D9A /* BookmarkListView.swift */,
+				DEF3BBCA2CD685D1007B2D9A /* ArticleListView.swift */,
 			);
-			path = BookmarkList;
+			path = Article;
 			sourceTree = "<group>";
 		};
 		DEF3BBCF2CD8F12C007B2D9A /* Entity */ = {
 			isa = PBXGroup;
 			children = (
-				DEF3BBF42CE224B1007B2D9A /* BookmarkEntity.swift */,
+				DEF3BBF42CE224B1007B2D9A /* ArticleEntity.swift */,
 				DEF3BBF02CE2247E007B2D9A /* CourseEntity.swift */,
 				DEF3BBF22CE2249A007B2D9A /* FeaturedEntity.swift */,
 			);
@@ -504,10 +504,10 @@
 				DEF3BBA82CCCE7F8007B2D9A /* UIViewControllerExtension.swift in Sources */,
 				DEF3BBD82CD8FCFA007B2D9A /* RatingViewRepresentable.swift in Sources */,
 				DEF3BBF12CE22487007B2D9A /* CourseEntity.swift in Sources */,
-				DEF3BBCB2CD685D1007B2D9A /* BookmarkListView.swift in Sources */,
+				DEF3BBCB2CD685D1007B2D9A /* ArticleListView.swift in Sources */,
 				DEF3BB992CC879D9007B2D9A /* AppDelegate.swift in Sources */,
 				DEF3BB9A2CC879D9007B2D9A /* ObservationViperExampleApp.swift in Sources */,
-				DEF3BBF52CE224BF007B2D9A /* BookmarkEntity.swift in Sources */,
+				DEF3BBF52CE224BF007B2D9A /* ArticleEntity.swift in Sources */,
 				DEF3BB9C2CC87A22007B2D9A /* UIColorExtension.swift in Sources */,
 				DEF3BBED2CDE7C18007B2D9A /* GraphQLClientManager.swift in Sources */,
 				DEF3BBF32CE224A2007B2D9A /* FeaturedEntity.swift in Sources */,
