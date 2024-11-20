@@ -468,6 +468,7 @@
 				DEF3BBBF2CD289E4007B2D9A /* XCRemoteSwiftPackageReference "Cosmos" */,
 				DEF3BBC02CD28A2E007B2D9A /* XCRemoteSwiftPackageReference "swift-markdown-ui" */,
 				DEF3BBD92CD93F66007B2D9A /* XCRemoteSwiftPackageReference "swift-async-algorithms" */,
+				DEF6E1DA2CEE19E6007FBD4A /* XCRemoteSwiftPackageReference "KeychainAccess" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = DEF3BB492CC3876A007B2D9A /* Products */;
@@ -903,6 +904,14 @@
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 1.0.2;
+			};
+		};
+		DEF6E1DA2CEE19E6007FBD4A /* XCRemoteSwiftPackageReference "KeychainAccess" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kishikawakatsumi/KeychainAccess.git";
+			requirement = {
+				branch = master;
+				kind = branch;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
