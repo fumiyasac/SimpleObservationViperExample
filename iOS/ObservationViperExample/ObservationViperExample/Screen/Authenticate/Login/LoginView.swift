@@ -8,10 +8,25 @@
 import SwiftUI
 
 struct LoginView: View {
+
+    // MARK: - Body
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        // MEMO: UIKitのNavigationController表示を実施する
+        NavigationStack {
+            Group {
+                VStack {
+                    Text("LoginView")
+                }
+            }
+            // Navigation表示に関する設定
+            .navigationTitle("Login")
+            .navigationBarTitleDisplayMode(.inline)
+        }
     }
 }
+
+// MARK: - Preview
 
 #Preview {
     LoginView()
