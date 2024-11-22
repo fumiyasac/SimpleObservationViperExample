@@ -38,6 +38,7 @@
 		DEF3BBF32CE224A2007B2D9A /* FeaturedEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF3BBF22CE2249A007B2D9A /* FeaturedEntity.swift */; };
 		DEF3BBF52CE224BF007B2D9A /* ArticleEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF3BBF42CE224B1007B2D9A /* ArticleEntity.swift */; };
 		DEF6E1D92CEE1994007FBD4A /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF6E1D82CEE1994007FBD4A /* LoginView.swift */; };
+		DEF6E1DC2CF0CD2C007FBD4A /* ApplicationUserEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF6E1DB2CF0CD21007FBD4A /* ApplicationUserEntity.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +87,7 @@
 		DEF3BBF22CE2249A007B2D9A /* FeaturedEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedEntity.swift; sourceTree = "<group>"; };
 		DEF3BBF42CE224B1007B2D9A /* ArticleEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleEntity.swift; sourceTree = "<group>"; };
 		DEF6E1D82CEE1994007FBD4A /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		DEF6E1DB2CF0CD21007FBD4A /* ApplicationUserEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationUserEntity.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -283,6 +285,7 @@
 		DEF3BBCF2CD8F12C007B2D9A /* Entity */ = {
 			isa = PBXGroup;
 			children = (
+				DEF6E1DB2CF0CD21007FBD4A /* ApplicationUserEntity.swift */,
 				DEF3BBF42CE224B1007B2D9A /* ArticleEntity.swift */,
 				DEF3BBF02CE2247E007B2D9A /* CourseEntity.swift */,
 				DEF3BBF22CE2249A007B2D9A /* FeaturedEntity.swift */,
@@ -521,6 +524,7 @@
 				DEF3BBA02CCA968A007B2D9A /* FirstAppearExtension.swift in Sources */,
 				DEF3BBB72CCFB0FE007B2D9A /* APIClientManager.swift in Sources */,
 				DEF3BBD62CD8FCD8007B2D9A /* StarRatingView.swift in Sources */,
+				DEF6E1DC2CF0CD2C007FBD4A /* ApplicationUserEntity.swift in Sources */,
 				DEF3BBA82CCCE7F8007B2D9A /* UIViewControllerExtension.swift in Sources */,
 				DEF3BBD82CD8FCFA007B2D9A /* RatingViewRepresentable.swift in Sources */,
 				DEF3BBF12CE22487007B2D9A /* CourseEntity.swift in Sources */,
