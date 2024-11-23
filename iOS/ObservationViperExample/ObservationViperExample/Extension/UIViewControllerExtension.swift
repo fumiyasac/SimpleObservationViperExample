@@ -14,7 +14,7 @@ extension UIViewController {
     // MARK: - Public Function
 
     // この画面のナビゲーションバーを設定するメソッド
-    public func setupNavigationBarTitle(_ title: String) {
+    func setupNavigationBarTitle(_ title: String) {
 
         // NavigationControllerのデザイン調整を行う
         var attributes: [NSAttributedString.Key : Any] = [:]
@@ -33,7 +33,7 @@ extension UIViewController {
     }
 
     // 戻るボタンの「戻る」テキストを削除した状態にするメソッド
-    public func removeBackButtonText() {
+    func removeBackButtonText() {
 
         // NavigationBarをタイトル配色を決定する
         guard let navigationController = self.navigationController else {

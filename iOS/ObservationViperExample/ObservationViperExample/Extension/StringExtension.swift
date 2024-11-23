@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-public extension String {
+extension String {
 
     // MARK: - Function
 

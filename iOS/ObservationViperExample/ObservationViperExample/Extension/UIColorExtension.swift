@@ -13,7 +13,7 @@ import UIKit
 // https://dev.classmethod.jp/smartphone/utilty-extension-uicolor/
 // iOS13での変更点: scanHexInt32がdeprecatedとなったのでscanHexInt64を使用する
 
-public extension UIColor {
+extension UIColor {
 
     // MARK: - Initializer
 

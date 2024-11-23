@@ -10,7 +10,7 @@ import SwiftUI
 // MEMO: 下記Stackoverflowの内容を参照
 // https://stackoverflow.com/questions/56874133/use-hex-color-in-swiftui
 
-public extension Color {
+extension Color {
 
     // MARK: - Initializer
 
