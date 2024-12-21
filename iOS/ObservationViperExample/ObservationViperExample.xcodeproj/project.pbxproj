@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DE304D622D1786B00085ABD0 /* FavoriteListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE304D612D1786B00085ABD0 /* FavoriteListView.swift */; };
 		DEF3BB962CC879D9007B2D9A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEF3BB902CC879D9007B2D9A /* Preview Assets.xcassets */; };
 		DEF3BB972CC879D9007B2D9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEF3BB932CC879D9007B2D9A /* Assets.xcassets */; };
 		DEF3BB982CC879D9007B2D9A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF3BB8D2CC879D9007B2D9A /* ContentView.swift */; };
@@ -59,6 +60,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DE304D612D1786B00085ABD0 /* FavoriteListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteListView.swift; sourceTree = "<group>"; };
 		DEF3BB482CC3876A007B2D9A /* ObservationViperExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObservationViperExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEF3BB582CC3876C007B2D9A /* ObservationViperExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObservationViperExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEF3BB622CC3876C007B2D9A /* ObservationViperExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObservationViperExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -121,6 +123,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DE304D5E2D1786850085ABD0 /* FavoriteList */ = {
+			isa = PBXGroup;
+			children = (
+				DE304D612D1786B00085ABD0 /* FavoriteListView.swift */,
+			);
+			path = FavoriteList;
+			sourceTree = "<group>";
+		};
 		DEF3BB3F2CC3876A007B2D9A = {
 			isa = PBXGroup;
 			children = (
@@ -245,6 +255,7 @@
 		DEF3BBB92CD13459007B2D9A /* Course */ = {
 			isa = PBXGroup;
 			children = (
+				DE304D5E2D1786850085ABD0 /* FavoriteList */,
 				DEF3BBCC2CD6864D007B2D9A /* CourseList */,
 			);
 			path = Course;
@@ -526,6 +537,7 @@
 				DEF3BBD62CD8FCD8007B2D9A /* StarRatingView.swift in Sources */,
 				DEF6E1DC2CF0CD2C007FBD4A /* ApplicationUserEntity.swift in Sources */,
 				DEF3BBA82CCCE7F8007B2D9A /* UIViewControllerExtension.swift in Sources */,
+				DE304D622D1786B00085ABD0 /* FavoriteListView.swift in Sources */,
 				DEF3BBD82CD8FCFA007B2D9A /* RatingViewRepresentable.swift in Sources */,
 				DEF3BBF12CE22487007B2D9A /* CourseEntity.swift in Sources */,
 				DEF3BBCB2CD685D1007B2D9A /* ArticleListView.swift in Sources */,
