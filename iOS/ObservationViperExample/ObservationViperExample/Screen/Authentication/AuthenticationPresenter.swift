@@ -16,7 +16,7 @@ final class AuthenticationPresenter: AuthenticationPresenterProtocol {
     private let interactor: AuthenticationInteractorProtocol
     private let router: AppRouter
 
-    // MARK: - Property (Dependency `@Observable`)
+    // MARK: - Property (`@Observable`)
 
     var isLoading: Bool = false
     var errorMessage: String?
