@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		DE304D622D1786B00085ABD0 /* FavoriteListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE304D612D1786B00085ABD0 /* FavoriteListView.swift */; };
+		DE49773B2D21227800FEC950 /* AuthenticateProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE49773A2D21227800FEC950 /* AuthenticateProtocol.swift */; };
 		DEF3BB962CC879D9007B2D9A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEF3BB902CC879D9007B2D9A /* Preview Assets.xcassets */; };
 		DEF3BB972CC879D9007B2D9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEF3BB932CC879D9007B2D9A /* Assets.xcassets */; };
 		DEF3BB982CC879D9007B2D9A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF3BB8D2CC879D9007B2D9A /* ContentView.swift */; };
@@ -38,7 +39,6 @@
 		DEF3BBF12CE22487007B2D9A /* CourseEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF3BBF02CE2247E007B2D9A /* CourseEntity.swift */; };
 		DEF3BBF32CE224A2007B2D9A /* FeaturedEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF3BBF22CE2249A007B2D9A /* FeaturedEntity.swift */; };
 		DEF3BBF52CE224BF007B2D9A /* ArticleEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF3BBF42CE224B1007B2D9A /* ArticleEntity.swift */; };
-		DEF6E1D92CEE1994007FBD4A /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF6E1D82CEE1994007FBD4A /* LoginView.swift */; };
 		DEF6E1DC2CF0CD2C007FBD4A /* ApplicationUserEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF6E1DB2CF0CD21007FBD4A /* ApplicationUserEntity.swift */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +61,7 @@
 
 /* Begin PBXFileReference section */
 		DE304D612D1786B00085ABD0 /* FavoriteListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteListView.swift; sourceTree = "<group>"; };
+		DE49773A2D21227800FEC950 /* AuthenticateProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticateProtocol.swift; sourceTree = "<group>"; };
 		DEF3BB482CC3876A007B2D9A /* ObservationViperExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObservationViperExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEF3BB582CC3876C007B2D9A /* ObservationViperExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObservationViperExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEF3BB622CC3876C007B2D9A /* ObservationViperExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObservationViperExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -88,7 +89,6 @@
 		DEF3BBF02CE2247E007B2D9A /* CourseEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseEntity.swift; sourceTree = "<group>"; };
 		DEF3BBF22CE2249A007B2D9A /* FeaturedEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedEntity.swift; sourceTree = "<group>"; };
 		DEF3BBF42CE224B1007B2D9A /* ArticleEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleEntity.swift; sourceTree = "<group>"; };
-		DEF6E1D82CEE1994007FBD4A /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		DEF6E1DB2CF0CD21007FBD4A /* ApplicationUserEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationUserEntity.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -362,17 +362,9 @@
 		DEF6E1D42CEE1956007FBD4A /* Authenticate */ = {
 			isa = PBXGroup;
 			children = (
-				DEF6E1D52CEE1966007FBD4A /* Login */,
+				DE49773A2D21227800FEC950 /* AuthenticateProtocol.swift */,
 			);
 			path = Authenticate;
-			sourceTree = "<group>";
-		};
-		DEF6E1D52CEE1966007FBD4A /* Login */ = {
-			isa = PBXGroup;
-			children = (
-				DEF6E1D82CEE1994007FBD4A /* LoginView.swift */,
-			);
-			path = Login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -527,6 +519,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE49773B2D21227800FEC950 /* AuthenticateProtocol.swift in Sources */,
 				DEF3BBA22CCBA2E4007B2D9A /* SwiftUIColorExtension.swift in Sources */,
 				DEF3BBA42CCBA9D4007B2D9A /* StringExtension.swift in Sources */,
 				DEF3BBB32CCFB074007B2D9A /* ConnectionErrorView.swift in Sources */,
@@ -547,7 +540,6 @@
 				DEF3BB9C2CC87A22007B2D9A /* UIColorExtension.swift in Sources */,
 				DEF3BBED2CDE7C18007B2D9A /* GraphQLClientManager.swift in Sources */,
 				DEF3BBF32CE224A2007B2D9A /* FeaturedEntity.swift in Sources */,
-				DEF6E1D92CEE1994007FBD4A /* LoginView.swift in Sources */,
 				DEF3BBC72CD6856A007B2D9A /* CourseListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
