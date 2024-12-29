@@ -6,5 +6,9 @@
 //
 
 struct ApplicationUserEntity: Hashable {
-    // TODO: 必要なPropertyをこれから決めていく
+
+    // MARK: - Property
+
+    let email: String
+    let token: String
 }
