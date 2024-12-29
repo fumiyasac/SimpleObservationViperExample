@@ -1,5 +1,5 @@
 //
-//  AuthenticateView.swift
+//  AuthenticationView.swift
 //  ObservationViperExample
 //
 //  Created by 酒井文也 on 2024/12/29.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct AuthenticateView: View {
+struct AuthenticationView: View {
 
     // MARK: - Property
 
@@ -16,11 +16,11 @@ struct AuthenticateView: View {
 
     // MARK: - Presenter
 
-    private let presenter: AuthenticatePresenterProtocol
+    private let presenter: AuthenticationPresenterProtocol
 
     // MARK: - Initializer
 
-    init(presenter: AuthenticatePresenterProtocol) {
+    init(presenter: AuthenticationPresenterProtocol) {
         self.presenter = presenter
     }
 

@@ -187,7 +187,7 @@
 		DEF3BB9D2CCA9640007B2D9A /* Screen */ = {
 			isa = PBXGroup;
 			children = (
-				DEF6E1D42CEE1956007FBD4A /* Authenticate */,
+				DEF6E1D42CEE1956007FBD4A /* Authentication */,
 				DEF3BBB82CD133E4007B2D9A /* Gallery */,
 				DE4977402D21323A00FEC950 /* AppRouter.swift */,
 			);
@@ -286,13 +286,13 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		DEF6E1D42CEE1956007FBD4A /* Authenticate */ = {
+		DEF6E1D42CEE1956007FBD4A /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
 				DE49773A2D21227800FEC950 /* AuthenticateContract.swift */,
 				DE49773C2D2124FA00FEC950 /* AuthenticateView.swift */,
 			);
-			path = Authenticate;
+			path = Authentication;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
