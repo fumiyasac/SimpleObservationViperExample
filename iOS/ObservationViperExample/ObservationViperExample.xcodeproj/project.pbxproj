@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DE49773B2D21227800FEC950 /* AuthenticateProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE49773A2D21227800FEC950 /* AuthenticateProtocol.swift */; };
+		DE49773B2D21227800FEC950 /* AuthenticateContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE49773A2D21227800FEC950 /* AuthenticateContract.swift */; };
 		DE49773D2D2124FA00FEC950 /* AuthenticateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE49773C2D2124FA00FEC950 /* AuthenticateView.swift */; };
 		DE4977412D21323A00FEC950 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4977402D21323A00FEC950 /* AppRouter.swift */; };
 		DEF3BB962CC879D9007B2D9A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEF3BB902CC879D9007B2D9A /* Preview Assets.xcassets */; };
@@ -57,7 +57,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		DE49773A2D21227800FEC950 /* AuthenticateProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticateProtocol.swift; sourceTree = "<group>"; };
+		DE49773A2D21227800FEC950 /* AuthenticateContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticateContract.swift; sourceTree = "<group>"; };
 		DE49773C2D2124FA00FEC950 /* AuthenticateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticateView.swift; sourceTree = "<group>"; };
 		DE4977402D21323A00FEC950 /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
 		DEF3BB482CC3876A007B2D9A /* ObservationViperExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObservationViperExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -289,7 +289,7 @@
 		DEF6E1D42CEE1956007FBD4A /* Authenticate */ = {
 			isa = PBXGroup;
 			children = (
-				DE49773A2D21227800FEC950 /* AuthenticateProtocol.swift */,
+				DE49773A2D21227800FEC950 /* AuthenticateContract.swift */,
 				DE49773C2D2124FA00FEC950 /* AuthenticateView.swift */,
 			);
 			path = Authenticate;
@@ -445,7 +445,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE49773B2D21227800FEC950 /* AuthenticateProtocol.swift in Sources */,
+				DE49773B2D21227800FEC950 /* AuthenticateContract.swift in Sources */,
 				DEF3BBA22CCBA2E4007B2D9A /* SwiftUIColorExtension.swift in Sources */,
 				DEF3BBA42CCBA9D4007B2D9A /* StringExtension.swift in Sources */,
 				DEF3BBB32CCFB074007B2D9A /* ConnectionErrorView.swift in Sources */,

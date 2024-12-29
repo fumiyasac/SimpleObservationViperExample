@@ -1,5 +1,5 @@
 //
-//  AuthenticateProtocol.swift
+//  AuthenticateContract.swift
 //  ObservationViperExample
 //
 //  Created by 酒井文也 on 2024/12/29.
