@@ -16,7 +16,7 @@ struct AuthenticateView: View {
 
     // MARK: - Presenter
 
-    private var presenter: AuthenticatePresenterProtocol
+    private let presenter: AuthenticatePresenterProtocol
 
     // MARK: - Initializer
 
@@ -28,12 +28,29 @@ struct AuthenticateView: View {
 
     var body: some View {
         // TODO: 本番のView要素を適用させる
-        VStack {
+        VStack(spacing: 20) {
             TextField("Email", text: $email)
+                .textFieldStyle(RoundedBorderTextFieldStyle())
+                .autocapitalization(.none)
             SecureField("Password", text: $password)
-            Button("Login") {
-                presenter.login(email: email, password: password)
-            }
+                .textFieldStyle(RoundedBorderTextFieldStyle())
+
+            //
+//            if presenter.isLoading {
+//                ProgressView()
+//            } else {
+//                Button("Login") {
+//                    presenter.login(email: email, password: password)
+//                }
+//                .disabled(email.isEmpty || password.isEmpty)
+//            }
+
+            //
+//            if let errorMessage = presenter.errorMessage {
+//                Text(errorMessage)
+//                    .foregroundColor(.red)
+//            }
         }
+        .padding()
     }
 }

@@ -9,19 +9,10 @@ import Foundation
 
 // MARK: - Protocol
 
-protocol AuthenticateViewProtocol: AnyObject {
-    func showAuthenticateSuccess()
-    func showAuthenticateError(message: String)
-}
-
 protocol AuthenticatePresenterProtocol {
     func login(email: String, password: String)
 }
 
 protocol AuthenticateInteractorProtocol {
-    func authenticate(email: String, password: String) async throws -> ApplicationUserEntity
-}
-
-protocol AuthenticateRouterProtocol {
-    func navigateToPhotoGrid(user: ApplicationUserEntity)
+    func login(email: String, password: String) async throws -> ApplicationUserEntity
 }
