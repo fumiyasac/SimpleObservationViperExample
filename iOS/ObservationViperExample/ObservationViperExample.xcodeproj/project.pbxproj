@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DE49773B2D21227800FEC950 /* AuthenticateContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE49773A2D21227800FEC950 /* AuthenticateContract.swift */; };
-		DE49773D2D2124FA00FEC950 /* AuthenticateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE49773C2D2124FA00FEC950 /* AuthenticateView.swift */; };
+		DE49773B2D21227800FEC950 /* AuthenticationContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE49773A2D21227800FEC950 /* AuthenticationContract.swift */; };
+		DE49773D2D2124FA00FEC950 /* AuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE49773C2D2124FA00FEC950 /* AuthenticationView.swift */; };
 		DE4977412D21323A00FEC950 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4977402D21323A00FEC950 /* AppRouter.swift */; };
 		DEF3BB962CC879D9007B2D9A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEF3BB902CC879D9007B2D9A /* Preview Assets.xcassets */; };
 		DEF3BB972CC879D9007B2D9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEF3BB932CC879D9007B2D9A /* Assets.xcassets */; };
@@ -57,8 +57,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		DE49773A2D21227800FEC950 /* AuthenticateContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticateContract.swift; sourceTree = "<group>"; };
-		DE49773C2D2124FA00FEC950 /* AuthenticateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticateView.swift; sourceTree = "<group>"; };
+		DE49773A2D21227800FEC950 /* AuthenticationContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationContract.swift; sourceTree = "<group>"; };
+		DE49773C2D2124FA00FEC950 /* AuthenticationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationView.swift; sourceTree = "<group>"; };
 		DE4977402D21323A00FEC950 /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
 		DEF3BB482CC3876A007B2D9A /* ObservationViperExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObservationViperExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEF3BB582CC3876C007B2D9A /* ObservationViperExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObservationViperExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -289,8 +289,8 @@
 		DEF6E1D42CEE1956007FBD4A /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
-				DE49773A2D21227800FEC950 /* AuthenticateContract.swift */,
-				DE49773C2D2124FA00FEC950 /* AuthenticateView.swift */,
+				DE49773A2D21227800FEC950 /* AuthenticationContract.swift */,
+				DE49773C2D2124FA00FEC950 /* AuthenticationView.swift */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -445,7 +445,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE49773B2D21227800FEC950 /* AuthenticateContract.swift in Sources */,
+				DE49773B2D21227800FEC950 /* AuthenticationContract.swift in Sources */,
 				DEF3BBA22CCBA2E4007B2D9A /* SwiftUIColorExtension.swift in Sources */,
 				DEF3BBA42CCBA9D4007B2D9A /* StringExtension.swift in Sources */,
 				DEF3BBB32CCFB074007B2D9A /* ConnectionErrorView.swift in Sources */,
@@ -454,7 +454,7 @@
 				DEF3BBB72CCFB0FE007B2D9A /* APIClientManager.swift in Sources */,
 				DEF3BBD62CD8FCD8007B2D9A /* StarRatingView.swift in Sources */,
 				DE4977412D21323A00FEC950 /* AppRouter.swift in Sources */,
-				DE49773D2D2124FA00FEC950 /* AuthenticateView.swift in Sources */,
+				DE49773D2D2124FA00FEC950 /* AuthenticationView.swift in Sources */,
 				DEF6E1DC2CF0CD2C007FBD4A /* ApplicationUserEntity.swift in Sources */,
 				DEF3BBA82CCCE7F8007B2D9A /* UIViewControllerExtension.swift in Sources */,
 				DEF3BBD82CD8FCFA007B2D9A /* RatingViewRepresentable.swift in Sources */,
