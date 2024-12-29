@@ -20,4 +20,16 @@ final class AuthenticationInteractor: AuthenticationInteractorProtocol {
         }
         return ApplicationUserEntity(email: email, token: "dummy_token")
     }
+
+    func getStoredToken() -> String? {
+        // TODO: Tokenは「KeychainAccess」から取り出す
+        return UserDefaults.standard.string(forKey: "userToken")
+    }
+
+    func validateToken(_ token: String) async throws -> Bool {
+        // TODO: 本番のAPI処理を適用させる
+        // API呼び出しをシミュレート＆トークンの有効性を確認
+        try await Task.sleep(for: .seconds(0.5))
+        return true
+    }
 }

@@ -40,6 +40,7 @@ final class AuthenticationPresenter: AuthenticationPresenterProtocol {
             // 認証処理
             do {
                 let user = try await interactor.login(email: email, password: password)
+                // TODO: Tokenは「KeychainAccess」を利用して保持する
                 UserDefaults.standard.set(user.token, forKey: "userToken")
                 router.navigateToArtcle()
             } catch {
@@ -48,6 +49,33 @@ final class AuthenticationPresenter: AuthenticationPresenterProtocol {
 
             // 処理完了
             isLoading = false
+        }
+    }
+
+    func checkAuthenticationStatus() {
+        Task { @MainActor in
+            
+            // Tokenがデバイス内に存在するかを確認
+            if let token = interactor.getStoredToken() {
+
+                // Loading状態
+                isLoading = true
+
+                // 認証処理
+                do {
+                    // トークンの有効性を確認
+                    // TODO: 実際はAPIリクエストを利用して有用性を確認する
+                    let isValid = try await interactor.validateToken(token)
+                    if isValid {
+                        router.navigateToArtcle()
+                    }
+                } catch {
+                    errorMessage = "Session expired. Please login again."
+                }
+
+                // 処理完了
+                isLoading = false
+            }
         }
     }
 }
