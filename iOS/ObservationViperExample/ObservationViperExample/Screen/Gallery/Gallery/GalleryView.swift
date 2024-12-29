@@ -1,5 +1,5 @@
 //
-//  ArticleListView.swift
+//  GalleryView.swift
 //  ObservationViperExample
 //
 //  Created by 酒井文也 on 2024/11/03.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ArticleListView: View {
+struct GalleryView: View {
 
     // MARK: - Body
 
@@ -16,18 +16,12 @@ struct ArticleListView: View {
         NavigationStack {
             Group {
                 VStack {
-                    Text("ArticleListView")
+                    Text("GalleryView")
                 }
             }
             // Navigation表示に関する設定
-            .navigationTitle("Bookmark")
+            .navigationTitle("Gallery")
             .navigationBarTitleDisplayMode(.inline)
         }
     }
-}
-
-// MARK: - Preview
-
-#Preview {
-    ArticleListView()
 }

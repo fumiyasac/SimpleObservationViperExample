@@ -14,7 +14,7 @@ import Observation
 
     enum Route {
         case authenticate
-        case article
+        case gallery
     }
 
     // MARK: - Property

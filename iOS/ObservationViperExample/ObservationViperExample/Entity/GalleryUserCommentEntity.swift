@@ -1,10 +1,10 @@
 //
-//  CourseEntity.swift
+//  GalleryUserCommentEntity.swift
 //  ObservationViperExample
 //
 //  Created by 酒井文也 on 2024/11/11.
 //
 
-struct ArticleUserCommentEntity: Hashable {
+struct GalleryUserCommentEntity: Hashable {
     // TODO: 必要なPropertyをこれから決めていく
 }
