@@ -36,20 +36,20 @@ struct AuthenticationView: View {
                 .textFieldStyle(RoundedBorderTextFieldStyle())
 
             //
-//            if presenter.isLoading {
-//                ProgressView()
-//            } else {
-//                Button("Login") {
-//                    presenter.login(email: email, password: password)
-//                }
-//                .disabled(email.isEmpty || password.isEmpty)
-//            }
+            if presenter.isLoading {
+                ProgressView()
+            } else {
+                Button("Login") {
+                    presenter.login(email: email, password: password)
+                }
+                .disabled(email.isEmpty || password.isEmpty)
+            }
 
             //
-//            if let errorMessage = presenter.errorMessage {
-//                Text(errorMessage)
-//                    .foregroundColor(.red)
-//            }
+            if let errorMessage = presenter.errorMessage {
+                Text(errorMessage)
+                    .foregroundColor(.red)
+            }
         }
         .padding()
     }

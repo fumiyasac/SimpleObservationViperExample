@@ -24,6 +24,6 @@ import Observation
     // MARK: - Function
 
     func navigateToArtcle() {
-        currentRoute = .article
+        currentRoute = .gallery
     }
 }

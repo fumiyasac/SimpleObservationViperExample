@@ -10,6 +10,8 @@ import Foundation
 // MARK: - Protocol
 
 protocol AuthenticationPresenterProtocol {
+    var isLoading: Bool { get set }
+    var errorMessage: String? { get set }
     func login(email: String, password: String)
 }
 

@@ -14,7 +14,6 @@
 		DE4977452D2136B900FEC950 /* AuthenticationInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4977442D2136B900FEC950 /* AuthenticationInteractor.swift */; };
 		DEF3BB962CC879D9007B2D9A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEF3BB902CC879D9007B2D9A /* Preview Assets.xcassets */; };
 		DEF3BB972CC879D9007B2D9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEF3BB932CC879D9007B2D9A /* Assets.xcassets */; };
-		DEF3BB982CC879D9007B2D9A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF3BB8D2CC879D9007B2D9A /* ContentView.swift */; };
 		DEF3BB992CC879D9007B2D9A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF3BB922CC879D9007B2D9A /* AppDelegate.swift */; };
 		DEF3BB9A2CC879D9007B2D9A /* ObservationViperExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF3BB942CC879D9007B2D9A /* ObservationViperExampleApp.swift */; };
 		DEF3BB9C2CC87A22007B2D9A /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF3BB9B2CC87A17007B2D9A /* UIColorExtension.swift */; };
@@ -67,7 +66,6 @@
 		DEF3BB482CC3876A007B2D9A /* ObservationViperExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObservationViperExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEF3BB582CC3876C007B2D9A /* ObservationViperExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObservationViperExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEF3BB622CC3876C007B2D9A /* ObservationViperExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObservationViperExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DEF3BB8D2CC879D9007B2D9A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DEF3BB902CC879D9007B2D9A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DEF3BB922CC879D9007B2D9A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DEF3BB932CC879D9007B2D9A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -142,14 +140,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		DEF3BB8E2CC879D9007B2D9A /* Application */ = {
-			isa = PBXGroup;
-			children = (
-				DEF3BB8D2CC879D9007B2D9A /* ContentView.swift */,
-			);
-			path = Application;
-			sourceTree = "<group>";
-		};
 		DEF3BB8F2CC879D9007B2D9A /* Extension */ = {
 			isa = PBXGroup;
 			children = (
@@ -176,7 +166,6 @@
 				DEF3BB922CC879D9007B2D9A /* AppDelegate.swift */,
 				DEF3BB942CC879D9007B2D9A /* ObservationViperExampleApp.swift */,
 				DEF3BB932CC879D9007B2D9A /* Assets.xcassets */,
-				DEF3BB8E2CC879D9007B2D9A /* Application */,
 				DEF3BB9E2CCA9658007B2D9A /* Common */,
 				DEF3BBD02CD8FC65007B2D9A /* Components */,
 				DEF3BBCF2CD8F12C007B2D9A /* Entity */,
@@ -455,7 +444,6 @@
 				DEF3BBA22CCBA2E4007B2D9A /* SwiftUIColorExtension.swift in Sources */,
 				DEF3BBA42CCBA9D4007B2D9A /* StringExtension.swift in Sources */,
 				DEF3BBB32CCFB074007B2D9A /* ConnectionErrorView.swift in Sources */,
-				DEF3BB982CC879D9007B2D9A /* ContentView.swift in Sources */,
 				DEF3BBA02CCA968A007B2D9A /* FirstAppearExtension.swift in Sources */,
 				DEF3BBB72CCFB0FE007B2D9A /* APIClientManager.swift in Sources */,
 				DEF3BBD62CD8FCD8007B2D9A /* StarRatingView.swift in Sources */,

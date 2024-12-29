@@ -9,6 +9,8 @@ import Foundation
 
 final class AuthenticationInteractor: AuthenticationInteractorProtocol {
 
+    // MARK: - Function
+
     func login(email: String, password: String) async throws -> ApplicationUserEntity {
 
         // TODO: 本番のAPI処理を適用させる
