@@ -16,10 +16,20 @@ final class AuthenticationPresenter: AuthenticationPresenterProtocol {
     private let interactor: AuthenticationInteractorProtocol
     private let router: AppRouter
 
+    // MARK: - Property (Computed)
+
+    private var _isLoading: Bool = false
+    private var _errorMessage: String?
+
     // MARK: - Property (`@Observable`)
 
-    var isLoading: Bool = false
-    var errorMessage: String?
+    var isLoading: Bool {
+        _isLoading
+    }
+
+    var errorMessage: String? {
+        _errorMessage
+    }
 
     // MARK: - Initializer
 
@@ -34,8 +44,8 @@ final class AuthenticationPresenter: AuthenticationPresenterProtocol {
         Task { @MainActor in
 
             // Loading状態
-            isLoading = true
-            errorMessage = nil
+            _isLoading = true
+            _errorMessage = nil
 
             // 認証処理
             do {
@@ -44,11 +54,14 @@ final class AuthenticationPresenter: AuthenticationPresenterProtocol {
                 UserDefaults.standard.set(user.token, forKey: "userToken")
                 router.navigateToArtcle()
             } catch {
-                errorMessage = error.localizedDescription
+                _errorMessage = """
+                ログインに失敗しました。
+                入力情報に誤りがないかをご確認ください。
+                """
             }
 
             // 処理完了
-            isLoading = false
+            _isLoading = false
         }
     }
 
@@ -59,7 +72,7 @@ final class AuthenticationPresenter: AuthenticationPresenterProtocol {
             if let token = interactor.getStoredToken() {
 
                 // Loading状態
-                isLoading = true
+                _isLoading = true
 
                 // 認証処理
                 do {
@@ -70,11 +83,14 @@ final class AuthenticationPresenter: AuthenticationPresenterProtocol {
                         router.navigateToArtcle()
                     }
                 } catch {
-                    errorMessage = "Session expired. Please login again."
+                    _errorMessage = """
+                    セッションの有効期限が切れました。
+                    再度ログイン処理をお願いします。
+                    """
                 }
 
                 // 処理完了
-                isLoading = false
+                _isLoading = false
             }
         }
     }
