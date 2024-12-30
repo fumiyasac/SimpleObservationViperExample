@@ -58,7 +58,7 @@ struct AuthenticationView: View {
                 presenter.checkAuthenticationStatus()
             }
             // Navigation表示に関する設定
-            .navigationTitle("Login")
+            .navigationTitle("🔑Login")
             .navigationBarTitleDisplayMode(.inline)
         }
     }

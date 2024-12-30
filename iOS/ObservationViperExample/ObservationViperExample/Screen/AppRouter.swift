@@ -14,7 +14,7 @@ import Observation
 
     enum Route {
         case authenticate
-        case gallery
+        case mainTabBar
     }
 
     // MARK: - Property
@@ -23,7 +23,7 @@ import Observation
 
     // MARK: - Function
 
-    func navigateToArtcle() {
-        currentRoute = .gallery
+    func navigateToMainTabBar() {
+        currentRoute = .mainTabBar
     }
 }

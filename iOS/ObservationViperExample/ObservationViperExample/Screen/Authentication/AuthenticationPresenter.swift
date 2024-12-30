@@ -52,7 +52,7 @@ final class AuthenticationPresenter: AuthenticationPresenterProtocol {
                 let user = try await interactor.login(email: email, password: password)
                 // TODO: 現在はUserDefaultに格納しているが、本来はTokenは「KeychainAccess」を利用して保持する
                 UserDefaults.standard.set(user.token, forKey: "userToken")
-                router.navigateToArtcle()
+                router.navigateToMainTabBar()
             } catch {
                 _errorMessage = """
                 ログインに失敗しました。
@@ -79,7 +79,7 @@ final class AuthenticationPresenter: AuthenticationPresenterProtocol {
                     // TODO: 現在は仮の処理であるが、実際はAPIリクエストを利用して有用性を確認する
                     let isValid = try await interactor.validateToken(token)
                     if isValid {
-                        router.navigateToArtcle()
+                        router.navigateToMainTabBar()
                     }
                 } catch {
                     _errorMessage = """

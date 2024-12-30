@@ -31,8 +31,26 @@ struct ObservationViperExampleApp: App {
                             router: router
                         )
                     )
-                case .gallery:
-                    GalleryView()
+                case .mainTabBar:
+                    TabView {
+                        FeedView()
+                            .tabItem {
+                                VStack {
+                                    Image(systemName: "newspaper.circle.fill")
+                                    Text("Feed")
+                                }
+                            }
+                            .tag(0)
+                        GalleryView()
+                            .tabItem {
+                                VStack {
+                                    Image(systemName: "photo.circle.fill")
+                                    Text("Gallery")
+                                }
+                            }
+                            .tag(1)
+                    }
+                    .accentColor(Color(uiColor: UIColor(code: "#f88c75")))
                 }
             }
         }

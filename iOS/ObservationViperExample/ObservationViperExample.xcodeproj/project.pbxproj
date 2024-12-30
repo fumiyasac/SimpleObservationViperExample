@@ -12,6 +12,7 @@
 		DE4977412D21323A00FEC950 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4977402D21323A00FEC950 /* AppRouter.swift */; };
 		DE4977432D21367800FEC950 /* AuthenticationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4977422D21367800FEC950 /* AuthenticationPresenter.swift */; };
 		DE4977452D2136B900FEC950 /* AuthenticationInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4977442D2136B900FEC950 /* AuthenticationInteractor.swift */; };
+		DE49774E2D22C58A00FEC950 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE49774D2D22C58A00FEC950 /* FeedView.swift */; };
 		DEF3BB962CC879D9007B2D9A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEF3BB902CC879D9007B2D9A /* Preview Assets.xcassets */; };
 		DEF3BB972CC879D9007B2D9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEF3BB932CC879D9007B2D9A /* Assets.xcassets */; };
 		DEF3BB992CC879D9007B2D9A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF3BB922CC879D9007B2D9A /* AppDelegate.swift */; };
@@ -63,6 +64,7 @@
 		DE4977402D21323A00FEC950 /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
 		DE4977422D21367800FEC950 /* AuthenticationPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationPresenter.swift; sourceTree = "<group>"; };
 		DE4977442D2136B900FEC950 /* AuthenticationInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationInteractor.swift; sourceTree = "<group>"; };
+		DE49774D2D22C58A00FEC950 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
 		DEF3BB482CC3876A007B2D9A /* ObservationViperExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObservationViperExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEF3BB582CC3876C007B2D9A /* ObservationViperExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObservationViperExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEF3BB622CC3876C007B2D9A /* ObservationViperExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObservationViperExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -135,6 +137,14 @@
 			path = Service;
 			sourceTree = "<group>";
 		};
+		DE4977482D22BCDD00FEC950 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				DE49774D2D22C58A00FEC950 /* FeedView.swift */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
 		DEF3BB3F2CC3876A007B2D9A = {
 			isa = PBXGroup;
 			children = (
@@ -197,7 +207,7 @@
 			isa = PBXGroup;
 			children = (
 				DEF6E1D42CEE1956007FBD4A /* Authentication */,
-				DEF3BBB82CD133E4007B2D9A /* Gallery */,
+				DEF3BBB82CD133E4007B2D9A /* MainTabBar */,
 				DE4977402D21323A00FEC950 /* AppRouter.swift */,
 			);
 			path = Screen;
@@ -236,12 +246,13 @@
 			path = ObservationViperExampleUITests;
 			sourceTree = "<group>";
 		};
-		DEF3BBB82CD133E4007B2D9A /* Gallery */ = {
+		DEF3BBB82CD133E4007B2D9A /* MainTabBar */ = {
 			isa = PBXGroup;
 			children = (
+				DE4977482D22BCDD00FEC950 /* Feed */,
 				DEF3BBCE2CD68669007B2D9A /* Gallery */,
 			);
-			path = Gallery;
+			path = MainTabBar;
 			sourceTree = "<group>";
 		};
 		DEF3BBCE2CD68669007B2D9A /* Gallery */ = {
@@ -462,6 +473,7 @@
 				DEF3BBB32CCFB074007B2D9A /* ConnectionErrorView.swift in Sources */,
 				DEF3BBA02CCA968A007B2D9A /* FirstAppearExtension.swift in Sources */,
 				DEF3BBB72CCFB0FE007B2D9A /* APIClientManager.swift in Sources */,
+				DE49774E2D22C58A00FEC950 /* FeedView.swift in Sources */,
 				DEF3BBD62CD8FCD8007B2D9A /* StarRatingView.swift in Sources */,
 				DE4977412D21323A00FEC950 /* AppRouter.swift in Sources */,
 				DE49773D2D2124FA00FEC950 /* AuthenticationView.swift in Sources */,

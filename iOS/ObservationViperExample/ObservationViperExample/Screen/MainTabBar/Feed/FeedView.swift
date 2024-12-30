@@ -1,13 +1,13 @@
 //
-//  GalleryView.swift
+//  FeedView.swift
 //  ObservationViperExample
 //
-//  Created by 酒井文也 on 2024/11/03.
+//  Created by 酒井文也 on 2024/12/30.
 //
 
 import SwiftUI
 
-struct GalleryView: View {
+struct FeedView: View {
 
     // MARK: - Body
 
@@ -16,11 +16,11 @@ struct GalleryView: View {
         NavigationStack {
             Group {
                 VStack {
-                    Text("GalleryView")
+                    Text("FeedView")
                 }
             }
             // Navigation表示に関する設定
-            .navigationTitle("Gallery")
+            .navigationTitle("🗞️FeedView")
             .navigationBarTitleDisplayMode(.inline)
         }
     }
