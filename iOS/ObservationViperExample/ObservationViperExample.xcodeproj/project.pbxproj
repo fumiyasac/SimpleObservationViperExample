@@ -119,6 +119,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DE4977462D225DD500FEC950 /* KeychainStore */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = KeychainStore;
+			sourceTree = "<group>";
+		};
+		DE4977472D225DEA00FEC950 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				DE4977462D225DD500FEC950 /* KeychainStore */,
+				DEF3BBA92CCCE808007B2D9A /* Client */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		DEF3BB3F2CC3876A007B2D9A = {
 			isa = PBXGroup;
 			children = (
@@ -170,7 +186,7 @@
 				DEF3BBD02CD8FC65007B2D9A /* Components */,
 				DEF3BBCF2CD8F12C007B2D9A /* Entity */,
 				DEF3BB8F2CC879D9007B2D9A /* Extension */,
-				DEF3BBA92CCCE808007B2D9A /* Client */,
+				DE4977472D225DEA00FEC950 /* Service */,
 				DEF3BB9D2CCA9640007B2D9A /* Screen */,
 				DEF3BB912CC879D9007B2D9A /* Preview Content */,
 			);

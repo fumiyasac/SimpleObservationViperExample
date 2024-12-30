@@ -35,7 +35,7 @@ struct AuthenticationView: View {
             SecureField("Password", text: $password)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
 
-            //
+            // Loading状態の場合はIndicatorを表示し、そうでない時はログインボタンを表示する
             if presenter.isLoading {
                 ProgressView()
             } else {
@@ -45,12 +45,16 @@ struct AuthenticationView: View {
                 .disabled(email.isEmpty || password.isEmpty)
             }
 
-            //
+            // もしエラーが発生した場合にはエラーメッセージを表示する
             if let errorMessage = presenter.errorMessage {
                 Text(errorMessage)
                     .foregroundColor(.red)
             }
         }
         .padding()
+        .onFirstAppear {
+            // 初回表示時に1度だけ認証処理を実行する
+            presenter.checkAuthenticationStatus()
+        }
     }
 }

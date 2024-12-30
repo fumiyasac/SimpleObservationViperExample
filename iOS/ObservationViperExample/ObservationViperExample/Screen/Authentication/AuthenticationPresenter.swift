@@ -43,14 +43,14 @@ final class AuthenticationPresenter: AuthenticationPresenterProtocol {
     func login(email: String, password: String) {
         Task { @MainActor in
 
-            // Loading状態
+            // Loading状態にする
             _isLoading = true
             _errorMessage = nil
 
-            // 認証処理
+            // 入力されたEメール・パスワードで認証処理を実行する
             do {
                 let user = try await interactor.login(email: email, password: password)
-                // TODO: Tokenは「KeychainAccess」を利用して保持する
+                // TODO: 現在はUserDefaultに格納しているが、本来はTokenは「KeychainAccess」を利用して保持する
                 UserDefaults.standard.set(user.token, forKey: "userToken")
                 router.navigateToArtcle()
             } catch {
@@ -60,7 +60,7 @@ final class AuthenticationPresenter: AuthenticationPresenterProtocol {
                 """
             }
 
-            // 処理完了
+            // 処理が完了した後にはLoading状態を元に戻す
             _isLoading = false
         }
     }
@@ -68,16 +68,15 @@ final class AuthenticationPresenter: AuthenticationPresenterProtocol {
     func checkAuthenticationStatus() {
         Task { @MainActor in
             
-            // Tokenがデバイス内に存在するかを確認
+            // Tokenがデバイス内に存在するかを確認する
             if let token = interactor.getStoredToken() {
 
-                // Loading状態
+                // Loading状態にする
                 _isLoading = true
 
-                // 認証処理
+                // 格納されたJWTの認証状態確認を実施する
                 do {
-                    // トークンの有効性を確認
-                    // TODO: 実際はAPIリクエストを利用して有用性を確認する
+                    // TODO: 現在は仮の処理であるが、実際はAPIリクエストを利用して有用性を確認する
                     let isValid = try await interactor.validateToken(token)
                     if isValid {
                         router.navigateToArtcle()
@@ -89,7 +88,7 @@ final class AuthenticationPresenter: AuthenticationPresenterProtocol {
                     """
                 }
 
-                // 処理完了
+                // 処理が完了した後にはLoading状態を元に戻す
                 _isLoading = false
             }
         }

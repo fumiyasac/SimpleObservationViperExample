@@ -28,7 +28,7 @@ final class AuthenticationInteractor: AuthenticationInteractorProtocol {
 
     func validateToken(_ token: String) async throws -> Bool {
         // TODO: 本番のAPI処理を適用させる
-        // API呼び出しをシミュレート＆トークンの有効性を確認
+        // API呼び出しをシミュレート＆トークンの有効性を確認する
         try await Task.sleep(for: .seconds(0.5))
         return true
     }
