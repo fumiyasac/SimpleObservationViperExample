@@ -423,6 +423,7 @@
 				DEF3BBC02CD28A2E007B2D9A /* XCRemoteSwiftPackageReference "swift-markdown-ui" */,
 				DEF3BBD92CD93F66007B2D9A /* XCRemoteSwiftPackageReference "swift-async-algorithms" */,
 				DEF6E1DA2CEE19E6007FBD4A /* XCRemoteSwiftPackageReference "KeychainAccess" */,
+				DE49774F2D22D71D00FEC950 /* XCRemoteSwiftPackageReference "ScalingHeaderScrollView" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = DEF3BB492CC3876A007B2D9A /* Products */;
@@ -814,6 +815,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		DE49774F2D22D71D00FEC950 /* XCRemoteSwiftPackageReference "ScalingHeaderScrollView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/exyte/ScalingHeaderScrollView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.1.5;
+			};
+		};
 		DEF3BBBC2CD28923007B2D9A /* XCRemoteSwiftPackageReference "swift-testing" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/apple/swift-testing.git";
