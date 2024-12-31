@@ -16,7 +16,7 @@ struct GuidanceView: View {
         NavigationStack {
             Group {
                 VStack {
-                    Text("GalleryView")
+                    Text("GuidanceView")
                 }
             }
             // Navigation表示に関する設定

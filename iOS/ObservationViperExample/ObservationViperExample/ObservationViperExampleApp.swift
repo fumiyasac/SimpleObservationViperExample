@@ -49,6 +49,14 @@ struct ObservationViperExampleApp: App {
                                 }
                             }
                             .tag(1)
+                        GuidanceView()
+                            .tabItem {
+                                VStack {
+                                    Image(systemName: "bubble.right.circle.fill")
+                                    Text("Guidance")
+                                }
+                            }
+                            .tag(2)
                     }
                     .accentColor(Color(uiColor: UIColor(code: "#f88c75")))
                 }
