@@ -13,6 +13,7 @@
 		DE4977432D21367800FEC950 /* AuthenticationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4977422D21367800FEC950 /* AuthenticationPresenter.swift */; };
 		DE4977452D2136B900FEC950 /* AuthenticationInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4977442D2136B900FEC950 /* AuthenticationInteractor.swift */; };
 		DE49774E2D22C58A00FEC950 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE49774D2D22C58A00FEC950 /* FeedView.swift */; };
+		DE4977522D2458DB00FEC950 /* GuidanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4977512D2458DB00FEC950 /* GuidanceView.swift */; };
 		DEF3BB962CC879D9007B2D9A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEF3BB902CC879D9007B2D9A /* Preview Assets.xcassets */; };
 		DEF3BB972CC879D9007B2D9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEF3BB932CC879D9007B2D9A /* Assets.xcassets */; };
 		DEF3BB992CC879D9007B2D9A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF3BB922CC879D9007B2D9A /* AppDelegate.swift */; };
@@ -65,6 +66,7 @@
 		DE4977422D21367800FEC950 /* AuthenticationPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationPresenter.swift; sourceTree = "<group>"; };
 		DE4977442D2136B900FEC950 /* AuthenticationInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationInteractor.swift; sourceTree = "<group>"; };
 		DE49774D2D22C58A00FEC950 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
+		DE4977512D2458DB00FEC950 /* GuidanceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuidanceView.swift; sourceTree = "<group>"; };
 		DEF3BB482CC3876A007B2D9A /* ObservationViperExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObservationViperExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEF3BB582CC3876C007B2D9A /* ObservationViperExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObservationViperExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEF3BB622CC3876C007B2D9A /* ObservationViperExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObservationViperExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -143,6 +145,14 @@
 				DE49774D2D22C58A00FEC950 /* FeedView.swift */,
 			);
 			path = Feed;
+			sourceTree = "<group>";
+		};
+		DE4977502D2458C500FEC950 /* Guidance */ = {
+			isa = PBXGroup;
+			children = (
+				DE4977512D2458DB00FEC950 /* GuidanceView.swift */,
+			);
+			path = Guidance;
 			sourceTree = "<group>";
 		};
 		DEF3BB3F2CC3876A007B2D9A = {
@@ -251,6 +261,7 @@
 			children = (
 				DE4977482D22BCDD00FEC950 /* Feed */,
 				DEF3BBCE2CD68669007B2D9A /* Gallery */,
+				DE4977502D2458C500FEC950 /* Guidance */,
 			);
 			path = MainTabBar;
 			sourceTree = "<group>";
@@ -480,6 +491,7 @@
 				DE49773D2D2124FA00FEC950 /* AuthenticationView.swift in Sources */,
 				DEF6E1DC2CF0CD2C007FBD4A /* ApplicationUserEntity.swift in Sources */,
 				DE4977432D21367800FEC950 /* AuthenticationPresenter.swift in Sources */,
+				DE4977522D2458DB00FEC950 /* GuidanceView.swift in Sources */,
 				DEF3BBA82CCCE7F8007B2D9A /* UIViewControllerExtension.swift in Sources */,
 				DEF3BBD82CD8FCFA007B2D9A /* RatingViewRepresentable.swift in Sources */,
 				DEF3BBF12CE22487007B2D9A /* GalleryUserCommentEntity.swift in Sources */,
