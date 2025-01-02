@@ -14,6 +14,8 @@
 		DE4977452D2136B900FEC950 /* AuthenticationInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4977442D2136B900FEC950 /* AuthenticationInteractor.swift */; };
 		DE49774E2D22C58A00FEC950 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE49774D2D22C58A00FEC950 /* FeedView.swift */; };
 		DE4977522D2458DB00FEC950 /* GuidanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4977512D2458DB00FEC950 /* GuidanceView.swift */; };
+		DE4977592D268CE000FEC950 /* KeychainAccessManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4977582D268CE000FEC950 /* KeychainAccessManager.swift */; };
+		DE49775C2D268DFF00FEC950 /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = DE49775B2D268DFF00FEC950 /* KeychainAccess */; };
 		DEF3BB962CC879D9007B2D9A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEF3BB902CC879D9007B2D9A /* Preview Assets.xcassets */; };
 		DEF3BB972CC879D9007B2D9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEF3BB932CC879D9007B2D9A /* Assets.xcassets */; };
 		DEF3BB992CC879D9007B2D9A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF3BB922CC879D9007B2D9A /* AppDelegate.swift */; };
@@ -67,6 +69,7 @@
 		DE4977442D2136B900FEC950 /* AuthenticationInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationInteractor.swift; sourceTree = "<group>"; };
 		DE49774D2D22C58A00FEC950 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
 		DE4977512D2458DB00FEC950 /* GuidanceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuidanceView.swift; sourceTree = "<group>"; };
+		DE4977582D268CE000FEC950 /* KeychainAccessManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainAccessManager.swift; sourceTree = "<group>"; };
 		DEF3BB482CC3876A007B2D9A /* ObservationViperExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObservationViperExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEF3BB582CC3876C007B2D9A /* ObservationViperExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObservationViperExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEF3BB622CC3876C007B2D9A /* ObservationViperExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObservationViperExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -102,6 +105,7 @@
 				DEF3BBDC2CD940DB007B2D9A /* Cosmos in Frameworks */,
 				DEF3BBE22CD94155007B2D9A /* MarkdownUI in Frameworks */,
 				DEF3BBE42CDBB084007B2D9A /* AsyncAlgorithms in Frameworks */,
+				DE49775C2D268DFF00FEC950 /* KeychainAccess in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -126,6 +130,7 @@
 		DE4977462D225DD500FEC950 /* KeychainStore */ = {
 			isa = PBXGroup;
 			children = (
+				DE4977582D268CE000FEC950 /* KeychainAccessManager.swift */,
 			);
 			path = KeychainStore;
 			sourceTree = "<group>";
@@ -349,6 +354,7 @@
 				DEF3BBDF2CD9414D007B2D9A /* Nuke */,
 				DEF3BBE12CD94155007B2D9A /* MarkdownUI */,
 				DEF3BBE32CDBB084007B2D9A /* AsyncAlgorithms */,
+				DE49775B2D268DFF00FEC950 /* KeychainAccess */,
 			);
 			productName = ObservationViperExample;
 			productReference = DEF3BB482CC3876A007B2D9A /* ObservationViperExample.app */;
@@ -502,6 +508,7 @@
 				DEF3BBF52CE224BF007B2D9A /* GalleryPhotoEntity.swift in Sources */,
 				DEF3BB9C2CC87A22007B2D9A /* UIColorExtension.swift in Sources */,
 				DEF3BBF32CE224A2007B2D9A /* GalleryFeaturedPhotoEntity.swift in Sources */,
+				DE4977592D268CE000FEC950 /* KeychainAccessManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -886,6 +893,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		DE49775B2D268DFF00FEC950 /* KeychainAccess */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DEF6E1DA2CEE19E6007FBD4A /* XCRemoteSwiftPackageReference "KeychainAccess" */;
+			productName = KeychainAccess;
+		};
 		DEF3BBDB2CD940DB007B2D9A /* Cosmos */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = DEF3BBBF2CD289E4007B2D9A /* XCRemoteSwiftPackageReference "Cosmos" */;
