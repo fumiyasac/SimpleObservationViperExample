@@ -73,7 +73,7 @@ server.post("/v1/auth/verify", (request, response) => {
 		const accessToken = request.headers.authorization.split(" ")[1];
     const decode = jwt.verify(accessToken, JWT_SECRET);
 		console.log(decode);
-    // 認証に成功した場合は、next関数を実行しJSON Serverの機能を利用する
+    // 認証成功時はステータスコードと（デバッグ用に）設定されていたトークンを返す
 		response.status(200).json({ message: 'Success! Your token is verifies!', accessToken: accessToken });
   } catch (e) {
     response.status(401).json("Unauthorized");
