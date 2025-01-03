@@ -23,5 +23,5 @@ server.use(router);
 
 // サーバをポート3000で起動する
 server.listen(3000, () => {
-    console.log('SimpleObservationViperExample Mock Server is running...');
+  console.log('SimpleObservationViperExample Mock Server is running...');
 });
