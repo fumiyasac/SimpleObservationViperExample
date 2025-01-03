@@ -4,6 +4,7 @@
   "main": "server.ts",
   "license": "MIT",
   "dependencies": {
+    "body-parser": "^1.20.3",
     "helmet": "^8.0.0",
     "json-server": "^0.17.0",
     "jsonwebtoken": "^9.0.2",

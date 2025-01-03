@@ -8,6 +8,7 @@
 // Mock用のJSONレスポンスサーバーの初期化設定
 import jsonServer from 'json-server';
 import helmet from 'helmet';
+import bodyParser from 'body-parser';
 
 const server = jsonServer.create();
 
