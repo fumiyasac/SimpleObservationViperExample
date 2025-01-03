@@ -86,14 +86,6 @@ server.get("/v1/users", (_, response) => {
   response.status(200).json({ users });
 });
 
-// TODO: 後で消す
-// 👉 受信したリクエストにおいてGET送信時のみ許可する
-// server.use(function (req, res, next) {
-// 	if (req.method === 'GET') {
-// 			next();
-// 	}
-// });
-
 // ルーティングを設定する
 server.use(router);
 
