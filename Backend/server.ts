@@ -7,6 +7,8 @@
 
 // Mock用のJSONレスポンスサーバーの初期化設定
 import jsonServer from 'json-server';
+import helmet from 'helmet';
+
 const server = jsonServer.create();
 
 // Database構築用のJSONファイル
@@ -15,13 +17,30 @@ const router = jsonServer.router('db/db.json');
 // 各種設定用
 const middlewares = jsonServer.defaults();
 
+// TODO: 後で消す
+// 👉 ルーティングを変更する
+const rewrite_rules = jsonServer.rewriter({
+	"/api/v1/users" : "/get_users",
+});
+
 // ミドルウェアを設定する (※コンソール出力するロガーやキャッシュの設定等)
 server.use(middlewares);
+
+// TODO: 後で消す
+// 👉 受信したリクエストにおいてGET送信時のみ許可する
+server.use(function (req, res, next) {
+	if (req.method === 'GET') {
+			next();
+	}
+});
 
 // ルーティングを設定する
 server.use(router);
 
-// サーバをポート3000で起動する
-server.listen(3000, () => {
+// Helmetを設定する
+server.use(helmet);
+
+// サーバをポート3001で起動する
+server.listen(3001, () => {
   console.log('SimpleObservationViperExample Mock Server is running...');
 });

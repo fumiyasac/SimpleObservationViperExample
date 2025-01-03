@@ -4,7 +4,9 @@
   "main": "server.ts",
   "license": "MIT",
   "dependencies": {
+    "helmet": "^8.0.0",
     "json-server": "^0.17.0",
+    "jsonwebtoken": "^9.0.2",
     "typescript": "^5.4.2"
   },
   "scripts": {
