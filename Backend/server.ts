@@ -4,6 +4,8 @@
 // https://ics.media/entry/4682/
 // ⭐️関連2: JSON ServerをCLIコマンドを使わずTypescript＆node.jsからサーバーを立てるやり方
 // https://deep.tacoskingdom.com/blog/151
+// ⭐️関連3: JSON Serverで30秒で認証機能付きモックREST APIを構築する
+// https://tech-blog.rakus.co.jp/entry/20201029/rest-api
 
 // Mock用のJSONレスポンスサーバーの初期化設定
 import jsonServer from 'json-server';
