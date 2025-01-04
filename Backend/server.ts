@@ -81,10 +81,17 @@ server.post("/v1/auth/verify", (request, response) => {
 });
 
 // 各種表示用データ取得処理
-server.get("/v1/users", (_, response) => {
-  const users = db.users;
-  response.status(200).json({ users });
+server.get("/v1/galleries", (request, response) => {
+  const galleries = db.galleries;
+  response.status(200).json({ galleries });
 });
+
+// (仮) 各種表示用データ取得処理
+// server.get("/v1/info_feed", (request, response) => {
+//   const targetId = request.url.split("?page=")[1];
+//   const infoFeeds = db.infoFeeds.filter((infoFeed: any) => infoFeed.id == targetId);
+//   response.status(200).json(...infoFeeds);
+// });
 
 // ルーティングを設定する
 server.use(router);
