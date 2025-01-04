@@ -83,7 +83,12 @@ server.post("/v1/auth/verify", (request, response) => {
 // 各種表示用データ取得処理
 server.get("/v1/galleries", (_, response) => {
   const galleries = db.galleries;
-  response.status(200).json({ galleries });
+  response.status(200).json(galleries);
+});
+
+server.get("/v1/pickup_feeds", (_, response) => {
+  const pickupFeeds = db.pickupFeeds;
+  response.status(200).json(pickupFeeds);
 });
 
 // (仮) 各種表示用データ取得処理

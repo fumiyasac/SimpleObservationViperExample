@@ -120,5 +120,71 @@
       "title": "Food No.24",
       "thumbnail": "https://observation-viper.s3.ap-northeast-1.amazonaws.com/gallery_thumbnail24.jpg"
     }
+  ],
+  "pickupFeeds": [
+    {
+      "id": 1,
+      "shop_name": "Pickup Sample No.1",
+      "category_name": "寿司",
+      "thumbnail": "https://observation-viper.s3.ap-northeast-1.amazonaws.com/feed_pickup1.jpg",
+      "min_budget": "16,000",
+      "rating": 3.8
+    },
+    {
+      "id": 2,
+      "shop_name": "Pickup Sample No.2",
+      "category_name": "懐石料理",
+      "thumbnail": "https://observation-viper.s3.ap-northeast-1.amazonaws.com/feed_pickup2.jpg",
+      "min_budget": "30,000",
+      "rating": 4.2
+    },
+    {
+      "id": 3,
+      "shop_name": "Pickup Sample No.3",
+      "category_name": "イタリアン",
+      "thumbnail": "https://observation-viper.s3.ap-northeast-1.amazonaws.com/feed_pickup3.jpg",
+      "min_budget": "8,000",
+      "rating": 4.0
+    },
+    {
+      "id": 4,
+      "shop_name": "Pickup Sample No.4",
+      "category_name": "中華",
+      "thumbnail": "https://observation-viper.s3.ap-northeast-1.amazonaws.com/feed_pickup4.jpg",
+      "min_budget": "40,000",
+      "rating": 4.5
+    },
+    {
+      "id": 5,
+      "shop_name": "Pickup Sample No.5",
+      "category_name": "天ぷら",
+      "thumbnail": "https://observation-viper.s3.ap-northeast-1.amazonaws.com/feed_pickup5.jpg",
+      "min_budget": "40,000",
+      "rating": 4.5
+    },
+    {
+      "id": 6,
+      "shop_name": "Pickup Sample No.6",
+      "category_name": "ステーキ",
+      "thumbnail": "https://observation-viper.s3.ap-northeast-1.amazonaws.com/feed_pickup6.jpg",
+      "min_budget": "10,000",
+      "rating": 3.9
+    },
+    {
+      "id": 7,
+      "shop_name": "Pickup Sample No.7",
+      "category_name": "パスタ",
+      "thumbnail": "https://observation-viper.s3.ap-northeast-1.amazonaws.com/feed_pickup7.jpg",
+      "min_budget": "6,000",
+      "rating": 3.7
+    },
+    {
+      "id": 8,
+      "shop_name": "Pickup Sample No.8",
+      "category_name": "うなぎ",
+      "thumbnail": "https://observation-viper.s3.ap-northeast-1.amazonaws.com/feed_pickup8.jpg",
+      "min_budget": "8,000",
+      "rating": 3.9
+    }
   ]
 }
