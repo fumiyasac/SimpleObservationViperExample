@@ -81,7 +81,7 @@ server.post("/v1/auth/verify", (request, response) => {
 });
 
 // 各種表示用データ取得処理
-server.get("/v1/galleries", (request, response) => {
+server.get("/v1/galleries", (_, response) => {
   const galleries = db.galleries;
   response.status(200).json({ galleries });
 });
