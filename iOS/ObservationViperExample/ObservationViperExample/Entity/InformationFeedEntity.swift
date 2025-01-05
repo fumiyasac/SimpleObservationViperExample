@@ -5,7 +5,7 @@
 //  Created by 酒井文也 on 2024/11/11.
 //
 
-struct InformationFeedEntity: Hashable {
+struct InformationFeedEntity: Hashable, Decodable {
 
     // MARK: - Property
     
