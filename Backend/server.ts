@@ -91,6 +91,11 @@ server.get("/v1/pickup_feeds", (_, response) => {
   response.status(200).json(pickupFeeds);
 });
 
+server.get("/v1/category_feeds", (_, response) => {
+  const categoryFeeds = db.categoryFeeds.sort((former: any, latter: any) => former.rank - latter.rank);
+  response.status(200).json(categoryFeeds);
+});
+
 // (仮) 各種表示用データ取得処理
 // server.get("/v1/info_feed", (request, response) => {
 //   const targetId = request.url.split("?page=")[1];
