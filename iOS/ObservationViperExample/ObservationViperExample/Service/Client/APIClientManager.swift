@@ -47,18 +47,21 @@ final class ApiClientManager {
 
     private enum EndPoint: String {
 
-        case foodPhotos = "pickup_foods"
-        case recentNews = "recent_news"
+        case galleries = "galleries"
+        case pickupFeeds = "pickup_feeds"
+        case categoryFeeds = "category_feeds"
+        case infoFeeds = "info_feed"
 
         func getBaseUrl() -> String {
-            return [host, self.rawValue].joined(separator: "/")
+            return [host, version, self.rawValue].joined(separator: "/")
         }
     }
 
     // MARK: - Property
 
     // MEMO: API ServerへのURLに関する情報
-    private static let host = "http://localhost:3000"
+    private static let host = "http://localhost:3001"
+    private static let version = "v1"
 
     // MARK: - Function
 
@@ -148,9 +151,11 @@ final class ApiClientManager {
         urlRequest.httpMethod = "GET"
         urlRequest.addValue("application/json", forHTTPHeaderField: "Content-Type")
 
-        // MEMO: 本来であれば認可用アクセストークンをセットする
-        let authraizationHeader = ""
-        urlRequest.addValue(authraizationHeader , forHTTPHeaderField: "Authorization")
+        // MEMO: 認可用アクセストークンをセットする（本サンプルでは利用せずともリクエスト可能）
+        let authraizationHeader = KeychainAccessManager.shared.getAuthenticationHeader()
+        if !authraizationHeader.isEmpty {
+            urlRequest.addValue(authraizationHeader , forHTTPHeaderField: "Authorization")
+        }
         return urlRequest
     }
 
@@ -172,9 +177,11 @@ final class ApiClientManager {
         }
         urlRequest.addValue("application/json", forHTTPHeaderField: "Content-Type")
 
-        // MEMO: 本来であれば認可用アクセストークンをセットする
-        let authraizationHeader = ""
-        urlRequest.addValue(authraizationHeader , forHTTPHeaderField: "Authorization")
+        // MEMO: 認可用アクセストークンをセットする（本サンプルでは利用せずともリクエスト可能）
+        let authraizationHeader = KeychainAccessManager.shared.getAuthenticationHeader()
+        if !authraizationHeader.isEmpty {
+            urlRequest.addValue(authraizationHeader , forHTTPHeaderField: "Authorization")
+        }
         return urlRequest
     }
 }
