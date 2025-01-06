@@ -31,8 +31,10 @@ enum HTTPMethod {
 // MARK: - Protocol
 
 protocol APIClientManagerProtocol {
-    
-    // MEMO: APIClientManagerはasync/awaitを利用して書く
+    func getGalleries() async throws -> [GalleryPhotoEntity]
+    func getPickupFeeds() async throws -> [PickupFeedEntity]
+    func getCategoryFeeds() async throws -> [CategoryRankingEntity]
+    func getInformationFeedPage(_ page: Int) async throws -> [InformationFeedPageEntity]
 }
 
 final class ApiClientManager {
@@ -188,4 +190,38 @@ final class ApiClientManager {
 
 // MARK: - ApiClientManagerProtocol
 
-extension ApiClientManager: APIClientManagerProtocol {}
+extension ApiClientManager: APIClientManagerProtocol {
+
+    func getGalleries() async throws -> [GalleryPhotoEntity] {
+        try await executeAPIRequest(
+            endpointUrl: EndPoint.galleries.getBaseUrl(),
+            httpMethod: .GET,
+            responseFormat: [GalleryPhotoEntity].self
+        )
+    }
+
+    func getPickupFeeds() async throws -> [PickupFeedEntity] {
+        try await executeAPIRequest(
+            endpointUrl: EndPoint.pickupFeeds.getBaseUrl(),
+            httpMethod: .GET,
+            responseFormat: [PickupFeedEntity].self
+        )
+    }
+
+    func getCategoryFeeds() async throws -> [CategoryRankingEntity] {
+        try await executeAPIRequest(
+            endpointUrl: EndPoint.categoryFeeds.getBaseUrl(),
+            httpMethod: .GET,
+            responseFormat: [CategoryRankingEntity].self
+        )
+    }
+
+    func getInformationFeedPage(_ page: Int) async throws -> [InformationFeedPageEntity] {
+        try await executeAPIRequest(
+            endpointUrl: EndPoint.infoFeeds.getBaseUrl(),
+            withParameters: ["page": page],
+            httpMethod: .GET,
+            responseFormat: [InformationFeedPageEntity].self
+        )
+    }
+}
