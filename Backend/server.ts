@@ -48,7 +48,8 @@ server.use(middlewares);
 server.post("/v1/auth/login", (request, response) => {
   const { email, password } = request.body;
   // ログイン内容チェック
-  if (email === 'just1factory@gmail.com' && password !== 'iwasbornin1984' ){ 
+  const user = db.users.find((user: any) => user.email === 'just1factory@gmail.com' && user.password === 'iwasbornin1984');
+  if (!user) { 
     response.status(401).json("Unauthorized");
     return;
   }
@@ -57,7 +58,7 @@ server.post("/v1/auth/login", (request, response) => {
     expiresIn: EXPIRATION,
   });
 	console.log(accessToken);
-	response.status(200).json({ accessToken });
+	response.status(200).json({ token: accessToken });
 });
 
 // トークン検証処理
@@ -74,7 +75,7 @@ server.post("/v1/auth/verify", (request, response) => {
     const decode = jwt.verify(accessToken, JWT_SECRET);
 		console.log(decode);
     // 認証成功時はステータスコードと（デバッグ用に）設定されていたトークンを返す
-		response.status(200).json({ message: 'Success! Your token is verifies!', accessToken: accessToken });
+		response.status(200).json({ token: accessToken });
   } catch (e) {
     response.status(401).json("Unauthorized");
   }

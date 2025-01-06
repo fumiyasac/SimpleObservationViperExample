@@ -1,4 +1,12 @@
 {
+  "users": [
+    {
+      "id": 1,
+      "name": "fumiyasac",
+      "email": "just1factory@gmail.com",
+      "password": "iwasbornin1984"
+    }
+  ],
   "galleries": [
     {
       "id": 1,
