@@ -18,7 +18,7 @@ final class AuthenticationInteractor: AuthenticationInteractorProtocol {
         guard email.contains("@"), !password.isEmpty else {
             throw NSError(domain: "", code: -1, userInfo: [NSLocalizedDescriptionKey: "Invalid credentials"])
         }
-        return ApplicationUserEntity(email: email, token: "dummy_token")
+        return ApplicationUserEntity(token: "dummy_token")
     }
 
     func getStoredToken() -> String? {

@@ -11,25 +11,17 @@ struct ApplicationUserEntity: Hashable, Decodable {
 
     // MARK: - Property
 
-    private let uuid = UUID()
-
-    let email: String
     let token: String
 
     // MARK: - Enum
 
     private enum Keys: String, CodingKey {
-        case email
         case token
     }
 
     // MARK: - Initializer
 
-    init(
-        email: String,
-        token: String
-    ) {
-        self.email = email
+    init(token: String) {
         self.token = token
     }
 
@@ -39,7 +31,6 @@ struct ApplicationUserEntity: Hashable, Decodable {
         let container = try decoder.container(keyedBy: Keys.self)
 
         // JSONの配列内の要素にある値をDecodeして初期化する
-        self.email = try container.decode(String.self, forKey: .email)
         self.token = try container.decode(String.self, forKey: .token)
     }
 
@@ -48,11 +39,10 @@ struct ApplicationUserEntity: Hashable, Decodable {
     // MEMO: Hashableプロトコルに適合させるための処理
 
     func hash(into hasher: inout Hasher) {
-        hasher.combine(uuid)
+        hasher.combine(token)
     }
 
     static func == (lhs: ApplicationUserEntity, rhs: ApplicationUserEntity) -> Bool {
-        return lhs.email == rhs.email
-            && lhs.token == rhs.token
+        return lhs.token == rhs.token
     }
 }
