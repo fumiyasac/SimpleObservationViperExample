@@ -1,5 +1,5 @@
 //
-//  ApplicationUserEntity.swift
+//  AccessTokenEntity.swift
 //  ObservationViperExample
 //
 //  Created by 酒井文也 on 2024/11/22.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct ApplicationUserEntity: Hashable, Decodable {
+struct AccessTokenEntity: Hashable, Decodable {
 
     // MARK: - Property
 
@@ -42,7 +42,7 @@ struct ApplicationUserEntity: Hashable, Decodable {
         hasher.combine(token)
     }
 
-    static func == (lhs: ApplicationUserEntity, rhs: ApplicationUserEntity) -> Bool {
+    static func == (lhs: AccessTokenEntity, rhs: AccessTokenEntity) -> Bool {
         return lhs.token == rhs.token
     }
 }

@@ -42,7 +42,7 @@
 		DEF3BBF12CE22487007B2D9A /* InformationFeedEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF3BBF02CE2247E007B2D9A /* InformationFeedEntity.swift */; };
 		DEF3BBF32CE224A2007B2D9A /* CategoryRankingEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF3BBF22CE2249A007B2D9A /* CategoryRankingEntity.swift */; };
 		DEF3BBF52CE224BF007B2D9A /* GalleryPhotoEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF3BBF42CE224B1007B2D9A /* GalleryPhotoEntity.swift */; };
-		DEF6E1DC2CF0CD2C007FBD4A /* ApplicationUserEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF6E1DB2CF0CD21007FBD4A /* ApplicationUserEntity.swift */; };
+		DEF6E1DC2CF0CD2C007FBD4A /* AccessTokenEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF6E1DB2CF0CD21007FBD4A /* AccessTokenEntity.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,7 +96,7 @@
 		DEF3BBF02CE2247E007B2D9A /* InformationFeedEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationFeedEntity.swift; sourceTree = "<group>"; };
 		DEF3BBF22CE2249A007B2D9A /* CategoryRankingEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRankingEntity.swift; sourceTree = "<group>"; };
 		DEF3BBF42CE224B1007B2D9A /* GalleryPhotoEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryPhotoEntity.swift; sourceTree = "<group>"; };
-		DEF6E1DB2CF0CD21007FBD4A /* ApplicationUserEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationUserEntity.swift; sourceTree = "<group>"; };
+		DEF6E1DB2CF0CD21007FBD4A /* AccessTokenEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessTokenEntity.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -284,7 +284,7 @@
 		DEF3BBCF2CD8F12C007B2D9A /* Entity */ = {
 			isa = PBXGroup;
 			children = (
-				DEF6E1DB2CF0CD21007FBD4A /* ApplicationUserEntity.swift */,
+				DEF6E1DB2CF0CD21007FBD4A /* AccessTokenEntity.swift */,
 				DEF3BBF42CE224B1007B2D9A /* GalleryPhotoEntity.swift */,
 				DEF3BBF02CE2247E007B2D9A /* InformationFeedEntity.swift */,
 				DEF3BBF22CE2249A007B2D9A /* CategoryRankingEntity.swift */,
@@ -497,7 +497,7 @@
 				DEF3BBD62CD8FCD8007B2D9A /* StarRatingView.swift in Sources */,
 				DE4977412D21323A00FEC950 /* AppRouter.swift in Sources */,
 				DE49773D2D2124FA00FEC950 /* AuthenticationView.swift in Sources */,
-				DEF6E1DC2CF0CD2C007FBD4A /* ApplicationUserEntity.swift in Sources */,
+				DEF6E1DC2CF0CD2C007FBD4A /* AccessTokenEntity.swift in Sources */,
 				DE4977432D21367800FEC950 /* AuthenticationPresenter.swift in Sources */,
 				DE4977522D2458DB00FEC950 /* GuidanceView.swift in Sources */,
 				DEF3BBA82CCCE7F8007B2D9A /* UIViewControllerExtension.swift in Sources */,

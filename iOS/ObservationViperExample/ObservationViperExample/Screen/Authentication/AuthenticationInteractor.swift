@@ -11,14 +11,14 @@ final class AuthenticationInteractor: AuthenticationInteractorProtocol {
 
     // MARK: - Function
 
-    func login(email: String, password: String) async throws -> ApplicationUserEntity {
+    func login(email: String, password: String) async throws -> AccessTokenEntity {
 
         // TODO: 本番のAPI処理を適用させる
         try await Task.sleep(for: .seconds(1))
         guard email.contains("@"), !password.isEmpty else {
             throw NSError(domain: "", code: -1, userInfo: [NSLocalizedDescriptionKey: "Invalid credentials"])
         }
-        return ApplicationUserEntity(token: "dummy_token")
+        return AccessTokenEntity(token: "dummy_token")
     }
 
     func getStoredToken() -> String? {

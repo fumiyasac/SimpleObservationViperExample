@@ -17,7 +17,7 @@ protocol AuthenticationPresenterProtocol {
 }
 
 protocol AuthenticationInteractorProtocol {
-    func login(email: String, password: String) async throws -> ApplicationUserEntity
+    func login(email: String, password: String) async throws -> AccessTokenEntity
     func getStoredToken() -> String?
     func validateToken(_ token: String) async throws -> Bool
 }

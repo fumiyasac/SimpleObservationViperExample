@@ -35,8 +35,8 @@ protocol APIClientManagerProtocol {
     func getPickupFeeds() async throws -> [PickupFeedEntity]
     func getCategoryFeeds() async throws -> [CategoryRankingEntity]
     func getInformationFeedPage(_ page: Int) async throws -> [InformationFeedPageEntity]
-    func generateAccessToken(email: String, password: String) async throws -> ApplicationUserEntity
-    func verifyAccessToken() async throws -> ApplicationUserEntity
+    func generateAccessToken(email: String, password: String) async throws -> AccessTokenEntity
+    func verifyAccessToken() async throws -> AccessTokenEntity
 }
 
 final class ApiClientManager {
@@ -229,20 +229,20 @@ extension ApiClientManager: APIClientManagerProtocol {
         )
     }
 
-    func generateAccessToken(email: String, password: String) async throws -> ApplicationUserEntity {
+    func generateAccessToken(email: String, password: String) async throws -> AccessTokenEntity {
         try await executeAPIRequest(
             endpointUrl: EndPoint.authLogin.getBaseUrl(),
             withParameters: ["email": email, "password": password],
             httpMethod: .POST,
-            responseFormat: ApplicationUserEntity.self
+            responseFormat: AccessTokenEntity.self
         )
     }
 
-    func verifyAccessToken() async throws -> ApplicationUserEntity {
+    func verifyAccessToken() async throws -> AccessTokenEntity {
         try await executeAPIRequest(
             endpointUrl: EndPoint.authVerify.getBaseUrl(),
             httpMethod: .POST,
-            responseFormat: ApplicationUserEntity.self
+            responseFormat: AccessTokenEntity.self
         )
     }
 }
