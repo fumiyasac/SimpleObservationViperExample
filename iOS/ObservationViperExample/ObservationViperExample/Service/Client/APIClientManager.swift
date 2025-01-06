@@ -35,6 +35,8 @@ protocol APIClientManagerProtocol {
     func getPickupFeeds() async throws -> [PickupFeedEntity]
     func getCategoryFeeds() async throws -> [CategoryRankingEntity]
     func getInformationFeedPage(_ page: Int) async throws -> [InformationFeedPageEntity]
+    func generateAccessToken(email: String, password: String) async throws -> ApplicationUserEntity
+    func verifyAccessToken() async throws -> ApplicationUserEntity
 }
 
 final class ApiClientManager {
@@ -53,6 +55,8 @@ final class ApiClientManager {
         case pickupFeeds = "pickup_feeds"
         case categoryFeeds = "category_feeds"
         case infoFeeds = "info_feed"
+        case authLogin = "auth/login"
+        case authVerify = "auth/verify"
 
         func getBaseUrl() -> String {
             return [host, version, self.rawValue].joined(separator: "/")
@@ -222,6 +226,23 @@ extension ApiClientManager: APIClientManagerProtocol {
             withParameters: ["page": page],
             httpMethod: .GET,
             responseFormat: [InformationFeedPageEntity].self
+        )
+    }
+
+    func generateAccessToken(email: String, password: String) async throws -> ApplicationUserEntity {
+        try await executeAPIRequest(
+            endpointUrl: EndPoint.authLogin.getBaseUrl(),
+            withParameters: ["email": email, "password": password],
+            httpMethod: .POST,
+            responseFormat: ApplicationUserEntity.self
+        )
+    }
+
+    func verifyAccessToken() async throws -> ApplicationUserEntity {
+        try await executeAPIRequest(
+            endpointUrl: EndPoint.authVerify.getBaseUrl(),
+            httpMethod: .POST,
+            responseFormat: ApplicationUserEntity.self
         )
     }
 }
