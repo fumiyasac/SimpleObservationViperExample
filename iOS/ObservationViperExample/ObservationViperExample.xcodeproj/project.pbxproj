@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		DE0147A52D2AC7F600551327 /* PickupFeedEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0147A42D2AC7F600551327 /* PickupFeedEntity.swift */; };
 		DE0147A72D2ACEE600551327 /* InformationFeedPageEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0147A62D2ACEE600551327 /* InformationFeedPageEntity.swift */; };
+		DE0147A92D2D6D3300551327 /* GalleryContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0147A82D2D6D3300551327 /* GalleryContract.swift */; };
 		DE49773B2D21227800FEC950 /* AuthenticationContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE49773A2D21227800FEC950 /* AuthenticationContract.swift */; };
 		DE49773D2D2124FA00FEC950 /* AuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE49773C2D2124FA00FEC950 /* AuthenticationView.swift */; };
 		DE4977412D21323A00FEC950 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4977402D21323A00FEC950 /* AppRouter.swift */; };
@@ -65,6 +66,7 @@
 /* Begin PBXFileReference section */
 		DE0147A42D2AC7F600551327 /* PickupFeedEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickupFeedEntity.swift; sourceTree = "<group>"; };
 		DE0147A62D2ACEE600551327 /* InformationFeedPageEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationFeedPageEntity.swift; sourceTree = "<group>"; };
+		DE0147A82D2D6D3300551327 /* GalleryContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryContract.swift; sourceTree = "<group>"; };
 		DE49773A2D21227800FEC950 /* AuthenticationContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationContract.swift; sourceTree = "<group>"; };
 		DE49773C2D2124FA00FEC950 /* AuthenticationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationView.swift; sourceTree = "<group>"; };
 		DE4977402D21323A00FEC950 /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
@@ -276,6 +278,7 @@
 		DEF3BBCE2CD68669007B2D9A /* Gallery */ = {
 			isa = PBXGroup;
 			children = (
+				DE0147A82D2D6D3300551327 /* GalleryContract.swift */,
 				DEF3BBCA2CD685D1007B2D9A /* GalleryView.swift */,
 			);
 			path = Gallery;
@@ -504,6 +507,7 @@
 				DEF3BBD82CD8FCFA007B2D9A /* RatingViewRepresentable.swift in Sources */,
 				DE0147A52D2AC7F600551327 /* PickupFeedEntity.swift in Sources */,
 				DEF3BBF12CE22487007B2D9A /* InformationFeedEntity.swift in Sources */,
+				DE0147A92D2D6D3300551327 /* GalleryContract.swift in Sources */,
 				DEF3BBCB2CD685D1007B2D9A /* GalleryView.swift in Sources */,
 				DE4977452D2136B900FEC950 /* AuthenticationInteractor.swift in Sources */,
 				DEF3BB992CC879D9007B2D9A /* AppDelegate.swift in Sources */,
