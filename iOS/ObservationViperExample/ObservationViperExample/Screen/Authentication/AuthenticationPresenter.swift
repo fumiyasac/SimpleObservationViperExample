@@ -50,7 +50,7 @@ final class AuthenticationPresenter: AuthenticationPresenterProtocol {
             // 入力されたEメール・パスワードで認証処理を実行する
             Task { @MainActor in
                 do {
-                    let user = try await interactor.login(email: email, password: password)
+                    let _ = try await interactor.login(email: email, password: password)
                     router.navigateToMainTabBar()
                 } catch {
                     _errorMessage = """
