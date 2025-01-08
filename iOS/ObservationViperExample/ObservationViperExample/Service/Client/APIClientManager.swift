@@ -39,11 +39,11 @@ protocol APIClientManagerProtocol {
     func verifyAccessToken() async throws -> AccessTokenEntity
 }
 
-final class ApiClientManager {
+final class APIClientManager {
 
     // MARK: - Singleton Instance
 
-    static let shared = ApiClientManager()
+    static let shared = APIClientManager()
 
     private init() {}
 
@@ -194,7 +194,7 @@ final class ApiClientManager {
 
 // MARK: - ApiClientManagerProtocol
 
-extension ApiClientManager: APIClientManagerProtocol {
+extension APIClientManager: APIClientManagerProtocol {
 
     func getGalleries() async throws -> [GalleryPhotoEntity] {
         try await executeAPIRequest(
