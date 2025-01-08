@@ -43,7 +43,7 @@ final class GalleryPresenter: GalleryPresenterProtocol {
 
     // MARK: - Function
 
-    func fetchGalleries() async throws {
+    func fetchGalleries() {
 
         // Loading状態にする
         _isLoading = true

@@ -9,6 +9,16 @@ import SwiftUI
 
 struct GalleryView: View {
 
+    // MARK: - Presenter
+
+    private let presenter: GalleryPresenterProtocol
+
+    // MARK: - Initializer
+
+    init(presenter: GalleryPresenterProtocol) {
+        self.presenter = presenter
+    }
+
     // MARK: - Body
 
     var body: some View {
@@ -18,6 +28,9 @@ struct GalleryView: View {
                 VStack {
                     Text("GalleryView")
                 }
+            }
+            .onFirstAppear {
+                presenter.fetchGalleries()
             }
             // Navigation表示に関する設定
             .navigationTitle("🎨Gallery")

@@ -13,7 +13,7 @@ protocol GalleryPresenterProtocol {
     var isLoading: Bool { get }
     var errorMessage: String? { get }
     var galleries: [GalleryPhotoEntity] { get }
-    func fetchGalleries() async throws
+    func fetchGalleries()
 }
 
 protocol GalleryInteractorProtocol {

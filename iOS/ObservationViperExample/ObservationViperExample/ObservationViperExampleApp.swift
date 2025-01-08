@@ -41,14 +41,18 @@ struct ObservationViperExampleApp: App {
                                 }
                             }
                             .tag(0)
-                        GalleryView()
-                            .tabItem {
-                                VStack {
-                                    Image(systemName: "photo.circle.fill")
-                                    Text("Gallery")
-                                }
+                        GalleryView(
+                            presenter: GalleryPresenter(
+                                interactor: GalleryInteractor()
+                            )
+                        )
+                        .tabItem {
+                            VStack {
+                                Image(systemName: "photo.circle.fill")
+                                Text("Gallery")
                             }
-                            .tag(1)
+                        }
+                        .tag(1)
                         GuidanceView()
                             .tabItem {
                                 VStack {
