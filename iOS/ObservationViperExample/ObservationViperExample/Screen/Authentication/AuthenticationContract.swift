@@ -13,7 +13,7 @@ protocol AuthenticationPresenterProtocol {
     var isLoading: Bool { get }
     var errorMessage: String? { get }
     func login(email: String, password: String)
-    func checkAuthenticationStatus()
+    func validateToken()
 }
 
 protocol AuthenticationInteractorProtocol {

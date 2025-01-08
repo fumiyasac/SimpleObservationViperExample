@@ -48,16 +48,16 @@ final class AuthenticationPresenter: AuthenticationPresenterProtocol {
             _errorMessage = nil
 
             // 入力されたEメール・パスワードで認証処理を実行する
-            do {
-                let user = try await interactor.login(email: email, password: password)
-                // TODO: 現在はUserDefaultに格納しているが、本来はTokenは「KeychainAccess」を利用して保持する
-                UserDefaults.standard.set(user.token, forKey: "userToken")
-                router.navigateToMainTabBar()
-            } catch {
-                _errorMessage = """
-                ログインに失敗しました。
-                入力情報に誤りがないかをご確認ください。
-                """
+            Task { @MainActor in
+                do {
+                    let user = try await interactor.login(email: email, password: password)
+                    router.navigateToMainTabBar()
+                } catch {
+                    _errorMessage = """
+                    ログインに失敗しました。
+                    入力情報に誤りがないかをご確認ください。
+                    """
+                }
             }
 
             // 処理が完了した後にはLoading状態を元に戻す
@@ -65,7 +65,7 @@ final class AuthenticationPresenter: AuthenticationPresenterProtocol {
         }
     }
 
-    func checkAuthenticationStatus() {
+    func validateToken() {
         Task { @MainActor in
             
             // Tokenがデバイス内に存在するかを確認する
@@ -75,17 +75,18 @@ final class AuthenticationPresenter: AuthenticationPresenterProtocol {
                 _isLoading = true
 
                 // 格納されたJWTの認証状態確認を実施する
-                do {
-                    // TODO: 現在は仮の処理であるが、実際はAPIリクエストを利用して有用性を確認する
-                    let isValid = try await interactor.validateToken(token)
-                    if isValid {
-                        router.navigateToMainTabBar()
+                Task { @MainActor in
+                    do {
+                        let isValid = try await interactor.validateToken(token)
+                        if isValid {
+                            router.navigateToMainTabBar()
+                        }
+                    } catch {
+                        _errorMessage = """
+                        セッションの有効期限が切れました。
+                        再度ログイン処理をお願いします。
+                        """
                     }
-                } catch {
-                    _errorMessage = """
-                    セッションの有効期限が切れました。
-                    再度ログイン処理をお願いします。
-                    """
                 }
 
                 // 処理が完了した後にはLoading状態を元に戻す

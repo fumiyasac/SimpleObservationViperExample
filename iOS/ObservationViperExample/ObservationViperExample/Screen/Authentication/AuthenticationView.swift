@@ -55,7 +55,7 @@ struct AuthenticationView: View {
             .padding()
             .onFirstAppear {
                 // 初回表示時に1度だけ認証処理を実行する
-                presenter.checkAuthenticationStatus()
+                presenter.validateToken()
             }
             // Navigation表示に関する設定
             .navigationTitle("🔑Login")

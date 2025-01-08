@@ -13,23 +13,27 @@ final class AuthenticationInteractor: AuthenticationInteractorProtocol {
 
     func login(email: String, password: String) async throws -> AccessTokenEntity {
 
-        // TODO: 本番のAPI処理を適用させる
-        try await Task.sleep(for: .seconds(1))
-        guard email.contains("@"), !password.isEmpty else {
-            throw NSError(domain: "", code: -1, userInfo: [NSLocalizedDescriptionKey: "Invalid credentials"])
+        do {
+            let accessTokenEntity = try await APIClientManager.shared.generateAccessToken(email: email, password: password)
+            KeychainAccessManager.shared.saveJsonAccessToken(accessTokenEntity.token)
+            return accessTokenEntity
+        } catch {
+            // MEMO: 厳密にはエラーハンドリングが必要
+            throw APIError.error(message: "認証処理に失敗しました。メールアドレスとパスワードのご確認をお願いします。")
         }
-        return AccessTokenEntity(token: "dummy_token")
     }
 
     func getStoredToken() -> String? {
-        // TODO: Tokenは「KeychainAccess」から取り出す
-        return UserDefaults.standard.string(forKey: "userToken")
+        KeychainAccessManager.shared.getAuthenticationHeader()
     }
 
     func validateToken(_ token: String) async throws -> Bool {
-        // TODO: 本番のAPI処理を適用させる
-        // API呼び出しをシミュレート＆トークンの有効性を確認する
-        try await Task.sleep(for: .seconds(0.5))
-        return true
+        do {
+            let accessTokenEntity = try await APIClientManager.shared.verifyAccessToken()
+            return !accessTokenEntity.token.isEmpty
+        } catch {
+            // MEMO: 厳密にはエラーハンドリングが必要
+            throw APIError.error(message: "トークンの有効期限が失効しています。再度ログイン処理をお願いします。")
+        }
     }
 }
