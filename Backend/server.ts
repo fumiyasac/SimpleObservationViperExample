@@ -48,8 +48,7 @@ server.use(middlewares);
 server.post("/v1/auth/login", (request, response) => {
   const { email, password } = request.body;
   // ログイン内容チェック
-  const user = db.users.find((user: any) => user.email === email && user.password === password);
-  if (!user) { 
+  if (email !== 'just1factory@gmail.com' && password !== 'iwasbornin1984' ){    
     response.status(401).json("Unauthorized");
     return;
   }
