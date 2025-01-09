@@ -9,6 +9,16 @@ import SwiftUI
 
 struct FeedView: View {
 
+    // MARK: - Presenter
+
+    private let presenter: FeedPresenterProtocol
+
+    // MARK: - Initializer
+
+    init(presenter: FeedPresenterProtocol) {
+        self.presenter = presenter
+    }
+
     // MARK: - Body
 
     var body: some View {
@@ -18,6 +28,9 @@ struct FeedView: View {
                 VStack {
                     Text("FeedView")
                 }
+            }
+            .onFirstAppear {
+                presenter.fetchInitialFeeds()
             }
             // Navigation表示に関する設定
             .navigationTitle("🗞️FeedView")

@@ -33,14 +33,18 @@ struct ObservationViperExampleApp: App {
                     )
                 case .mainTabBar:
                     TabView {
-                        FeedView()
-                            .tabItem {
-                                VStack {
-                                    Image(systemName: "newspaper.circle.fill")
-                                    Text("Feed")
-                                }
+                        FeedView(
+                            presenter: FeedPresenter(
+                                interactor: FeedInteractor()
+                            )
+                        )
+                        .tabItem {
+                            VStack {
+                                Image(systemName: "newspaper.circle.fill")
+                                Text("Feed")
                             }
-                            .tag(0)
+                        }
+                        .tag(0)
                         GalleryView(
                             presenter: GalleryPresenter(
                                 interactor: GalleryInteractor()

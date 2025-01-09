@@ -22,5 +22,5 @@ protocol FeedPresenterProtocol {
 protocol FeedInteractorProtocol {
     func fetchPickupFeeds() async throws -> [PickupFeedEntity]
     func fetchCategoryRankings() async throws -> [CategoryRankingEntity]
-    func fetchInformationFeeds() async throws -> InformationFeedPageEntity
+    func fetchInformationFeeds(page: Int) async throws -> InformationFeedPageEntity
 }

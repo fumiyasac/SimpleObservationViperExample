@@ -34,7 +34,7 @@ protocol APIClientManagerProtocol {
     func getGalleries() async throws -> [GalleryPhotoEntity]
     func getPickupFeeds() async throws -> [PickupFeedEntity]
     func getCategoryFeeds() async throws -> [CategoryRankingEntity]
-    func getInformationFeedPage(_ page: Int) async throws -> [InformationFeedPageEntity]
+    func getInformationFeedPage(_ page: Int) async throws -> InformationFeedPageEntity
     func generateAccessToken(email: String, password: String) async throws -> AccessTokenEntity
     func verifyAccessToken() async throws -> AccessTokenEntity
 }
@@ -220,12 +220,12 @@ extension APIClientManager: APIClientManagerProtocol {
         )
     }
 
-    func getInformationFeedPage(_ page: Int) async throws -> [InformationFeedPageEntity] {
+    func getInformationFeedPage(_ page: Int) async throws -> InformationFeedPageEntity {
         try await executeAPIRequest(
             endpointUrl: EndPoint.infoFeeds.getBaseUrl(),
             withParameters: ["page": page],
             httpMethod: .GET,
-            responseFormat: [InformationFeedPageEntity].self
+            responseFormat: InformationFeedPageEntity.self
         )
     }
 
