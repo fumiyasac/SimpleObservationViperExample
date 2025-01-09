@@ -11,7 +11,7 @@ final class GalleryInteractor: GalleryInteractorProtocol {
 
     // MARK: - Function
 
-    func fetchGalleries() async throws -> [GalleryPhotoEntity] {
+    func fetchGalleryPhotos() async throws -> [GalleryPhotoEntity] {
         return try await APIClientManager.shared.getGalleries()
     }
 }

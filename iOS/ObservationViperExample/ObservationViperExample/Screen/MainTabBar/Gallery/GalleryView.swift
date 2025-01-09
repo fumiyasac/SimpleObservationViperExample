@@ -30,7 +30,7 @@ struct GalleryView: View {
                 }
             }
             .onFirstAppear {
-                presenter.fetchGalleries()
+                presenter.fetchGalleryPhotos()
             }
             // Navigation表示に関する設定
             .navigationTitle("🎨Gallery")

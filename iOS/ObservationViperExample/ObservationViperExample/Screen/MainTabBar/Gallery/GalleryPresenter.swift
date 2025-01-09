@@ -19,7 +19,7 @@ final class GalleryPresenter: GalleryPresenterProtocol {
 
     private var _isLoading: Bool = false
     private var _errorMessage: String?
-    private var _galleries: [GalleryPhotoEntity] = []
+    private var _galleryPhotos: [GalleryPhotoEntity] = []
 
     // MARK: - Property (`@Observable`)
 
@@ -31,8 +31,8 @@ final class GalleryPresenter: GalleryPresenterProtocol {
         _errorMessage
     }
 
-    var galleries: [GalleryPhotoEntity] {
-        _galleries
+    var galleryPhotos: [GalleryPhotoEntity] {
+        _galleryPhotos
     }
 
     // MARK: - Initializer
@@ -43,14 +43,14 @@ final class GalleryPresenter: GalleryPresenterProtocol {
 
     // MARK: - Function
 
-    func fetchGalleries() {
+    func fetchGalleryPhotos() {
 
         // Loading状態にする
         _isLoading = true
 
         Task { @MainActor in
             do {
-                _galleries = try await interactor.fetchGalleries()
+                _galleryPhotos = try await interactor.fetchGalleryPhotos()
 
             } catch {
                 _errorMessage = """

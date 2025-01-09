@@ -12,10 +12,10 @@ import Foundation
 protocol GalleryPresenterProtocol {
     var isLoading: Bool { get }
     var errorMessage: String? { get }
-    var galleries: [GalleryPhotoEntity] { get }
-    func fetchGalleries()
+    var galleryPhotos: [GalleryPhotoEntity] { get }
+    func fetchGalleryPhotos()
 }
 
 protocol GalleryInteractorProtocol {
-    func fetchGalleries() async throws -> [GalleryPhotoEntity]
+    func fetchGalleryPhotos() async throws -> [GalleryPhotoEntity]
 }
