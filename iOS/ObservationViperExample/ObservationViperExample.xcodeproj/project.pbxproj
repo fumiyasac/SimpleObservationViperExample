@@ -12,6 +12,7 @@
 		DE0147A92D2D6D3300551327 /* GalleryContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0147A82D2D6D3300551327 /* GalleryContract.swift */; };
 		DE0147B12D2D74D900551327 /* GalleryInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0147B02D2D74D900551327 /* GalleryInteractor.swift */; };
 		DE0147B32D2D755E00551327 /* GalleryPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0147B22D2D755E00551327 /* GalleryPresenter.swift */; };
+		DE1DC4972D2FF9D900873A8B /* FeedContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1DC4962D2FF9D900873A8B /* FeedContract.swift */; };
 		DE49773B2D21227800FEC950 /* AuthenticationContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE49773A2D21227800FEC950 /* AuthenticationContract.swift */; };
 		DE49773D2D2124FA00FEC950 /* AuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE49773C2D2124FA00FEC950 /* AuthenticationView.swift */; };
 		DE4977412D21323A00FEC950 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4977402D21323A00FEC950 /* AppRouter.swift */; };
@@ -71,6 +72,7 @@
 		DE0147A82D2D6D3300551327 /* GalleryContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryContract.swift; sourceTree = "<group>"; };
 		DE0147B02D2D74D900551327 /* GalleryInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryInteractor.swift; sourceTree = "<group>"; };
 		DE0147B22D2D755E00551327 /* GalleryPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryPresenter.swift; sourceTree = "<group>"; };
+		DE1DC4962D2FF9D900873A8B /* FeedContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedContract.swift; sourceTree = "<group>"; };
 		DE49773A2D21227800FEC950 /* AuthenticationContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationContract.swift; sourceTree = "<group>"; };
 		DE49773C2D2124FA00FEC950 /* AuthenticationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationView.swift; sourceTree = "<group>"; };
 		DE4977402D21323A00FEC950 /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
@@ -155,6 +157,7 @@
 		DE4977482D22BCDD00FEC950 /* Feed */ = {
 			isa = PBXGroup;
 			children = (
+				DE1DC4962D2FF9D900873A8B /* FeedContract.swift */,
 				DE49774D2D22C58A00FEC950 /* FeedView.swift */,
 			);
 			path = Feed;
@@ -509,6 +512,7 @@
 				DEF6E1DC2CF0CD2C007FBD4A /* AccessTokenEntity.swift in Sources */,
 				DE4977432D21367800FEC950 /* AuthenticationPresenter.swift in Sources */,
 				DE4977522D2458DB00FEC950 /* GuidanceView.swift in Sources */,
+				DE1DC4972D2FF9D900873A8B /* FeedContract.swift in Sources */,
 				DEF3BBA82CCCE7F8007B2D9A /* UIViewControllerExtension.swift in Sources */,
 				DE0147B32D2D755E00551327 /* GalleryPresenter.swift in Sources */,
 				DEF3BBD82CD8FCFA007B2D9A /* RatingViewRepresentable.swift in Sources */,
