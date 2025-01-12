@@ -1,0 +1,44 @@
+//
+//  LoadingIndicatorViewRepresentable.swift
+//  ObservationViperExample
+//
+//  Created by 酒井文也 on 2025/01/12.
+//
+
+import Foundation
+import SwiftUI
+import UIKit
+
+struct LoadingIndicatorViewRepresentable: UIViewRepresentable {
+    
+    // MARK: - Property
+
+    // 👉 親のView要素から受け取ったRatingの値をこの構造体の中で利用していく。
+    @Binding var isLoading: Bool
+    
+    // MARK: - Function
+    
+    func makeUIView(context: Context) -> UIActivityIndicatorView {
+        UIActivityIndicatorView()
+    }
+    
+    func updateUIView(_ uiView: UIActivityIndicatorView, context: Context) {
+
+        // このインジケータ表示に関する初期設定
+        uiView.style = .medium
+        uiView.hidesWhenStopped = true
+        
+        // @Bindingで設定された読み込み中か否かの状態を反映する
+        if isLoading {
+            uiView.startAnimating()
+        } else {
+            uiView.stopAnimating()
+        }
+        
+        // 内在サイズに則って自動でCosmosViewをリサイズする
+        // 参考: 内在サイズについての説明
+        // https://developer.mozilla.org/ja/docs/Glossary/Intrinsic_Size
+        uiView.setContentHuggingPriority(.defaultHigh, for: .vertical)
+        uiView.setContentHuggingPriority(.defaultHigh, for: .horizontal)
+    }
+}

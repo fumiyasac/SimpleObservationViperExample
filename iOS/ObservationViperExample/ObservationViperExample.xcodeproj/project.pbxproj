@@ -15,6 +15,8 @@
 		DE1DC4972D2FF9D900873A8B /* FeedContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1DC4962D2FF9D900873A8B /* FeedContract.swift */; };
 		DE1DC4992D2FFE4100873A8B /* FeedPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1DC4982D2FFE4100873A8B /* FeedPresenter.swift */; };
 		DE1DC49B2D2FFE4F00873A8B /* FeedInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1DC49A2D2FFE4F00873A8B /* FeedInteractor.swift */; };
+		DE1DC5142D33531000873A8B /* ExecutingConnectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1DC5132D33531000873A8B /* ExecutingConnectionView.swift */; };
+		DE1DC5162D3353B300873A8B /* LoadingIndicatorViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1DC5152D3353B300873A8B /* LoadingIndicatorViewRepresentable.swift */; };
 		DE49773B2D21227800FEC950 /* AuthenticationContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE49773A2D21227800FEC950 /* AuthenticationContract.swift */; };
 		DE49773D2D2124FA00FEC950 /* AuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE49773C2D2124FA00FEC950 /* AuthenticationView.swift */; };
 		DE4977412D21323A00FEC950 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4977402D21323A00FEC950 /* AppRouter.swift */; };
@@ -77,6 +79,8 @@
 		DE1DC4962D2FF9D900873A8B /* FeedContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedContract.swift; sourceTree = "<group>"; };
 		DE1DC4982D2FFE4100873A8B /* FeedPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedPresenter.swift; sourceTree = "<group>"; };
 		DE1DC49A2D2FFE4F00873A8B /* FeedInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedInteractor.swift; sourceTree = "<group>"; };
+		DE1DC5132D33531000873A8B /* ExecutingConnectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExecutingConnectionView.swift; sourceTree = "<group>"; };
+		DE1DC5152D3353B300873A8B /* LoadingIndicatorViewRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingIndicatorViewRepresentable.swift; sourceTree = "<group>"; };
 		DE49773A2D21227800FEC950 /* AuthenticationContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationContract.swift; sourceTree = "<group>"; };
 		DE49773C2D2124FA00FEC950 /* AuthenticationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationView.swift; sourceTree = "<group>"; };
 		DE4977402D21323A00FEC950 /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
@@ -141,6 +145,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DE1DC4FB2D3266B200873A8B /* FeedComponents */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = FeedComponents;
+			sourceTree = "<group>";
+		};
 		DE4977462D225DD500FEC950 /* KeychainStore */ = {
 			isa = PBXGroup;
 			children = (
@@ -161,6 +172,7 @@
 		DE4977482D22BCDD00FEC950 /* Feed */ = {
 			isa = PBXGroup;
 			children = (
+				DE1DC4FB2D3266B200873A8B /* FeedComponents */,
 				DE1DC4962D2FF9D900873A8B /* FeedContract.swift */,
 				DE49774D2D22C58A00FEC950 /* FeedView.swift */,
 				DE1DC4982D2FFE4100873A8B /* FeedPresenter.swift */,
@@ -249,6 +261,7 @@
 			isa = PBXGroup;
 			children = (
 				DEF3BBB22CCFB074007B2D9A /* ConnectionErrorView.swift */,
+				DE1DC5132D33531000873A8B /* ExecutingConnectionView.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -325,6 +338,7 @@
 			isa = PBXGroup;
 			children = (
 				DEF3BBD72CD8FCFA007B2D9A /* RatingViewRepresentable.swift */,
+				DE1DC5152D3353B300873A8B /* LoadingIndicatorViewRepresentable.swift */,
 			);
 			path = UIViewRepresentable;
 			sourceTree = "<group>";
@@ -511,6 +525,7 @@
 				DEF3BBB32CCFB074007B2D9A /* ConnectionErrorView.swift in Sources */,
 				DEF3BBA02CCA968A007B2D9A /* FirstAppearExtension.swift in Sources */,
 				DEF3BBB72CCFB0FE007B2D9A /* APIClientManager.swift in Sources */,
+				DE1DC5142D33531000873A8B /* ExecutingConnectionView.swift in Sources */,
 				DE49774E2D22C58A00FEC950 /* FeedView.swift in Sources */,
 				DEF3BBD62CD8FCD8007B2D9A /* StarRatingView.swift in Sources */,
 				DE4977412D21323A00FEC950 /* AppRouter.swift in Sources */,
@@ -532,6 +547,7 @@
 				DEF3BB992CC879D9007B2D9A /* AppDelegate.swift in Sources */,
 				DE0147A72D2ACEE600551327 /* InformationFeedPageEntity.swift in Sources */,
 				DEF3BB9A2CC879D9007B2D9A /* ObservationViperExampleApp.swift in Sources */,
+				DE1DC5162D3353B300873A8B /* LoadingIndicatorViewRepresentable.swift in Sources */,
 				DEF3BBF52CE224BF007B2D9A /* GalleryPhotoEntity.swift in Sources */,
 				DEF3BB9C2CC87A22007B2D9A /* UIColorExtension.swift in Sources */,
 				DEF3BBF32CE224A2007B2D9A /* CategoryRankingEntity.swift in Sources */,

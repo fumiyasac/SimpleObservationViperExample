@@ -25,7 +25,7 @@ extension UIViewController {
         guard let navigationController = self.navigationController else {
             return
         }
-        navigationController.navigationBar.barTintColor = UIColor(code: "#869a42")
+        navigationController.navigationBar.barTintColor = UIColor(code: "#f88c75")
         navigationController.navigationBar.titleTextAttributes = attributes
 
         // タイトルを入れる

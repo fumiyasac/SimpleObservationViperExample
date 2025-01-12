@@ -23,15 +23,23 @@ struct ConnectionErrorView: View {
         return Color.primary
     }
 
+    private var connectionErrorDescriptionFont: Font {
+        return Font.custom("AvenirNext-Regular", size: 12)
+    }
+
+    private var connectionErrorDescriptionColor: Color {
+        return Color.secondary
+    }
+
     private var connectionErrorButtonFont: Font {
         return Font.custom("AvenirNext-Bold", size: 16)
     }
 
     private var connectionErrorButtonColor: Color {
-        return Color.orange
+        return Color(uiColor: UIColor(code: "#f88c75"))
     }
 
-    private var tapButtonAction: ConnectionErrorView.TapButtonAction
+    private var tapButtonAction: TapButtonAction
 
     // MARK: - Initializer
 
@@ -48,15 +56,23 @@ struct ConnectionErrorView: View {
             // 2. コンテンツ表示部分
             VStack {
                 // (1) エラータイトル表示
-                Text("Error: 表示データ取得失敗")
+                Text("エラー: 画面表示に失敗しました")
                     .font(connectionErrorTitleFont)
                     .foregroundColor(connectionErrorTitleColor)
-                // (2) リクエスト再実行ボタン表示
+                    .padding([.bottom], 16.0)
+                // (2) エラー文言表示
+                HStack {
+                    Text("ネットワークの接続エラー等の要因でデータを取得することができなかった可能性があります。通信の良い環境等で再度のリクエスト実行をお試し下さい。またそれでも解決しない場合には、運営へのお問い合わせをお手数ですが宜しくお願い致します。")
+                        .font(connectionErrorDescriptionFont)
+                        .foregroundColor(connectionErrorDescriptionColor)
+                        .multilineTextAlignment(.leading)
+                }
+                // (3) リクエスト再実行ボタン表示
                 HStack {
                     Spacer()
                     Button(action: tapButtonAction, label: {
                         // MEMO: 縁取りをした角丸ボタンのための装飾
-                        Text("再読み込みを実行する")
+                        Text("再度リクエストを実行する")
                             .font(connectionErrorButtonFont)
                             .foregroundColor(connectionErrorButtonColor)
                             .background(.white)
@@ -69,15 +85,15 @@ struct ConnectionErrorView: View {
                     })
                     Spacer()
                 }
-                .padding(.vertical, 24.0)
+                .padding([.top, .bottom], 24.0)
             }
             // 3. Spacer
             Spacer()
         }
-        .padding(.horizontal, 12.0)
+        .padding([.leading, .trailing], 12.0)
     }
 }
 
-#Preview {
+#Preview("ConnectionErrorView Preview") {
     ConnectionErrorView(tapButtonAction: {})
 }
