@@ -5,9 +5,16 @@
 //  Created by 酒井文也 on 2024/11/03.
 //
 
+import NukeUI
 import SwiftUI
 
 struct GalleryView: View {
+
+    // MARK: - Property
+ 
+    private var gridColumns: [GridItem] {
+        (0..<3).map { _ in GridItem(.flexible(minimum: 100, maximum: 200), spacing: 1) }
+    }
 
     // MARK: - Presenter
 
@@ -24,9 +31,21 @@ struct GalleryView: View {
     var body: some View {
         // MEMO: UIKitのNavigationController表示を実施する
         NavigationStack {
-            Group {
-                VStack {
-                    Text("GalleryView")
+            ZStack {
+                ScrollView {
+                    LazyVGrid(columns: gridColumns, spacing: 1.0) {
+                        ForEach(presenter.galleryPhotos, id: \.id) { galleryPhoto in
+                            LazyImage(url: URL(string: galleryPhoto.thumbnail)) { imageState in
+                                if let image = imageState.image {
+                                    image
+                                        .resizable()
+                                        .aspectRatio(1, contentMode: .fill)
+                                } else {
+                                    Color(uiColor: UIColor(code: "#dddddd"))
+                                }
+                            }
+                        }
+                    }
                 }
             }
             .onFirstAppear {

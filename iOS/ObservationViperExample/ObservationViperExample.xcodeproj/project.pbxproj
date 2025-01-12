@@ -17,6 +17,7 @@
 		DE1DC49B2D2FFE4F00873A8B /* FeedInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1DC49A2D2FFE4F00873A8B /* FeedInteractor.swift */; };
 		DE1DC5142D33531000873A8B /* ExecutingConnectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1DC5132D33531000873A8B /* ExecutingConnectionView.swift */; };
 		DE1DC5162D3353B300873A8B /* LoadingIndicatorViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1DC5152D3353B300873A8B /* LoadingIndicatorViewRepresentable.swift */; };
+		DE1DC5182D33AF8500873A8B /* NukeUI in Frameworks */ = {isa = PBXBuildFile; productRef = DE1DC5172D33AF8500873A8B /* NukeUI */; };
 		DE49773B2D21227800FEC950 /* AuthenticationContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE49773A2D21227800FEC950 /* AuthenticationContract.swift */; };
 		DE49773D2D2124FA00FEC950 /* AuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE49773C2D2124FA00FEC950 /* AuthenticationView.swift */; };
 		DE4977412D21323A00FEC950 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4977402D21323A00FEC950 /* AppRouter.swift */; };
@@ -120,6 +121,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE1DC5182D33AF8500873A8B /* NukeUI in Frameworks */,
 				DEF3BBE02CD9414D007B2D9A /* Nuke in Frameworks */,
 				DEF3BBDC2CD940DB007B2D9A /* Cosmos in Frameworks */,
 				DEF3BBE22CD94155007B2D9A /* MarkdownUI in Frameworks */,
@@ -145,13 +147,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		DE1DC4FB2D3266B200873A8B /* FeedComponents */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = FeedComponents;
-			sourceTree = "<group>";
-		};
 		DE4977462D225DD500FEC950 /* KeychainStore */ = {
 			isa = PBXGroup;
 			children = (
@@ -172,7 +167,6 @@
 		DE4977482D22BCDD00FEC950 /* Feed */ = {
 			isa = PBXGroup;
 			children = (
-				DE1DC4FB2D3266B200873A8B /* FeedComponents */,
 				DE1DC4962D2FF9D900873A8B /* FeedContract.swift */,
 				DE49774D2D22C58A00FEC950 /* FeedView.swift */,
 				DE1DC4982D2FFE4100873A8B /* FeedPresenter.swift */,
@@ -390,6 +384,7 @@
 				DEF3BBDF2CD9414D007B2D9A /* Nuke */,
 				DEF3BBE12CD94155007B2D9A /* MarkdownUI */,
 				DE49775B2D268DFF00FEC950 /* KeychainAccess */,
+				DE1DC5172D33AF8500873A8B /* NukeUI */,
 			);
 			productName = ObservationViperExample;
 			productReference = DEF3BB482CC3876A007B2D9A /* ObservationViperExample.app */;
@@ -929,6 +924,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		DE1DC5172D33AF8500873A8B /* NukeUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DEF3BBBD2CD2894D007B2D9A /* XCRemoteSwiftPackageReference "Nuke" */;
+			productName = NukeUI;
+		};
 		DE49775B2D268DFF00FEC950 /* KeychainAccess */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = DEF6E1DA2CEE19E6007FBD4A /* XCRemoteSwiftPackageReference "KeychainAccess" */;
