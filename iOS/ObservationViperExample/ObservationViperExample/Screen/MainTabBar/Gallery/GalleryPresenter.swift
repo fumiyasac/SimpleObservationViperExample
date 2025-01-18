@@ -51,6 +51,7 @@ final class GalleryPresenter: GalleryPresenterProtocol {
         Task { @MainActor in
             do {
                 _galleryPhotos = try await interactor.fetchGalleryPhotos()
+                _errorMessage = nil
 
             } catch {
                 _errorMessage = """
