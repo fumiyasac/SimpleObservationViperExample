@@ -71,6 +71,7 @@ final class FeedPresenter: FeedPresenterProtocol {
                 _categoryRankings = try await categoryRankings
                 _informationFeeds = try await informationPerPage.infomation
                 _page += 1
+                _errorMessage = nil
 
             } catch {
                 _errorMessage = """
