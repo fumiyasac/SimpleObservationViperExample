@@ -21,7 +21,8 @@
 		DE1DC8722D3931E800873A8B /* ScalingHeaderScrollView in Frameworks */ = {isa = PBXBuildFile; productRef = DE1DC8712D3931E800873A8B /* ScalingHeaderScrollView */; };
 		DE1DC9352D3B36D400873A8B /* PickupFeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1DC9342D3B36D400873A8B /* PickupFeedView.swift */; };
 		DE1DC9382D3B381B00873A8B /* pickup_feed.json in Resources */ = {isa = PBXBuildFile; fileRef = DE1DC9372D3B381B00873A8B /* pickup_feed.json */; };
-		DE1DC93B2D3B468700873A8B /* CategoryFeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1DC93A2D3B468700873A8B /* CategoryFeedView.swift */; };
+		DE1DC93B2D3B468700873A8B /* CategoryRankingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1DC93A2D3B468700873A8B /* CategoryRankingView.swift */; };
+		DE1DC93D2D3B481900873A8B /* category_feed.json in Resources */ = {isa = PBXBuildFile; fileRef = DE1DC93C2D3B481900873A8B /* category_feed.json */; };
 		DE49773B2D21227800FEC950 /* AuthenticationContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE49773A2D21227800FEC950 /* AuthenticationContract.swift */; };
 		DE49773D2D2124FA00FEC950 /* AuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE49773C2D2124FA00FEC950 /* AuthenticationView.swift */; };
 		DE4977412D21323A00FEC950 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4977402D21323A00FEC950 /* AppRouter.swift */; };
@@ -88,7 +89,8 @@
 		DE1DC5152D3353B300873A8B /* LoadingIndicatorViewRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingIndicatorViewRepresentable.swift; sourceTree = "<group>"; };
 		DE1DC9342D3B36D400873A8B /* PickupFeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickupFeedView.swift; sourceTree = "<group>"; };
 		DE1DC9372D3B381B00873A8B /* pickup_feed.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = pickup_feed.json; sourceTree = "<group>"; };
-		DE1DC93A2D3B468700873A8B /* CategoryFeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryFeedView.swift; sourceTree = "<group>"; };
+		DE1DC93A2D3B468700873A8B /* CategoryRankingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRankingView.swift; sourceTree = "<group>"; };
+		DE1DC93C2D3B481900873A8B /* category_feed.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = category_feed.json; sourceTree = "<group>"; };
 		DE49773A2D21227800FEC950 /* AuthenticationContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationContract.swift; sourceTree = "<group>"; };
 		DE49773C2D2124FA00FEC950 /* AuthenticationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationView.swift; sourceTree = "<group>"; };
 		DE4977402D21323A00FEC950 /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
@@ -159,7 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				DE1DC9342D3B36D400873A8B /* PickupFeedView.swift */,
-				DE1DC93A2D3B468700873A8B /* CategoryFeedView.swift */,
+				DE1DC93A2D3B468700873A8B /* CategoryRankingView.swift */,
 			);
 			path = FeedComponents;
 			sourceTree = "<group>";
@@ -167,6 +169,7 @@
 		DE1DC9362D3B379100873A8B /* Testing */ = {
 			isa = PBXGroup;
 			children = (
+				DE1DC93C2D3B481900873A8B /* category_feed.json */,
 				DE1DC9372D3B381B00873A8B /* pickup_feed.json */,
 			);
 			path = Testing;
@@ -519,6 +522,7 @@
 				DEF3BB962CC879D9007B2D9A /* Preview Assets.xcassets in Resources */,
 				DE1DC9382D3B381B00873A8B /* pickup_feed.json in Resources */,
 				DEF3BB972CC879D9007B2D9A /* Assets.xcassets in Resources */,
+				DE1DC93D2D3B481900873A8B /* category_feed.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -553,7 +557,7 @@
 				DE49774E2D22C58A00FEC950 /* FeedView.swift in Sources */,
 				DEF3BBD62CD8FCD8007B2D9A /* StarRatingView.swift in Sources */,
 				DE4977412D21323A00FEC950 /* AppRouter.swift in Sources */,
-				DE1DC93B2D3B468700873A8B /* CategoryFeedView.swift in Sources */,
+				DE1DC93B2D3B468700873A8B /* CategoryRankingView.swift in Sources */,
 				DE49773D2D2124FA00FEC950 /* AuthenticationView.swift in Sources */,
 				DEF6E1DC2CF0CD2C007FBD4A /* AccessTokenEntity.swift in Sources */,
 				DE4977432D21367800FEC950 /* AuthenticationPresenter.swift in Sources */,
