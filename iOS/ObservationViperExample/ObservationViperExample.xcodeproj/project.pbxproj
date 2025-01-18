@@ -19,7 +19,7 @@
 		DE1DC5162D3353B300873A8B /* LoadingIndicatorViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1DC5152D3353B300873A8B /* LoadingIndicatorViewRepresentable.swift */; };
 		DE1DC5182D33AF8500873A8B /* NukeUI in Frameworks */ = {isa = PBXBuildFile; productRef = DE1DC5172D33AF8500873A8B /* NukeUI */; };
 		DE1DC8722D3931E800873A8B /* ScalingHeaderScrollView in Frameworks */ = {isa = PBXBuildFile; productRef = DE1DC8712D3931E800873A8B /* ScalingHeaderScrollView */; };
-		DE1DC9352D3B36D400873A8B /* FeedPickupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1DC9342D3B36D400873A8B /* FeedPickupView.swift */; };
+		DE1DC9352D3B36D400873A8B /* PickupFeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1DC9342D3B36D400873A8B /* PickupFeedView.swift */; };
 		DE1DC9382D3B381B00873A8B /* feed_pickup.json in Resources */ = {isa = PBXBuildFile; fileRef = DE1DC9372D3B381B00873A8B /* feed_pickup.json */; };
 		DE49773B2D21227800FEC950 /* AuthenticationContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE49773A2D21227800FEC950 /* AuthenticationContract.swift */; };
 		DE49773D2D2124FA00FEC950 /* AuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE49773C2D2124FA00FEC950 /* AuthenticationView.swift */; };
@@ -85,7 +85,7 @@
 		DE1DC49A2D2FFE4F00873A8B /* FeedInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedInteractor.swift; sourceTree = "<group>"; };
 		DE1DC5132D33531000873A8B /* ExecutingConnectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExecutingConnectionView.swift; sourceTree = "<group>"; };
 		DE1DC5152D3353B300873A8B /* LoadingIndicatorViewRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingIndicatorViewRepresentable.swift; sourceTree = "<group>"; };
-		DE1DC9342D3B36D400873A8B /* FeedPickupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedPickupView.swift; sourceTree = "<group>"; };
+		DE1DC9342D3B36D400873A8B /* PickupFeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickupFeedView.swift; sourceTree = "<group>"; };
 		DE1DC9372D3B381B00873A8B /* feed_pickup.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = feed_pickup.json; sourceTree = "<group>"; };
 		DE49773A2D21227800FEC950 /* AuthenticationContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationContract.swift; sourceTree = "<group>"; };
 		DE49773C2D2124FA00FEC950 /* AuthenticationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationView.swift; sourceTree = "<group>"; };
@@ -156,7 +156,7 @@
 		DE1DC9332D3B35C700873A8B /* FeedComponents */ = {
 			isa = PBXGroup;
 			children = (
-				DE1DC9342D3B36D400873A8B /* FeedPickupView.swift */,
+				DE1DC9342D3B36D400873A8B /* PickupFeedView.swift */,
 			);
 			path = FeedComponents;
 			sourceTree = "<group>";
@@ -565,7 +565,7 @@
 				DE0147A92D2D6D3300551327 /* GalleryContract.swift in Sources */,
 				DEF3BBCB2CD685D1007B2D9A /* GalleryView.swift in Sources */,
 				DE4977452D2136B900FEC950 /* AuthenticationInteractor.swift in Sources */,
-				DE1DC9352D3B36D400873A8B /* FeedPickupView.swift in Sources */,
+				DE1DC9352D3B36D400873A8B /* PickupFeedView.swift in Sources */,
 				DEF3BB992CC879D9007B2D9A /* AppDelegate.swift in Sources */,
 				DE0147A72D2ACEE600551327 /* InformationFeedPageEntity.swift in Sources */,
 				DEF3BB9A2CC879D9007B2D9A /* ObservationViperExampleApp.swift in Sources */,
