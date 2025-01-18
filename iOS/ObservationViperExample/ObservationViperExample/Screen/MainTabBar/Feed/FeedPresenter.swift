@@ -69,9 +69,9 @@ final class FeedPresenter: FeedPresenterProtocol {
 
                 _pickupFeeds = try await pickupFeeds
                 _categoryRankings = try await categoryRankings
-                _informationFeeds = try await informationPerPage.infomation
-                _page += 1
+                _informationFeeds = try await informationPerPage.information
                 _errorMessage = nil
+                _page += 1
 
             } catch {
                 _errorMessage = """
@@ -86,27 +86,18 @@ final class FeedPresenter: FeedPresenterProtocol {
 
     func fetchNextInformationFeeds() {
 
-        guard !_hasNextPage else {
+        if _hasNextPage == false {
             return
         }
-
-        // Loading状態にする
-        _isLoading = true
 
         Task { @MainActor in
             do {
                 let informationPerPage = try await interactor.fetchInformationFeeds(page: _page)
-                _informationFeeds += informationPerPage.infomation
+                _informationFeeds += informationPerPage.information
+                _errorMessage = nil
                 _page += 1
 
-            } catch {
-                _errorMessage = """
-                InformationFeed情報の取得に失敗しました。
-                """
-            }
+            } catch {}
         }
-        
-        // 処理が完了した後にはLoading状態を元に戻す
-        _isLoading = false
     }
 }
