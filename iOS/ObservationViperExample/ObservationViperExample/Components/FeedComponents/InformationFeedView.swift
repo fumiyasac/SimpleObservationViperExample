@@ -57,7 +57,6 @@ struct InformationFeedView: View {
                 .padding(.leading, 16.0)
                 // 1-(3). Spacer
                 Spacer()
-
             }
             // 2. 概要テキストの情報表示部分
             HStack(spacing: 0.0) {
