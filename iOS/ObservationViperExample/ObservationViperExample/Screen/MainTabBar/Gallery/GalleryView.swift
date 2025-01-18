@@ -8,18 +8,19 @@
 import NukeUI
 import SwiftUI
 
+// (参考1) Matched Geometry Effectの基本
+// https://develop.designcode.io/swiftui-handbook-matched-geometry-effect
+// (参考2) こちらのライブコーディング動画を参考に実装しました。
+// https://www.youtube.com/watch?v=89fps_fP9DM
+// https://www.youtube.com/watch?v=93SeJ9ousBw
+
 struct GalleryView: View {
     
     // MARK: - Property
     
-    //
     @State private var selectedGalleryPhotoEntity: GalleryPhotoEntity?
-    
-    //
     @State private var position = CGSize.zero
-    
-    //
-    @Namespace var namespace
+    @Namespace private var namespace
     
     private var gridColumns: [GridItem] {
         (0..<3).map { _ in GridItem(.flexible(minimum: 100, maximum: 200), spacing: 1) }
@@ -79,19 +80,20 @@ struct GalleryView: View {
                         if let image = imageState.image {
                             image
                                 .resizable()
-                                .aspectRatio(1, contentMode: .fill)
-                                .matchedGeometryEffect(
-                                    id: galleryPhotoEntity.id,
-                                    in: namespace
-                                )
-                                .onTapGesture {
-                                    position = .zero
-                                    withAnimation(.easeInOut(duration: 0.48)) {
-                                        selectedGalleryPhotoEntity = galleryPhotoEntity
-                                    }
-                                }
+                                .aspectRatio(1, contentMode: .fit)
+
                         } else {
                             Color(.white)
+                        }
+                    }
+                    .matchedGeometryEffect(
+                        id: "gallery_\(galleryPhotoEntity.id)",
+                        in: namespace
+                    )
+                    .onTapGesture {
+                        position = .zero
+                        withAnimation(.easeInOut(duration: 0.72)) {
+                            selectedGalleryPhotoEntity = galleryPhotoEntity
                         }
                     }
                 }
@@ -104,7 +106,7 @@ struct GalleryView: View {
         Color.white
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .ignoresSafeArea()
-            .opacity(selectedGalleryPhotoEntity == nil ? 0 : min(1, max(0, 1 - abs(Double(position.height) / 800))))
+            .opacity(selectedGalleryPhotoEntity == nil ? 0 : min(1, max(0, 1 - abs(Double(position.height) / 600))))
     }
     
     @ViewBuilder
@@ -116,34 +118,34 @@ struct GalleryView: View {
                         .resizable()
                         .aspectRatio(1, contentMode: .fit)
                         .matchedGeometryEffect(
-                            id: selectedGalleryPhotoEntity.id,
+                            id: "gallery_\(selectedGalleryPhotoEntity.id)",
                             in: namespace
                         )
-                        .zIndex(2)
-                        .onTapGesture {
-                            withAnimation(.easeInOut(duration: 0.48)) {
-                                self.selectedGalleryPhotoEntity = nil
-                            }
-                        }
-                        .offset(position)
-                        .gesture(
-                            DragGesture()
-                                .onChanged { value in
-                                    self.position = value.translation
-                                }
-                                .onEnded { value in
-                                    withAnimation(.easeInOut(duration: 0.48)) {
-                                        if 200 < abs(self.position.height) {
-                                            self.selectedGalleryPhotoEntity = nil
-                                        } else {
-                                            self.position = .zero
-                                        }
-                                    }
-                                })
                 } else {
                     Color(.white)
                 }
             }
+            .zIndex(99)
+            .onTapGesture {
+                withAnimation(.easeInOut(duration: 0.48)) {
+                    self.selectedGalleryPhotoEntity = nil
+                }
+            }
+            .offset(position)
+            .gesture(
+                DragGesture()
+                    .onChanged { value in
+                        self.position = value.translation
+                    }
+                    .onEnded { value in
+                        withAnimation(.easeInOut(duration: 0.48)) {
+                            if 200.0 < abs(self.position.height) {
+                                self.selectedGalleryPhotoEntity = nil
+                            } else {
+                                self.position = .zero
+                            }
+                        }
+                    })
         }
     }
 }
