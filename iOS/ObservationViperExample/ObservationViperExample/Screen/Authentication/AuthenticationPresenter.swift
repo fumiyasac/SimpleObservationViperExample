@@ -41,57 +41,53 @@ final class AuthenticationPresenter: AuthenticationPresenterProtocol {
     // MARK: - Function
 
     func login(email: String, password: String) {
+
+        // Loading状態にする
+        _isLoading = true
+        _errorMessage = nil
+
+        // 入力されたEメール・パスワードで認証処理を実行する
         Task { @MainActor in
+            do {
+                let _ = try await interactor.login(email: email, password: password)
+                router.navigateToMainTabBar()
+            } catch {
+                _errorMessage = """
+                ログインに失敗しました。
+                入力情報に誤りがないかをご確認ください。
+                """
+            }
+        }
+
+        // 処理が完了した後にはLoading状態を元に戻す
+        _isLoading = false
+    }
+
+    func validateToken() {
+
+        // Tokenがデバイス内に存在するかを確認する
+        if let token = interactor.getStoredToken() {
 
             // Loading状態にする
             _isLoading = true
-            _errorMessage = nil
 
-            // 入力されたEメール・パスワードで認証処理を実行する
+            // 格納されたJWTの認証状態確認を実施する
             Task { @MainActor in
                 do {
-                    let _ = try await interactor.login(email: email, password: password)
-                    router.navigateToMainTabBar()
+                    let isValid = try await interactor.validateToken(token)
+                    if isValid {
+                        router.navigateToMainTabBar()
+                    }
                 } catch {
                     _errorMessage = """
-                    ログインに失敗しました。
-                    入力情報に誤りがないかをご確認ください。
+                    セッションの有効期限が切れました。
+                    再度ログイン処理をお願いします。
                     """
                 }
             }
 
             // 処理が完了した後にはLoading状態を元に戻す
             _isLoading = false
-        }
-    }
-
-    func validateToken() {
-        Task { @MainActor in
-            
-            // Tokenがデバイス内に存在するかを確認する
-            if let token = interactor.getStoredToken() {
-
-                // Loading状態にする
-                _isLoading = true
-
-                // 格納されたJWTの認証状態確認を実施する
-                Task { @MainActor in
-                    do {
-                        let isValid = try await interactor.validateToken(token)
-                        if isValid {
-                            router.navigateToMainTabBar()
-                        }
-                    } catch {
-                        _errorMessage = """
-                        セッションの有効期限が切れました。
-                        再度ログイン処理をお願いします。
-                        """
-                    }
-                }
-
-                // 処理が完了した後にはLoading状態を元に戻す
-                _isLoading = false
-            }
         }
     }
 }
