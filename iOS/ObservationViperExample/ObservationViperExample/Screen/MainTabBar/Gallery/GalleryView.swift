@@ -106,7 +106,7 @@ struct GalleryView: View {
         Color.white
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .ignoresSafeArea()
-            .opacity(selectedGalleryPhotoEntity == nil ? 0 : min(1, max(0, 1 - abs(Double(position.height) / 600))))
+            .opacity(selectedGalleryPhotoEntity == nil ? 0 : min(1, max(0, 1 - abs(Double(position.height) / 1200))))
     }
     
     @ViewBuilder
