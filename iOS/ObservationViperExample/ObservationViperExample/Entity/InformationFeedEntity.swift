@@ -20,7 +20,7 @@ struct InformationFeedEntity: Hashable, Decodable {
     private enum Keys: String, CodingKey {
         case id
         case title
-        case catchCopy = "catch"
+        case catchCopy = "catch_copy"
         case summary
         case thumbnail
     }

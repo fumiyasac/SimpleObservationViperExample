@@ -15,14 +15,14 @@ struct InformationFeedPageEntity: Hashable, Decodable {
 
     let page: Int
     let hasNextPage: Bool
-    let infomation: [InformationFeedEntity]
+    let information: [InformationFeedEntity]
     
     // MARK: - Enum
 
     private enum Keys: String, CodingKey {
         case page
         case hasNextPage = "has_next_page"
-        case infomation
+        case information
     }
 
     // MARK: - Initializer
@@ -35,7 +35,7 @@ struct InformationFeedPageEntity: Hashable, Decodable {
         // JSONの配列内の要素にある値をDecodeして初期化する
         self.page = try container.decode(Int.self, forKey: .page)
         self.hasNextPage = try container.decode(Bool.self, forKey: .hasNextPage)
-        self.infomation = try container.decode([InformationFeedEntity].self, forKey: .infomation)
+        self.information = try container.decode([InformationFeedEntity].self, forKey: .information)
     }
     // MARK: - Hashable
 
