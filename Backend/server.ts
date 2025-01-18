@@ -98,7 +98,7 @@ server.get("/v1/category_feeds", (_, response) => {
 
 server.get("/v1/info_feed", (request, response) => {
   const targetId = request.url.split("?page=")[1];
-  const infoFeeds = db.infoFeeds.filter((infoFeed: any) => infoFeed.id == targetId);
+  const infoFeeds = db.infoFeeds.filter((infoFeed: any) => infoFeed.page == targetId);
   response.status(200).json(...infoFeeds);
 });
 

@@ -231,228 +231,228 @@
   ],
   "infoFeeds": [
     {
-      "id": 1,
+      "page": 1,
       "has_next_page": true,
       "information": [
         {
           "id": 1,
           "title": "My Information Title No.1",
-          "catch": "Sample articles",
+          "catch_copy": "Sample articles",
           "summary": "This is description about No.1. Thank you.",
           "thumbnail": "https://observation-viper.s3.ap-northeast-1.amazonaws.com/feed_shop1.jpg"
         },
         {
           "id": 2,
           "title": "My Information Title No.2",
-          "catch": "Sample articles",
+          "catch_copy": "Sample articles",
           "summary": "This is description about No.2. Thank you.",
           "thumbnail": "https://observation-viper.s3.ap-northeast-1.amazonaws.com/feed_shop2.jpg"
         },
         {
           "id": 3,
           "title": "My Information Title No.3",
-          "catch": "Sample articles",
+          "catch_copy": "Sample articles",
           "summary": "This is description about No.3. Thank you.",
           "thumbnail": "https://observation-viper.s3.ap-northeast-1.amazonaws.com/feed_shop3.jpg"
         },
         {
           "id": 4,
           "title": "My Information Title No.4",
-          "catch": "Sample articles",
+          "catch_copy": "Sample articles",
           "summary": "This is description about No.4. Thank you.",
           "thumbnail": "https://observation-viper.s3.ap-northeast-1.amazonaws.com/feed_shop4.jpg"
         },
         {
           "id": 5,
           "title": "My Information Title No.5",
-          "catch": "Sample articles",
+          "catch_copy": "Sample articles",
           "summary": "This is description about No.5. Thank you.",
           "thumbnail": "https://observation-viper.s3.ap-northeast-1.amazonaws.com/feed_shop5.jpg"
         },
         {
           "id": 6,
           "title": "My Information Title No.6",
-          "catch": "Sample articles",
+          "catch_copy": "Sample articles",
           "summary": "This is description about No.6. Thank you.",
           "thumbnail": "https://observation-viper.s3.ap-northeast-1.amazonaws.com/feed_shop6.jpg"
         },
         {
           "id": 7,
           "title": "My Information Title No.7",
-          "catch": "Sample articles",
+          "catch_copy": "Sample articles",
           "summary": "This is description about No.7. Thank you.",
           "thumbnail": "https://observation-viper.s3.ap-northeast-1.amazonaws.com/feed_shop7.jpg"
         },
         {
           "id": 8,
           "title": "My Information Title No.8",
-          "catch": "Sample articles",
+          "catch_copy": "Sample articles",
           "summary": "This is description about No.8. Thank you.",
           "thumbnail": "https://observation-viper.s3.ap-northeast-1.amazonaws.com/feed_shop8.jpg"
         },
         {
           "id": 9,
           "title": "My Information Title No.9",
-          "catch": "Sample articles",
+          "catch_copy": "Sample articles",
           "summary": "This is description about No.9. Thank you.",
           "thumbnail": "https://observation-viper.s3.ap-northeast-1.amazonaws.com/feed_shop9.jpg"
         },
         {
           "id": 10,
           "title": "My Information Title No.10",
-          "catch": "Sample articles",
+          "catch_copy": "Sample articles",
           "summary": "This is description about No.10. Thank you.",
           "thumbnail": "https://observation-viper.s3.ap-northeast-1.amazonaws.com/feed_shop10.jpg"
         }
       ]
     },
     {
-      "id": 2,
+      "page": 2,
       "has_next_page": true,
       "information": [
         {
           "id": 11,
           "title": "My Information Title No.11",
-          "catch": "Sample articles",
+          "catch_copy": "Sample articles",
           "summary": "This is description about No.11. Thank you.",
           "thumbnail": "https://observation-viper.s3.ap-northeast-1.amazonaws.com/feed_shop11.jpg"
         },
         {
           "id": 12,
           "title": "My Information Title No.12",
-          "catch": "Sample articles",
+          "catch_copy": "Sample articles",
           "summary": "This is description about No.12. Thank you.",
           "thumbnail": "https://observation-viper.s3.ap-northeast-1.amazonaws.com/feed_shop12.jpg"
         },
         {
           "id": 13,
           "title": "My Information Title No.13",
-          "catch": "Sample articles",
+          "catch_copy": "Sample articles",
           "summary": "This is description about No.13. Thank you.",
           "thumbnail": "https://observation-viper.s3.ap-northeast-1.amazonaws.com/feed_shop13.jpg"
         },
         {
           "id": 14,
           "title": "My Information Title No.14",
-          "catch": "Sample articles",
+          "catch_copy": "Sample articles",
           "summary": "This is description about No.14. Thank you.",
           "thumbnail": "https://observation-viper.s3.ap-northeast-1.amazonaws.com/feed_shop14.jpg"
         },
         {
           "id": 15,
           "title": "My Information Title No.15",
-          "catch": "Sample articles",
+          "catch_copy": "Sample articles",
           "summary": "This is description about No.15. Thank you.",
           "thumbnail": "https://observation-viper.s3.ap-northeast-1.amazonaws.com/feed_shop15.jpg"
         },
         {
           "id": 16,
           "title": "My Information Title No.16",
-          "catch": "Sample articles",
+          "catch_copy": "Sample articles",
           "summary": "This is description about No.16. Thank you.",
           "thumbnail": "https://observation-viper.s3.ap-northeast-1.amazonaws.com/feed_shop16.jpg"
         },
         {
           "id": 17,
           "title": "My Information Title No.17",
-          "catch": "Sample articles",
+          "catch_copy": "Sample articles",
           "summary": "This is description about No.17. Thank you.",
           "thumbnail": "https://observation-viper.s3.ap-northeast-1.amazonaws.com/feed_shop17.jpg"
         },
         {
           "id": 18,
           "title": "My Information Title No.18",
-          "catch": "Sample articles",
+          "catch_copy": "Sample articles",
           "summary": "This is description about No.18. Thank you.",
           "thumbnail": "https://observation-viper.s3.ap-northeast-1.amazonaws.com/feed_shop18.jpg"
         },
         {
           "id": 19,
           "title": "My Information Title No.19",
-          "catch": "Sample articles",
+          "catch_copy": "Sample articles",
           "summary": "This is description about No.19. Thank you.",
           "thumbnail": "https://observation-viper.s3.ap-northeast-1.amazonaws.com/feed_shop19.jpg"
         },
         {
           "id": 20,
           "title": "My Information Title No.20",
-          "catch": "Sample articles",
+          "catch_copy": "Sample articles",
           "summary": "This is description about No.20. Thank you.",
           "thumbnail": "https://observation-viper.s3.ap-northeast-1.amazonaws.com/feed_shop20.jpg"
         }
       ]
     },
     {
-      "id": 3,
+      "page": 3,
       "has_next_page": false,
       "information": [
         {
           "id": 21,
           "title": "My Information Title No.21",
-          "catch": "Sample articles",
+          "catch_copy": "Sample articles",
           "summary": "This is description about No.21. Thank you.",
           "thumbnail": "https://observation-viper.s3.ap-northeast-1.amazonaws.com/feed_shop21.jpg"
         },
         {
           "id": 22,
           "title": "My Information Title No.22",
-          "catch": "Sample articles",
+          "catch_copy": "Sample articles",
           "summary": "This is description about No.22. Thank you.",
           "thumbnail": "https://observation-viper.s3.ap-northeast-1.amazonaws.com/feed_shop22.jpg"
         },
         {
           "id": 23,
           "title": "My Information Title No.23",
-          "catch": "Sample articles",
+          "catch_copy": "Sample articles",
           "summary": "This is description about No.23. Thank you.",
           "thumbnail": "https://observation-viper.s3.ap-northeast-1.amazonaws.com/feed_shop23.jpg"
         },
         {
           "id": 24,
           "title": "My Information Title No.24",
-          "catch": "Sample articles",
+          "catch_copy": "Sample articles",
           "summary": "This is description about No.24. Thank you.",
           "thumbnail": "https://observation-viper.s3.ap-northeast-1.amazonaws.com/feed_shop24.jpg"
         },
         {
           "id": 25,
           "title": "My Information Title No.25",
-          "catch": "Sample articles",
+          "catch_copy": "Sample articles",
           "summary": "This is description about No.25. Thank you.",
           "thumbnail": "https://observation-viper.s3.ap-northeast-1.amazonaws.com/feed_shop25.jpg"
         },
         {
           "id": 26,
           "title": "My Information Title No.26",
-          "catch": "Sample articles",
+          "catch_copy": "Sample articles",
           "summary": "This is description about No.26. Thank you.",
           "thumbnail": "https://observation-viper.s3.ap-northeast-1.amazonaws.com/feed_shop26.jpg"
         },
         {
           "id": 27,
           "title": "My Information Title No.27",
-          "catch": "Sample articles",
+          "catch_copy": "Sample articles",
           "summary": "This is description about No.27. Thank you.",
           "thumbnail": "https://observation-viper.s3.ap-northeast-1.amazonaws.com/feed_shop27.jpg"
         },
         {
           "id": 28,
           "title": "My Information Title No.28",
-          "catch": "Sample articles",
+          "catch_copy": "Sample articles",
           "summary": "This is description about No.28. Thank you.",
           "thumbnail": "https://observation-viper.s3.ap-northeast-1.amazonaws.com/feed_shop28.jpg"
         },
         {
           "id": 29,
           "title": "My Information Title No.29",
-          "catch": "Sample articles",
+          "catch_copy": "Sample articles",
           "summary": "This is description about No.29. Thank you.",
           "thumbnail": "https://observation-viper.s3.ap-northeast-1.amazonaws.com/feed_shop29.jpg"
         },
         {
           "id": 30,
           "title": "My Information Title No.30",
-          "catch": "Sample articles",
+          "catch_copy": "Sample articles",
           "summary": "This is description about No.30. Thank you.",
           "thumbnail": "https://observation-viper.s3.ap-northeast-1.amazonaws.com/feed_shop30.jpg"
         }
