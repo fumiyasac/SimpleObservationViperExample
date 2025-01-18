@@ -20,6 +20,7 @@
 		DE1DC5182D33AF8500873A8B /* NukeUI in Frameworks */ = {isa = PBXBuildFile; productRef = DE1DC5172D33AF8500873A8B /* NukeUI */; };
 		DE1DC8722D3931E800873A8B /* ScalingHeaderScrollView in Frameworks */ = {isa = PBXBuildFile; productRef = DE1DC8712D3931E800873A8B /* ScalingHeaderScrollView */; };
 		DE1DC9352D3B36D400873A8B /* FeedPickupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1DC9342D3B36D400873A8B /* FeedPickupView.swift */; };
+		DE1DC9382D3B381B00873A8B /* feed_pickup.json in Resources */ = {isa = PBXBuildFile; fileRef = DE1DC9372D3B381B00873A8B /* feed_pickup.json */; };
 		DE49773B2D21227800FEC950 /* AuthenticationContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE49773A2D21227800FEC950 /* AuthenticationContract.swift */; };
 		DE49773D2D2124FA00FEC950 /* AuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE49773C2D2124FA00FEC950 /* AuthenticationView.swift */; };
 		DE4977412D21323A00FEC950 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4977402D21323A00FEC950 /* AppRouter.swift */; };
@@ -85,6 +86,7 @@
 		DE1DC5132D33531000873A8B /* ExecutingConnectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExecutingConnectionView.swift; sourceTree = "<group>"; };
 		DE1DC5152D3353B300873A8B /* LoadingIndicatorViewRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingIndicatorViewRepresentable.swift; sourceTree = "<group>"; };
 		DE1DC9342D3B36D400873A8B /* FeedPickupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedPickupView.swift; sourceTree = "<group>"; };
+		DE1DC9372D3B381B00873A8B /* feed_pickup.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = feed_pickup.json; sourceTree = "<group>"; };
 		DE49773A2D21227800FEC950 /* AuthenticationContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationContract.swift; sourceTree = "<group>"; };
 		DE49773C2D2124FA00FEC950 /* AuthenticationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationView.swift; sourceTree = "<group>"; };
 		DE4977402D21323A00FEC950 /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
@@ -157,6 +159,14 @@
 				DE1DC9342D3B36D400873A8B /* FeedPickupView.swift */,
 			);
 			path = FeedComponents;
+			sourceTree = "<group>";
+		};
+		DE1DC9362D3B379100873A8B /* Testing */ = {
+			isa = PBXGroup;
+			children = (
+				DE1DC9372D3B381B00873A8B /* feed_pickup.json */,
+			);
+			path = Testing;
 			sourceTree = "<group>";
 		};
 		DE4977462D225DD500FEC950 /* KeychainStore */ = {
@@ -248,6 +258,7 @@
 				DEF3BB8F2CC879D9007B2D9A /* Extension */,
 				DE4977472D225DEA00FEC950 /* Service */,
 				DEF3BB9D2CCA9640007B2D9A /* Screen */,
+				DE1DC9362D3B379100873A8B /* Testing */,
 				DEF3BB912CC879D9007B2D9A /* Preview Content */,
 			);
 			path = ObservationViperExample;
@@ -503,6 +514,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DEF3BB962CC879D9007B2D9A /* Preview Assets.xcassets in Resources */,
+				DE1DC9382D3B381B00873A8B /* feed_pickup.json in Resources */,
 				DEF3BB972CC879D9007B2D9A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
