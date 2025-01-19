@@ -27,8 +27,6 @@
 		DE1DC9412D3B656F00873A8B /* PickupFeedCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1DC9402D3B656F00873A8B /* PickupFeedCarouselView.swift */; };
 		DE1DC9432D3B69BA00873A8B /* CategoryRankingTagsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1DC9422D3B69BA00873A8B /* CategoryRankingTagsView.swift */; };
 		DE1DC9472D3C83A300873A8B /* photo_gallery.json in Resources */ = {isa = PBXBuildFile; fileRef = DE1DC9462D3C83A300873A8B /* photo_gallery.json */; };
-		DE1DC9492D3C84B000873A8B /* Testing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE1DC9482D3C84B000873A8B /* Testing.framework */; platformFilter = ios; };
-		DE1DC94A2D3C84B100873A8B /* Testing.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DE1DC9482D3C84B000873A8B /* Testing.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DE49773B2D21227800FEC950 /* AuthenticationContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE49773A2D21227800FEC950 /* AuthenticationContract.swift */; };
 		DE49773D2D2124FA00FEC950 /* AuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE49773C2D2124FA00FEC950 /* AuthenticationView.swift */; };
 		DE4977412D21323A00FEC950 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4977402D21323A00FEC950 /* AppRouter.swift */; };
@@ -80,20 +78,6 @@
 			remoteInfo = ObservationViperExample;
 		};
 /* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		DE1DC94B2D3C84B100873A8B /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				DE1DC94A2D3C84B100873A8B /* Testing.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		DE0147A42D2AC7F600551327 /* PickupFeedEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickupFeedEntity.swift; sourceTree = "<group>"; };
@@ -167,7 +151,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE1DC9492D3C84B000873A8B /* Testing.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -457,7 +440,6 @@
 				DEF3BB542CC3876C007B2D9A /* Sources */,
 				DEF3BB552CC3876C007B2D9A /* Frameworks */,
 				DEF3BB562CC3876C007B2D9A /* Resources */,
-				DE1DC94B2D3C84B100873A8B /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
