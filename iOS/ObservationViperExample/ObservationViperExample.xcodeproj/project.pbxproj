@@ -26,6 +26,9 @@
 		DE1DC93F2D3B529D00873A8B /* InformationFeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1DC93E2D3B529D00873A8B /* InformationFeedView.swift */; };
 		DE1DC9412D3B656F00873A8B /* PickupFeedCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1DC9402D3B656F00873A8B /* PickupFeedCarouselView.swift */; };
 		DE1DC9432D3B69BA00873A8B /* CategoryRankingTagsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1DC9422D3B69BA00873A8B /* CategoryRankingTagsView.swift */; };
+		DE1DC9472D3C83A300873A8B /* photo_gallery.json in Resources */ = {isa = PBXBuildFile; fileRef = DE1DC9462D3C83A300873A8B /* photo_gallery.json */; };
+		DE1DC9492D3C84B000873A8B /* Testing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE1DC9482D3C84B000873A8B /* Testing.framework */; platformFilter = ios; };
+		DE1DC94A2D3C84B100873A8B /* Testing.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DE1DC9482D3C84B000873A8B /* Testing.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DE49773B2D21227800FEC950 /* AuthenticationContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE49773A2D21227800FEC950 /* AuthenticationContract.swift */; };
 		DE49773D2D2124FA00FEC950 /* AuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE49773C2D2124FA00FEC950 /* AuthenticationView.swift */; };
 		DE4977412D21323A00FEC950 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4977402D21323A00FEC950 /* AppRouter.swift */; };
@@ -55,7 +58,6 @@
 		DEF3BBDC2CD940DB007B2D9A /* Cosmos in Frameworks */ = {isa = PBXBuildFile; productRef = DEF3BBDB2CD940DB007B2D9A /* Cosmos */; };
 		DEF3BBE02CD9414D007B2D9A /* Nuke in Frameworks */ = {isa = PBXBuildFile; productRef = DEF3BBDF2CD9414D007B2D9A /* Nuke */; };
 		DEF3BBE22CD94155007B2D9A /* MarkdownUI in Frameworks */ = {isa = PBXBuildFile; productRef = DEF3BBE12CD94155007B2D9A /* MarkdownUI */; };
-		DEF3BBE62CDBB096007B2D9A /* Testing in Frameworks */ = {isa = PBXBuildFile; productRef = DEF3BBE52CDBB096007B2D9A /* Testing */; };
 		DEF3BBF12CE22487007B2D9A /* InformationFeedEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF3BBF02CE2247E007B2D9A /* InformationFeedEntity.swift */; };
 		DEF3BBF32CE224A2007B2D9A /* CategoryRankingEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF3BBF22CE2249A007B2D9A /* CategoryRankingEntity.swift */; };
 		DEF3BBF52CE224BF007B2D9A /* GalleryPhotoEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF3BBF42CE224B1007B2D9A /* GalleryPhotoEntity.swift */; };
@@ -79,6 +81,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		DE1DC94B2D3C84B100873A8B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				DE1DC94A2D3C84B100873A8B /* Testing.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		DE0147A42D2AC7F600551327 /* PickupFeedEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickupFeedEntity.swift; sourceTree = "<group>"; };
 		DE0147A62D2ACEE600551327 /* InformationFeedPageEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationFeedPageEntity.swift; sourceTree = "<group>"; };
@@ -97,6 +113,8 @@
 		DE1DC93E2D3B529D00873A8B /* InformationFeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationFeedView.swift; sourceTree = "<group>"; };
 		DE1DC9402D3B656F00873A8B /* PickupFeedCarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickupFeedCarouselView.swift; sourceTree = "<group>"; };
 		DE1DC9422D3B69BA00873A8B /* CategoryRankingTagsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRankingTagsView.swift; sourceTree = "<group>"; };
+		DE1DC9462D3C83A300873A8B /* photo_gallery.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = photo_gallery.json; sourceTree = "<group>"; };
+		DE1DC9482D3C84B000873A8B /* Testing.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Testing.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/Testing.framework; sourceTree = DEVELOPER_DIR; };
 		DE49773A2D21227800FEC950 /* AuthenticationContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationContract.swift; sourceTree = "<group>"; };
 		DE49773C2D2124FA00FEC950 /* AuthenticationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationView.swift; sourceTree = "<group>"; };
 		DE4977402D21323A00FEC950 /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
@@ -149,7 +167,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DEF3BBE62CDBB096007B2D9A /* Testing in Frameworks */,
+				DE1DC9492D3C84B000873A8B /* Testing.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -178,6 +196,7 @@
 		DE1DC9362D3B379100873A8B /* Testing */ = {
 			isa = PBXGroup;
 			children = (
+				DE1DC9462D3C83A300873A8B /* photo_gallery.json */,
 				DE1DC93C2D3B481900873A8B /* category_feed.json */,
 				DE1DC9372D3B381B00873A8B /* pickup_feed.json */,
 			);
@@ -387,6 +406,7 @@
 		DEF3BBDA2CD940DB007B2D9A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DE1DC9482D3C84B000873A8B /* Testing.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -437,6 +457,7 @@
 				DEF3BB542CC3876C007B2D9A /* Sources */,
 				DEF3BB552CC3876C007B2D9A /* Frameworks */,
 				DEF3BB562CC3876C007B2D9A /* Resources */,
+				DE1DC94B2D3C84B100873A8B /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -445,7 +466,6 @@
 			);
 			name = ObservationViperExampleTests;
 			packageProductDependencies = (
-				DEF3BBE52CDBB096007B2D9A /* Testing */,
 			);
 			productName = ObservationViperExampleTests;
 			productReference = DEF3BB582CC3876C007B2D9A /* ObservationViperExampleTests.xctest */;
@@ -504,7 +524,6 @@
 			mainGroup = DEF3BB3F2CC3876A007B2D9A;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				DEF3BBBC2CD28923007B2D9A /* XCRemoteSwiftPackageReference "swift-testing" */,
 				DEF3BBBD2CD2894D007B2D9A /* XCRemoteSwiftPackageReference "Nuke" */,
 				DEF3BBBF2CD289E4007B2D9A /* XCRemoteSwiftPackageReference "Cosmos" */,
 				DEF3BBC02CD28A2E007B2D9A /* XCRemoteSwiftPackageReference "swift-markdown-ui" */,
@@ -531,6 +550,7 @@
 				DEF3BB962CC879D9007B2D9A /* Preview Assets.xcassets in Resources */,
 				DE1DC9382D3B381B00873A8B /* pickup_feed.json in Resources */,
 				DEF3BB972CC879D9007B2D9A /* Assets.xcassets in Resources */,
+				DE1DC9472D3C83A300873A8B /* photo_gallery.json in Resources */,
 				DE1DC93D2D3B481900873A8B /* category_feed.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -928,14 +948,6 @@
 				minimumVersion = 1.1.5;
 			};
 		};
-		DEF3BBBC2CD28923007B2D9A /* XCRemoteSwiftPackageReference "swift-testing" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/apple/swift-testing.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 6.0.2;
-			};
-		};
 		DEF3BBBD2CD2894D007B2D9A /* XCRemoteSwiftPackageReference "Nuke" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/kean/Nuke.git";
@@ -1000,11 +1012,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = DEF3BBC02CD28A2E007B2D9A /* XCRemoteSwiftPackageReference "swift-markdown-ui" */;
 			productName = MarkdownUI;
-		};
-		DEF3BBE52CDBB096007B2D9A /* Testing */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = DEF3BBBC2CD28923007B2D9A /* XCRemoteSwiftPackageReference "swift-testing" */;
-			productName = Testing;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
