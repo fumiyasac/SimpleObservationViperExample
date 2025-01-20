@@ -92,7 +92,7 @@ struct GalleryView: View {
                     )
                     .onTapGesture {
                         position = .zero
-                        withAnimation(.easeInOut(duration: 0.72)) {
+                        withAnimation(.spring(response: 0.5, dampingFraction: 0.7)) {
                             selectedGalleryPhotoEntity = galleryPhotoEntity
                         }
                     }
