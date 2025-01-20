@@ -34,12 +34,6 @@ const db = JSON.parse(fs.readFileSync('db/db.json', 'utf8'));
 // 各種設定用
 const middlewares = jsonServer.defaults();
 
-// TODO: 後で消す
-// 👉 ルーティングを変更する
-// const rewrite_rules = jsonServer.rewriter({
-// 	"/api/v1/users" : "/get_users",
-// });
-
 // ミドルウェアを設定する (※コンソール出力するロガーやキャッシュの設定等)
 server.use(middlewares);
 
