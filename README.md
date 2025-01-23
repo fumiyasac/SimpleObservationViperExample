@@ -1,5 +1,5 @@
 # SimpleObservationViperExample
-[ING] - SwiftUIとReduxで作るサンプルアプリ
+[ING] - SwiftUI + VIPER + Observationを組み合わせた実装サンプル
 
 iOS17から登場した、Observation Frameworkを利用してVIPERアーキテクチャでiOSアプリサンプルを開発した事例になります。
 
