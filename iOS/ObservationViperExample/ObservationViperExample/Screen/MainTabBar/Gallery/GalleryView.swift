@@ -111,14 +111,14 @@ struct GalleryView: View {
     
     @ViewBuilder
     private func showExpandedImageViewIfNeeded() -> some View {
-        if let selectedGalleryPhotoEntity {
-            LazyImage(url: URL(string: selectedGalleryPhotoEntity.thumbnail)) { imageState in
+        if let targetSelectedGalleryPhotoEntity = selectedGalleryPhotoEntity {
+            LazyImage(url: URL(string: targetSelectedGalleryPhotoEntity.thumbnail)) { imageState in
                 if let image = imageState.image {
                     image
                         .resizable()
                         .aspectRatio(1, contentMode: .fit)
                         .matchedGeometryEffect(
-                            id: "gallery_\(selectedGalleryPhotoEntity.id)",
+                            id: "gallery_\(targetSelectedGalleryPhotoEntity.id)",
                             in: namespace
                         )
                 } else {
@@ -128,21 +128,21 @@ struct GalleryView: View {
             .zIndex(99)
             .onTapGesture {
                 withAnimation(.easeInOut(duration: 0.48)) {
-                    self.selectedGalleryPhotoEntity = nil
+                    selectedGalleryPhotoEntity = nil
                 }
             }
             .offset(position)
             .gesture(
                 DragGesture()
                     .onChanged { value in
-                        self.position = value.translation
+                        position = value.translation
                     }
                     .onEnded { value in
                         withAnimation(.easeInOut(duration: 0.48)) {
-                            if 200.0 < abs(self.position.height) {
-                                self.selectedGalleryPhotoEntity = nil
+                            if 200.0 < abs(position.height) {
+                                selectedGalleryPhotoEntity = nil
                             } else {
-                                self.position = .zero
+                                position = .zero
                             }
                         }
                     })
