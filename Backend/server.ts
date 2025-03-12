@@ -50,8 +50,8 @@ server.post("/v1/auth/login", (request, response) => {
   const accessToken = jwt.sign({ email, password }, JWT_SECRET, {
     expiresIn: EXPIRATION,
   });
-	console.log(accessToken);
-	response.status(200).json({ token: accessToken });
+  console.log(accessToken);
+  response.status(200).json({ token: accessToken });
 });
 
 // トークン検証処理
@@ -64,11 +64,11 @@ server.post("/v1/auth/verify", (request, response) => {
   }
   // 認証チェック
   try {
-		const accessToken = request.headers.authorization.split(" ")[1];
+    const accessToken = request.headers.authorization.split(" ")[1];
     const decode = jwt.verify(accessToken, JWT_SECRET);
-		console.log(decode);
+    console.log(decode);
     // 認証成功時はステータスコードと（デバッグ用に）設定されていたトークンを返す
-		response.status(200).json({ token: accessToken });
+    response.status(200).json({ token: accessToken });
   } catch (e) {
     response.status(401).json("Unauthorized");
   }
