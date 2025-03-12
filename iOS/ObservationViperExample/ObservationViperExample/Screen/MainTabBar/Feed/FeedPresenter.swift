@@ -70,8 +70,9 @@ final class FeedPresenter: FeedPresenterProtocol {
                 _pickupFeeds = try await pickupFeeds
                 _categoryRankings = try await categoryRankings
                 _informationFeeds = try await informationPerPage.information
-                _errorMessage = nil
+                _hasNextPage = try await informationPerPage.hasNextPage
                 _page += 1
+                _errorMessage = nil
 
             } catch {
                 _errorMessage = """
@@ -94,8 +95,9 @@ final class FeedPresenter: FeedPresenterProtocol {
             do {
                 let informationPerPage = try await interactor.fetchInformationFeeds(page: _page)
                 _informationFeeds += informationPerPage.information
-                _errorMessage = nil
+                _hasNextPage = informationPerPage.hasNextPage
                 _page += 1
+                _errorMessage = nil
 
             } catch {}
         }
