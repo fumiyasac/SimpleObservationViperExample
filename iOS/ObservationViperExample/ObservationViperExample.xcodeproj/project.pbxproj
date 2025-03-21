@@ -55,7 +55,6 @@
 		DEF3BBD82CD8FCFA007B2D9A /* RatingViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF3BBD72CD8FCFA007B2D9A /* RatingViewRepresentable.swift */; };
 		DEF3BBDC2CD940DB007B2D9A /* Cosmos in Frameworks */ = {isa = PBXBuildFile; productRef = DEF3BBDB2CD940DB007B2D9A /* Cosmos */; };
 		DEF3BBE02CD9414D007B2D9A /* Nuke in Frameworks */ = {isa = PBXBuildFile; productRef = DEF3BBDF2CD9414D007B2D9A /* Nuke */; };
-		DEF3BBE22CD94155007B2D9A /* MarkdownUI in Frameworks */ = {isa = PBXBuildFile; productRef = DEF3BBE12CD94155007B2D9A /* MarkdownUI */; };
 		DEF3BBF12CE22487007B2D9A /* InformationFeedEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF3BBF02CE2247E007B2D9A /* InformationFeedEntity.swift */; };
 		DEF3BBF32CE224A2007B2D9A /* CategoryRankingEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF3BBF22CE2249A007B2D9A /* CategoryRankingEntity.swift */; };
 		DEF3BBF52CE224BF007B2D9A /* GalleryPhotoEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF3BBF42CE224B1007B2D9A /* GalleryPhotoEntity.swift */; };
@@ -141,7 +140,6 @@
 				DE1DC5182D33AF8500873A8B /* NukeUI in Frameworks */,
 				DEF3BBE02CD9414D007B2D9A /* Nuke in Frameworks */,
 				DEF3BBDC2CD940DB007B2D9A /* Cosmos in Frameworks */,
-				DEF3BBE22CD94155007B2D9A /* MarkdownUI in Frameworks */,
 				DE49775C2D268DFF00FEC950 /* KeychainAccess in Frameworks */,
 				DE1DC8722D3931E800873A8B /* ScalingHeaderScrollView in Frameworks */,
 			);
@@ -424,7 +422,6 @@
 			packageProductDependencies = (
 				DEF3BBDB2CD940DB007B2D9A /* Cosmos */,
 				DEF3BBDF2CD9414D007B2D9A /* Nuke */,
-				DEF3BBE12CD94155007B2D9A /* MarkdownUI */,
 				DE49775B2D268DFF00FEC950 /* KeychainAccess */,
 				DE1DC5172D33AF8500873A8B /* NukeUI */,
 				DE1DC8712D3931E800873A8B /* ScalingHeaderScrollView */,
@@ -508,7 +505,6 @@
 			packageReferences = (
 				DEF3BBBD2CD2894D007B2D9A /* XCRemoteSwiftPackageReference "Nuke" */,
 				DEF3BBBF2CD289E4007B2D9A /* XCRemoteSwiftPackageReference "Cosmos" */,
-				DEF3BBC02CD28A2E007B2D9A /* XCRemoteSwiftPackageReference "swift-markdown-ui" */,
 				DEF6E1DA2CEE19E6007FBD4A /* XCRemoteSwiftPackageReference "KeychainAccess" */,
 				DE49774F2D22D71D00FEC950 /* XCRemoteSwiftPackageReference "ScalingHeaderScrollView" */,
 			);
@@ -946,14 +942,6 @@
 				minimumVersion = 25.0.1;
 			};
 		};
-		DEF3BBC02CD28A2E007B2D9A /* XCRemoteSwiftPackageReference "swift-markdown-ui" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/gonzalezreal/swift-markdown-ui";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 2.4.1;
-			};
-		};
 		DEF6E1DA2CEE19E6007FBD4A /* XCRemoteSwiftPackageReference "KeychainAccess" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/kishikawakatsumi/KeychainAccess.git";
@@ -989,11 +977,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = DEF3BBBD2CD2894D007B2D9A /* XCRemoteSwiftPackageReference "Nuke" */;
 			productName = Nuke;
-		};
-		DEF3BBE12CD94155007B2D9A /* MarkdownUI */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = DEF3BBC02CD28A2E007B2D9A /* XCRemoteSwiftPackageReference "swift-markdown-ui" */;
-			productName = MarkdownUI;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
