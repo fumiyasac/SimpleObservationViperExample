@@ -45,9 +45,6 @@
 		DEF3BBA22CCBA2E4007B2D9A /* SwiftUIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF3BBA12CCBA2E3007B2D9A /* SwiftUIColorExtension.swift */; };
 		DEF3BBA42CCBA9D4007B2D9A /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF3BBA32CCBA9D4007B2D9A /* StringExtension.swift */; };
 		DEF3BBA82CCCE7F8007B2D9A /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF3BBA72CCCE7F8007B2D9A /* UIViewControllerExtension.swift */; };
-		DEF3BBAC2CCE5CF3007B2D9A /* ObservationViperExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF3BBAA2CCE5CF3007B2D9A /* ObservationViperExampleTests.swift */; };
-		DEF3BBB02CCE5CF9007B2D9A /* ObservationViperExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF3BBAD2CCE5CF9007B2D9A /* ObservationViperExampleUITests.swift */; };
-		DEF3BBB12CCE5CF9007B2D9A /* ObservationViperExampleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF3BBAE2CCE5CF9007B2D9A /* ObservationViperExampleUITestsLaunchTests.swift */; };
 		DEF3BBB32CCFB074007B2D9A /* ConnectionErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF3BBB22CCFB074007B2D9A /* ConnectionErrorView.swift */; };
 		DEF3BBB72CCFB0FE007B2D9A /* APIClientManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF3BBB62CCFB0FE007B2D9A /* APIClientManager.swift */; };
 		DEF3BBCB2CD685D1007B2D9A /* GalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF3BBCA2CD685D1007B2D9A /* GalleryView.swift */; };
@@ -106,6 +103,7 @@
 		DE49774D2D22C58A00FEC950 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
 		DE4977512D2458DB00FEC950 /* GuidanceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuidanceView.swift; sourceTree = "<group>"; };
 		DE4977582D268CE000FEC950 /* KeychainAccessManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainAccessManager.swift; sourceTree = "<group>"; };
+		DE6F4DEB2DACF153004D7495 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		DEF3BB482CC3876A007B2D9A /* ObservationViperExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObservationViperExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEF3BB582CC3876C007B2D9A /* ObservationViperExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObservationViperExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEF3BB622CC3876C007B2D9A /* ObservationViperExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObservationViperExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -118,9 +116,6 @@
 		DEF3BBA12CCBA2E3007B2D9A /* SwiftUIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIColorExtension.swift; sourceTree = "<group>"; };
 		DEF3BBA32CCBA9D4007B2D9A /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		DEF3BBA72CCCE7F8007B2D9A /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
-		DEF3BBAA2CCE5CF3007B2D9A /* ObservationViperExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservationViperExampleTests.swift; sourceTree = "<group>"; };
-		DEF3BBAD2CCE5CF9007B2D9A /* ObservationViperExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservationViperExampleUITests.swift; sourceTree = "<group>"; };
-		DEF3BBAE2CCE5CF9007B2D9A /* ObservationViperExampleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservationViperExampleUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		DEF3BBB22CCFB074007B2D9A /* ConnectionErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionErrorView.swift; sourceTree = "<group>"; };
 		DEF3BBB62CCFB0FE007B2D9A /* APIClientManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClientManager.swift; sourceTree = "<group>"; };
 		DEF3BBCA2CD685D1007B2D9A /* GalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryView.swift; sourceTree = "<group>"; };
@@ -309,7 +304,6 @@
 		DEF3BBAB2CCE5CF3007B2D9A /* ObservationViperExampleTests */ = {
 			isa = PBXGroup;
 			children = (
-				DEF3BBAA2CCE5CF3007B2D9A /* ObservationViperExampleTests.swift */,
 			);
 			path = ObservationViperExampleTests;
 			sourceTree = "<group>";
@@ -317,8 +311,6 @@
 		DEF3BBAF2CCE5CF9007B2D9A /* ObservationViperExampleUITests */ = {
 			isa = PBXGroup;
 			children = (
-				DEF3BBAD2CCE5CF9007B2D9A /* ObservationViperExampleUITests.swift */,
-				DEF3BBAE2CCE5CF9007B2D9A /* ObservationViperExampleUITestsLaunchTests.swift */,
 			);
 			path = ObservationViperExampleUITests;
 			sourceTree = "<group>";
@@ -387,6 +379,7 @@
 		DEF3BBDA2CD940DB007B2D9A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DE6F4DEB2DACF153004D7495 /* XCTest.framework */,
 				DE1DC9482D3C84B000873A8B /* Testing.framework */,
 			);
 			name = Frameworks;
@@ -485,6 +478,7 @@
 					};
 					DEF3BB572CC3876C007B2D9A = {
 						CreatedOnToolsVersion = 16.0;
+						LastSwiftMigration = 1630;
 						TestTargetID = DEF3BB472CC3876A007B2D9A;
 					};
 					DEF3BB612CC3876C007B2D9A = {
@@ -600,7 +594,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DEF3BBAC2CCE5CF3007B2D9A /* ObservationViperExampleTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -608,8 +601,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DEF3BBB02CCE5CF9007B2D9A /* ObservationViperExampleUITests.swift in Sources */,
-				DEF3BBB12CCE5CF9007B2D9A /* ObservationViperExampleUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -808,6 +799,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = S5BF5553KY;
@@ -817,6 +809,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = net.just1factory.ObservationViperExampleTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ObservationViperExample.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ObservationViperExample";
@@ -827,6 +820,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = S5BF5553KY;
