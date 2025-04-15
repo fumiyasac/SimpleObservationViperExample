@@ -50,6 +50,8 @@ final class AuthenticationPresenter: AuthenticationPresenterProtocol {
         Task { @MainActor in
             do {
                 let _ = try await interactor.login(email: email, password: password)
+
+                // 👉 認証処理が成功した場合にMainTabBar画面に切り替える
                 router.navigateToMainTabBar()
             } catch {
                 _errorMessage = """
@@ -76,6 +78,7 @@ final class AuthenticationPresenter: AuthenticationPresenterProtocol {
                 do {
                     let isValid = try await interactor.validateToken(token)
                     if isValid {
+                        // 👉 トークンの有効期限がまだ続いている場合にMainTabBar画面に切り替える
                         router.navigateToMainTabBar()
                     }
                 } catch {
